@@ -1,0 +1,3 @@
+D:/Program/STM32F407Explorer/build/CMakeFiles/ALL_BUILD.dir
+D:/Program/STM32F407Explorer/build/CMakeFiles/ZERO_CHECK.dir
+D:/Program/STM32F407Explorer/build/cmsis/CMakeFiles/CMSIS_DSP.dir

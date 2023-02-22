@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B7B8DAED-F6E3-3D5A-A105-B24DE6420ED3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>CMSIS_DSP</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMSIS_DSP.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMSIS_DSP.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">CMSIS_DSP</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMSIS_DSP.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMSIS_DSP.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">CMSIS_DSP</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CMSIS_DSP.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CMSIS_DSP.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">CMSIS_DSP</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CMSIS_DSP.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CMSIS_DSP.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">CMSIS_DSP</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mcpu=cortex-m4 -fomit-frame-pointer -falign-functions=16 -ffunction-sections -fdata-sections -fno-common -flto -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wextra -Wundef -Wstrict-prototypes -mthumb -mno-thumb-interwork</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mcpu=cortex-m4 -fomit-frame-pointer -falign-functions=16 -ffunction-sections -fdata-sections -fno-common -flto -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wextra -Wundef -Wstrict-prototypes -mthumb -mno-thumb-interwork</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mcpu=cortex-m4 -fomit-frame-pointer -falign-functions=16 -ffunction-sections -fdata-sections -fno-common -flto -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wextra -Wundef -Wstrict-prototypes -mthumb -mno-thumb-interwork</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -mcpu=cortex-m4 -fomit-frame-pointer -falign-functions=16 -ffunction-sections -fdata-sections -fno-common -flto -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wextra -Wundef -Wstrict-prototypes -mthumb -mno-thumb-interwork</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>EnableAllWarnings</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);CORTEX_USE_FPU=TRUE;SHELL_CONFIG_FILE;THUMB;THUMB_PRESENT;THUMB_NO_INTERWORKING;ARM_MATH_CM4;ARM_MATH_MATRIX_CHECK;ARM_MATH_ROUNDING;__FPU_PRESENT=1U;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Program\STM32F407Explorer\.\os\license;D:\Program\STM32F407Explorer\.\os\common\portability\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\common\startup\ARMCMx\devices\STM32F4xx;D:\Program\STM32F407Explorer\.\os\common\ext\ARM\CMSIS\Core\Include;D:\Program\STM32F407Explorer\.\os\common\ext\ST\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\include;D:\Program\STM32F407Explorer\.\os\hal\ports\common\ARMCMx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\STM32F4xx;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\ADCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\CANv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\DMAv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\EXTIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\GPIOv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\I2Cv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\MACv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\OTGv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\QUADSPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\RTCv2;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SPIv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\SDIOv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\TIMv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\USARTv1;D:\Program\STM32F407Explorer\.\os\hal\ports\STM32\LLD\xWDGv1;D:\Program\STM32F407Explorer\.\dev\board;D:\Program\STM32F407Explorer\.\os\hal\osal\rt;D:\Program\STM32F407Explorer\.\os\rt\include;D:\Program\STM32F407Explorer\.\os\common\oslib\include;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx;D:\Program\STM32F407Explorer\.\os\common\ports\ARMCMx\compilers\GCC;D:\Program\STM32F407Explorer\.\os\various\cpp_wrappers;D:\Program\STM32F407Explorer\.\os\hal\lib\streams;D:\Program\STM32F407Explorer\cmsis\dsp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Program\STM32F407Explorer\cmsis\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Program/STM32F407Explorer/cmsis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Program/STM32F407Explorer -BD:/Program/STM32F407Explorer/build --check-stamp-file D:/Program/STM32F407Explorer/build/cmsis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Program\STM32F407Explorer\build\cmsis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Program/STM32F407Explorer/cmsis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Program/STM32F407Explorer -BD:/Program/STM32F407Explorer/build --check-stamp-file D:/Program/STM32F407Explorer/build/cmsis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Program\STM32F407Explorer\build\cmsis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Program/STM32F407Explorer/cmsis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Program/STM32F407Explorer -BD:/Program/STM32F407Explorer/build --check-stamp-file D:/Program/STM32F407Explorer/build/cmsis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Program\STM32F407Explorer\build\cmsis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Program/STM32F407Explorer/cmsis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"D:\Program Files\CMake\bin\cmake.exe" -SD:/Program/STM32F407Explorer -BD:/Program/STM32F407Explorer/build --check-stamp-file D:/Program/STM32F407Explorer/build/cmsis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Program\STM32F407Explorer\build\cmsis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\CommonTables\arm_common_tables.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\CommonTables\arm_const_structs.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_add_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_cmplx_mult_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_init_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_inverse_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_mult_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_scale_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_sub_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\MatrixFunctions\arm_mat_trans_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\FastMathFunctions\arm_cos_f32.c" />
+    <ClCompile Include="D:\Program\STM32F407Explorer\cmsis\dsp\src\FastMathFunctions\arm_sin_f32.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\Program\STM32F407Explorer\build\ZERO_CHECK.proj">
+      <Project>{4CB47AF7-D730-369E-8FE9-B24593F552DF}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
