@@ -33,6 +33,13 @@ include_directories(dev/board_cfg)
 add_library(ChibiOS OBJECT ${CHIBIOS_XASM_SRC} ${CHIBIOS_C_SRC} ${CHIBIOS_CPP_SRC} dev/board_cfg/board.c)
 
 # ========================== Files and Targets Configurations ==========================
+set(BUZZER_SRC
+        dev/interface/buzzer/buzzer_scheduler.cpp
+        dev/interface/buzzer/buzzer_interface.cpp)
+
+include_directories(dev/interface/buzzer
+        dev/interface/led)
+
 
 set(LIGHT_LED_SRC
         dev/application/light_led/main.cpp
@@ -40,10 +47,21 @@ set(LIGHT_LED_SRC
 
 add_executable(LIGHT_LED
         ${LIGHT_LED_SRC})
-target_include_directories(LIGHT_LED PRIVATE dev/interface/led
-        dev/application/light_led)
+target_include_directories(LIGHT_LED PRIVATE dev/application/light_led
+        )
 target_compile_definitions(LIGHT_LED PRIVATE LIGHT_LED)
 
+
+set(PLAY_SOUND_SRC
+        dev/application/play_sound/paly_sound.cpp
+        dev/interface/led/led.cpp
+        ${BUZZER_SRC}
+)
+
+add_executable(PLAY_SOUND
+        ${PLAY_SOUND_SRC})
+target_include_directories(PLAY_SOUND PRIVATE dev/application/play_sound)
+target_compile_definitions(PLAY_SOUND PRIVATE PLAY_SOUND)
 
 
 # ================================= Post Configurations for all targets =================================
