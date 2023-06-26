@@ -52,5 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ChibiOS.dir/DependInfo.cmake"
   "CMakeFiles/LIGHT_LED.dir/DependInfo.cmake"
+  "CMakeFiles/LCD_PROJ.dir/DependInfo.cmake"
+  "CMakeFiles/SERIAL_PROJ.dir/DependInfo.cmake"
   "cmsis/CMakeFiles/CMSIS_DSP.dir/DependInfo.cmake"
   )

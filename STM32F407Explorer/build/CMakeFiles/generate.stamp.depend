@@ -1,0 +1,25 @@
+# CMake generation dependency list for this directory.
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeASMInformation.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCInformation.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCXXInformation.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeCommonLanguageInclude.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeGenericSystem.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeInitializeConfigs.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeLanguageInformation.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeSystemSpecificInformation.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/CMakeSystemSpecificInitialize.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/GNU-ASM.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/GNU.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/MSVC-C.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/MSVC-CXX.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Compiler/MSVC.cmake
+D:/Program Files/CMake/share/cmake-3.24/Modules/Platform/Generic.cmake
+D:/Program/STM32F407Explorer/CMakeLists.txt
+D:/Program/STM32F407Explorer/build/CMakeFiles/3.24.0-rc3/CMakeASMCompiler.cmake
+D:/Program/STM32F407Explorer/build/CMakeFiles/3.24.0-rc3/CMakeCCompiler.cmake
+D:/Program/STM32F407Explorer/build/CMakeFiles/3.24.0-rc3/CMakeCXXCompiler.cmake
+D:/Program/STM32F407Explorer/build/CMakeFiles/3.24.0-rc3/CMakeSystem.cmake
+D:/Program/STM32F407Explorer/config/compile_options.cmake
+D:/Program/STM32F407Explorer/config/toolchain.cmake
+D:/Program/STM32F407Explorer/os/ch.cmake

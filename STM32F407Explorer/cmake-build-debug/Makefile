@@ -142,6 +142,32 @@ LIGHT_LED/fast:
 .PHONY : LIGHT_LED/fast
 
 #=============================================================================
+# Target rules for targets named LCD_PROJ
+
+# Build rule for target.
+LCD_PROJ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 LCD_PROJ
+.PHONY : LCD_PROJ
+
+# fast build rule for target.
+LCD_PROJ/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/build
+.PHONY : LCD_PROJ/fast
+
+#=============================================================================
+# Target rules for targets named SERIAL_PROJ
+
+# Build rule for target.
+SERIAL_PROJ: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 SERIAL_PROJ
+.PHONY : SERIAL_PROJ
+
+# fast build rule for target.
+SERIAL_PROJ/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/build
+.PHONY : SERIAL_PROJ/fast
+
+#=============================================================================
 # Target rules for targets named CMSIS_DSP
 
 # Build rule for target.
@@ -153,6 +179,30 @@ CMSIS_DSP: cmake_check_build_system
 CMSIS_DSP/fast:
 	$(MAKE) $(MAKESILENT) -f cmsis\CMakeFiles\CMSIS_DSP.dir\build.make cmsis/CMakeFiles/CMSIS_DSP.dir/build
 .PHONY : CMSIS_DSP/fast
+
+dev/application/lcd_proj/main.obj: dev/application/lcd_proj/main.cpp.obj
+.PHONY : dev/application/lcd_proj/main.obj
+
+# target to build an object file
+dev/application/lcd_proj/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/application/lcd_proj/main.cpp.obj
+.PHONY : dev/application/lcd_proj/main.cpp.obj
+
+dev/application/lcd_proj/main.i: dev/application/lcd_proj/main.cpp.i
+.PHONY : dev/application/lcd_proj/main.i
+
+# target to preprocess a source file
+dev/application/lcd_proj/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/application/lcd_proj/main.cpp.i
+.PHONY : dev/application/lcd_proj/main.cpp.i
+
+dev/application/lcd_proj/main.s: dev/application/lcd_proj/main.cpp.s
+.PHONY : dev/application/lcd_proj/main.s
+
+# target to generate assembly for a file
+dev/application/lcd_proj/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/application/lcd_proj/main.cpp.s
+.PHONY : dev/application/lcd_proj/main.cpp.s
 
 dev/application/light_led/main.obj: dev/application/light_led/main.cpp.obj
 .PHONY : dev/application/light_led/main.obj
@@ -178,6 +228,30 @@ dev/application/light_led/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/application/light_led/main.cpp.s
 .PHONY : dev/application/light_led/main.cpp.s
 
+dev/application/serial_proj/main.obj: dev/application/serial_proj/main.cpp.obj
+.PHONY : dev/application/serial_proj/main.obj
+
+# target to build an object file
+dev/application/serial_proj/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/application/serial_proj/main.cpp.obj
+.PHONY : dev/application/serial_proj/main.cpp.obj
+
+dev/application/serial_proj/main.i: dev/application/serial_proj/main.cpp.i
+.PHONY : dev/application/serial_proj/main.i
+
+# target to preprocess a source file
+dev/application/serial_proj/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/application/serial_proj/main.cpp.i
+.PHONY : dev/application/serial_proj/main.cpp.i
+
+dev/application/serial_proj/main.s: dev/application/serial_proj/main.cpp.s
+.PHONY : dev/application/serial_proj/main.s
+
+# target to generate assembly for a file
+dev/application/serial_proj/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/application/serial_proj/main.cpp.s
+.PHONY : dev/application/serial_proj/main.cpp.s
+
 dev/board_cfg/board.obj: dev/board_cfg/board.c.obj
 .PHONY : dev/board_cfg/board.obj
 
@@ -202,6 +276,30 @@ dev/board_cfg/board.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.s
 .PHONY : dev/board_cfg/board.c.s
 
+dev/interface/lcd/lcd.obj: dev/interface/lcd/lcd.cpp.obj
+.PHONY : dev/interface/lcd/lcd.obj
+
+# target to build an object file
+dev/interface/lcd/lcd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/interface/lcd/lcd.cpp.obj
+.PHONY : dev/interface/lcd/lcd.cpp.obj
+
+dev/interface/lcd/lcd.i: dev/interface/lcd/lcd.cpp.i
+.PHONY : dev/interface/lcd/lcd.i
+
+# target to preprocess a source file
+dev/interface/lcd/lcd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/interface/lcd/lcd.cpp.i
+.PHONY : dev/interface/lcd/lcd.cpp.i
+
+dev/interface/lcd/lcd.s: dev/interface/lcd/lcd.cpp.s
+.PHONY : dev/interface/lcd/lcd.s
+
+# target to generate assembly for a file
+dev/interface/lcd/lcd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/interface/lcd/lcd.cpp.s
+.PHONY : dev/interface/lcd/lcd.cpp.s
+
 dev/interface/led/led.obj: dev/interface/led/led.cpp.obj
 .PHONY : dev/interface/led/led.obj
 
@@ -225,6 +323,54 @@ dev/interface/led/led.s: dev/interface/led/led.cpp.s
 dev/interface/led/led.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.s
 .PHONY : dev/interface/led/led.cpp.s
+
+dev/interface/serial/serial.obj: dev/interface/serial/serial.cpp.obj
+.PHONY : dev/interface/serial/serial.obj
+
+# target to build an object file
+dev/interface/serial/serial.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/interface/serial/serial.cpp.obj
+.PHONY : dev/interface/serial/serial.cpp.obj
+
+dev/interface/serial/serial.i: dev/interface/serial/serial.cpp.i
+.PHONY : dev/interface/serial/serial.i
+
+# target to preprocess a source file
+dev/interface/serial/serial.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/interface/serial/serial.cpp.i
+.PHONY : dev/interface/serial/serial.cpp.i
+
+dev/interface/serial/serial.s: dev/interface/serial/serial.cpp.s
+.PHONY : dev/interface/serial/serial.s
+
+# target to generate assembly for a file
+dev/interface/serial/serial.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/interface/serial/serial.cpp.s
+.PHONY : dev/interface/serial/serial.cpp.s
+
+dev/interface/shell/shell.obj: dev/interface/shell/shell.cpp.obj
+.PHONY : dev/interface/shell/shell.obj
+
+# target to build an object file
+dev/interface/shell/shell.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/interface/shell/shell.cpp.obj
+.PHONY : dev/interface/shell/shell.cpp.obj
+
+dev/interface/shell/shell.i: dev/interface/shell/shell.cpp.i
+.PHONY : dev/interface/shell/shell.i
+
+# target to preprocess a source file
+dev/interface/shell/shell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/interface/shell/shell.cpp.i
+.PHONY : dev/interface/shell/shell.cpp.i
+
+dev/interface/shell/shell.s: dev/interface/shell/shell.cpp.s
+.PHONY : dev/interface/shell/shell.s
+
+# target to generate assembly for a file
+dev/interface/shell/shell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/dev/interface/shell/shell.cpp.s
+.PHONY : dev/interface/shell/shell.cpp.s
 
 os/common/ports/ARMv7-M/chcore.obj: os/common/ports/ARMv7-M/chcore.c.obj
 .PHONY : os/common/ports/ARMv7-M/chcore.obj
@@ -561,6 +707,78 @@ os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.s: os/hal/ports/STM32/LLD/EXTIv1/stm32_
 os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.s
 .PHONY : os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.s
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.obj: os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.obj
+
+# target to build an object file
+os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.i: os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.i
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.i
+
+# target to preprocess a source file
+os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.i
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.i
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.s: os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.s
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.s
+
+# target to generate assembly for a file
+os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.s
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.s
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.obj: os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.obj
+
+# target to build an object file
+os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.i: os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.i
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.i
+
+# target to preprocess a source file
+os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.i
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.i
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.s: os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.s
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.s
+
+# target to generate assembly for a file
+os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.s
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.s
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.obj: os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.obj
+
+# target to build an object file
+os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.i: os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.i
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.i
+
+# target to preprocess a source file
+os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.i
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.i
+
+os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.s: os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.s
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.s
+
+# target to generate assembly for a file
+os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.s
+.PHONY : os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.s
 
 os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.obj: os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj
 .PHONY : os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.obj
@@ -946,6 +1164,30 @@ os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.s
 .PHONY : os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.s
 
+os/hal/ports/STM32/STM32F4xx/hal_efl_lld.obj: os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj
+.PHONY : os/hal/ports/STM32/STM32F4xx/hal_efl_lld.obj
+
+# target to build an object file
+os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj
+.PHONY : os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj
+
+os/hal/ports/STM32/STM32F4xx/hal_efl_lld.i: os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.i
+.PHONY : os/hal/ports/STM32/STM32F4xx/hal_efl_lld.i
+
+# target to preprocess a source file
+os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.i
+.PHONY : os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.i
+
+os/hal/ports/STM32/STM32F4xx/hal_efl_lld.s: os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.s
+.PHONY : os/hal/ports/STM32/STM32F4xx/hal_efl_lld.s
+
+# target to generate assembly for a file
+os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.s
+.PHONY : os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.s
+
 os/hal/ports/STM32/STM32F4xx/hal_lld.obj: os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj
 .PHONY : os/hal/ports/STM32/STM32F4xx/hal_lld.obj
 
@@ -1186,6 +1428,54 @@ os/hal/src/hal_efl.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.s
 .PHONY : os/hal/src/hal_efl.c.s
 
+os/hal/src/hal_flash.obj: os/hal/src/hal_flash.c.obj
+.PHONY : os/hal/src/hal_flash.obj
+
+# target to build an object file
+os/hal/src/hal_flash.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.obj
+.PHONY : os/hal/src/hal_flash.c.obj
+
+os/hal/src/hal_flash.i: os/hal/src/hal_flash.c.i
+.PHONY : os/hal/src/hal_flash.i
+
+# target to preprocess a source file
+os/hal/src/hal_flash.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.i
+.PHONY : os/hal/src/hal_flash.c.i
+
+os/hal/src/hal_flash.s: os/hal/src/hal_flash.c.s
+.PHONY : os/hal/src/hal_flash.s
+
+# target to generate assembly for a file
+os/hal/src/hal_flash.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.s
+.PHONY : os/hal/src/hal_flash.c.s
+
+os/hal/src/hal_fsmc.obj: os/hal/src/hal_fsmc.c.obj
+.PHONY : os/hal/src/hal_fsmc.obj
+
+# target to build an object file
+os/hal/src/hal_fsmc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj
+.PHONY : os/hal/src/hal_fsmc.c.obj
+
+os/hal/src/hal_fsmc.i: os/hal/src/hal_fsmc.c.i
+.PHONY : os/hal/src/hal_fsmc.i
+
+# target to preprocess a source file
+os/hal/src/hal_fsmc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.i
+.PHONY : os/hal/src/hal_fsmc.c.i
+
+os/hal/src/hal_fsmc.s: os/hal/src/hal_fsmc.c.s
+.PHONY : os/hal/src/hal_fsmc.s
+
+# target to generate assembly for a file
+os/hal/src/hal_fsmc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.s
+.PHONY : os/hal/src/hal_fsmc.c.s
+
 os/hal/src/hal_gpt.obj: os/hal/src/hal_gpt.c.obj
 .PHONY : os/hal/src/hal_gpt.obj
 
@@ -1354,6 +1644,30 @@ os/hal/src/hal_mmcsd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmcsd.c.s
 .PHONY : os/hal/src/hal_mmcsd.c.s
 
+os/hal/src/hal_nand.obj: os/hal/src/hal_nand.c.obj
+.PHONY : os/hal/src/hal_nand.obj
+
+# target to build an object file
+os/hal/src/hal_nand.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj
+.PHONY : os/hal/src/hal_nand.c.obj
+
+os/hal/src/hal_nand.i: os/hal/src/hal_nand.c.i
+.PHONY : os/hal/src/hal_nand.i
+
+# target to preprocess a source file
+os/hal/src/hal_nand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.i
+.PHONY : os/hal/src/hal_nand.c.i
+
+os/hal/src/hal_nand.s: os/hal/src/hal_nand.c.s
+.PHONY : os/hal/src/hal_nand.s
+
+# target to generate assembly for a file
+os/hal/src/hal_nand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.s
+.PHONY : os/hal/src/hal_nand.c.s
+
 os/hal/src/hal_pal.obj: os/hal/src/hal_pal.c.obj
 .PHONY : os/hal/src/hal_pal.obj
 
@@ -1474,6 +1788,30 @@ os/hal/src/hal_sdc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdc.c.s
 .PHONY : os/hal/src/hal_sdc.c.s
 
+os/hal/src/hal_sdram.obj: os/hal/src/hal_sdram.c.obj
+.PHONY : os/hal/src/hal_sdram.obj
+
+# target to build an object file
+os/hal/src/hal_sdram.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj
+.PHONY : os/hal/src/hal_sdram.c.obj
+
+os/hal/src/hal_sdram.i: os/hal/src/hal_sdram.c.i
+.PHONY : os/hal/src/hal_sdram.i
+
+# target to preprocess a source file
+os/hal/src/hal_sdram.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.i
+.PHONY : os/hal/src/hal_sdram.c.i
+
+os/hal/src/hal_sdram.s: os/hal/src/hal_sdram.c.s
+.PHONY : os/hal/src/hal_sdram.s
+
+# target to generate assembly for a file
+os/hal/src/hal_sdram.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.s
+.PHONY : os/hal/src/hal_sdram.c.s
+
 os/hal/src/hal_serial.obj: os/hal/src/hal_serial.c.obj
 .PHONY : os/hal/src/hal_serial.obj
 
@@ -1522,6 +1860,30 @@ os/hal/src/hal_serial_usb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial_usb.c.s
 .PHONY : os/hal/src/hal_serial_usb.c.s
 
+os/hal/src/hal_sio.obj: os/hal/src/hal_sio.c.obj
+.PHONY : os/hal/src/hal_sio.obj
+
+# target to build an object file
+os/hal/src/hal_sio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.obj
+.PHONY : os/hal/src/hal_sio.c.obj
+
+os/hal/src/hal_sio.i: os/hal/src/hal_sio.c.i
+.PHONY : os/hal/src/hal_sio.i
+
+# target to preprocess a source file
+os/hal/src/hal_sio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.i
+.PHONY : os/hal/src/hal_sio.c.i
+
+os/hal/src/hal_sio.s: os/hal/src/hal_sio.c.s
+.PHONY : os/hal/src/hal_sio.s
+
+# target to generate assembly for a file
+os/hal/src/hal_sio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.s
+.PHONY : os/hal/src/hal_sio.c.s
+
 os/hal/src/hal_spi.obj: os/hal/src/hal_spi.c.obj
 .PHONY : os/hal/src/hal_spi.obj
 
@@ -1546,6 +1908,30 @@ os/hal/src/hal_spi.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_spi.c.s
 .PHONY : os/hal/src/hal_spi.c.s
 
+os/hal/src/hal_sram.obj: os/hal/src/hal_sram.c.obj
+.PHONY : os/hal/src/hal_sram.obj
+
+# target to build an object file
+os/hal/src/hal_sram.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj
+.PHONY : os/hal/src/hal_sram.c.obj
+
+os/hal/src/hal_sram.i: os/hal/src/hal_sram.c.i
+.PHONY : os/hal/src/hal_sram.i
+
+# target to preprocess a source file
+os/hal/src/hal_sram.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.i
+.PHONY : os/hal/src/hal_sram.c.i
+
+os/hal/src/hal_sram.s: os/hal/src/hal_sram.c.s
+.PHONY : os/hal/src/hal_sram.s
+
+# target to generate assembly for a file
+os/hal/src/hal_sram.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.s
+.PHONY : os/hal/src/hal_sram.c.s
+
 os/hal/src/hal_st.obj: os/hal/src/hal_st.c.obj
 .PHONY : os/hal/src/hal_st.obj
 
@@ -1569,6 +1955,30 @@ os/hal/src/hal_st.s: os/hal/src/hal_st.c.s
 os/hal/src/hal_st.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_st.c.s
 .PHONY : os/hal/src/hal_st.c.s
+
+os/hal/src/hal_trng.obj: os/hal/src/hal_trng.c.obj
+.PHONY : os/hal/src/hal_trng.obj
+
+# target to build an object file
+os/hal/src/hal_trng.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.obj
+.PHONY : os/hal/src/hal_trng.c.obj
+
+os/hal/src/hal_trng.i: os/hal/src/hal_trng.c.i
+.PHONY : os/hal/src/hal_trng.i
+
+# target to preprocess a source file
+os/hal/src/hal_trng.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.i
+.PHONY : os/hal/src/hal_trng.c.i
+
+os/hal/src/hal_trng.s: os/hal/src/hal_trng.c.s
+.PHONY : os/hal/src/hal_trng.s
+
+# target to generate assembly for a file
+os/hal/src/hal_trng.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.s
+.PHONY : os/hal/src/hal_trng.c.s
 
 os/hal/src/hal_uart.obj: os/hal/src/hal_uart.c.obj
 .PHONY : os/hal/src/hal_uart.obj
@@ -1641,6 +2051,222 @@ os/hal/src/hal_wdg.s: os/hal/src/hal_wdg.c.s
 os/hal/src/hal_wdg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.s
 .PHONY : os/hal/src/hal_wdg.c.s
+
+os/hal/src/hal_wspi.obj: os/hal/src/hal_wspi.c.obj
+.PHONY : os/hal/src/hal_wspi.obj
+
+# target to build an object file
+os/hal/src/hal_wspi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj
+.PHONY : os/hal/src/hal_wspi.c.obj
+
+os/hal/src/hal_wspi.i: os/hal/src/hal_wspi.c.i
+.PHONY : os/hal/src/hal_wspi.i
+
+# target to preprocess a source file
+os/hal/src/hal_wspi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.i
+.PHONY : os/hal/src/hal_wspi.c.i
+
+os/hal/src/hal_wspi.s: os/hal/src/hal_wspi.c.s
+.PHONY : os/hal/src/hal_wspi.s
+
+# target to generate assembly for a file
+os/hal/src/hal_wspi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.s
+.PHONY : os/hal/src/hal_wspi.c.s
+
+os/oslib/src/chdelegates.obj: os/oslib/src/chdelegates.c.obj
+.PHONY : os/oslib/src/chdelegates.obj
+
+# target to build an object file
+os/oslib/src/chdelegates.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj
+.PHONY : os/oslib/src/chdelegates.c.obj
+
+os/oslib/src/chdelegates.i: os/oslib/src/chdelegates.c.i
+.PHONY : os/oslib/src/chdelegates.i
+
+# target to preprocess a source file
+os/oslib/src/chdelegates.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.i
+.PHONY : os/oslib/src/chdelegates.c.i
+
+os/oslib/src/chdelegates.s: os/oslib/src/chdelegates.c.s
+.PHONY : os/oslib/src/chdelegates.s
+
+# target to generate assembly for a file
+os/oslib/src/chdelegates.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.s
+.PHONY : os/oslib/src/chdelegates.c.s
+
+os/oslib/src/chfactory.obj: os/oslib/src/chfactory.c.obj
+.PHONY : os/oslib/src/chfactory.obj
+
+# target to build an object file
+os/oslib/src/chfactory.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj
+.PHONY : os/oslib/src/chfactory.c.obj
+
+os/oslib/src/chfactory.i: os/oslib/src/chfactory.c.i
+.PHONY : os/oslib/src/chfactory.i
+
+# target to preprocess a source file
+os/oslib/src/chfactory.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.i
+.PHONY : os/oslib/src/chfactory.c.i
+
+os/oslib/src/chfactory.s: os/oslib/src/chfactory.c.s
+.PHONY : os/oslib/src/chfactory.s
+
+# target to generate assembly for a file
+os/oslib/src/chfactory.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.s
+.PHONY : os/oslib/src/chfactory.c.s
+
+os/oslib/src/chmboxes.obj: os/oslib/src/chmboxes.c.obj
+.PHONY : os/oslib/src/chmboxes.obj
+
+# target to build an object file
+os/oslib/src/chmboxes.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj
+.PHONY : os/oslib/src/chmboxes.c.obj
+
+os/oslib/src/chmboxes.i: os/oslib/src/chmboxes.c.i
+.PHONY : os/oslib/src/chmboxes.i
+
+# target to preprocess a source file
+os/oslib/src/chmboxes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.i
+.PHONY : os/oslib/src/chmboxes.c.i
+
+os/oslib/src/chmboxes.s: os/oslib/src/chmboxes.c.s
+.PHONY : os/oslib/src/chmboxes.s
+
+# target to generate assembly for a file
+os/oslib/src/chmboxes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.s
+.PHONY : os/oslib/src/chmboxes.c.s
+
+os/oslib/src/chmemcore.obj: os/oslib/src/chmemcore.c.obj
+.PHONY : os/oslib/src/chmemcore.obj
+
+# target to build an object file
+os/oslib/src/chmemcore.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj
+.PHONY : os/oslib/src/chmemcore.c.obj
+
+os/oslib/src/chmemcore.i: os/oslib/src/chmemcore.c.i
+.PHONY : os/oslib/src/chmemcore.i
+
+# target to preprocess a source file
+os/oslib/src/chmemcore.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.i
+.PHONY : os/oslib/src/chmemcore.c.i
+
+os/oslib/src/chmemcore.s: os/oslib/src/chmemcore.c.s
+.PHONY : os/oslib/src/chmemcore.s
+
+# target to generate assembly for a file
+os/oslib/src/chmemcore.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.s
+.PHONY : os/oslib/src/chmemcore.c.s
+
+os/oslib/src/chmemheaps.obj: os/oslib/src/chmemheaps.c.obj
+.PHONY : os/oslib/src/chmemheaps.obj
+
+# target to build an object file
+os/oslib/src/chmemheaps.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj
+.PHONY : os/oslib/src/chmemheaps.c.obj
+
+os/oslib/src/chmemheaps.i: os/oslib/src/chmemheaps.c.i
+.PHONY : os/oslib/src/chmemheaps.i
+
+# target to preprocess a source file
+os/oslib/src/chmemheaps.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.i
+.PHONY : os/oslib/src/chmemheaps.c.i
+
+os/oslib/src/chmemheaps.s: os/oslib/src/chmemheaps.c.s
+.PHONY : os/oslib/src/chmemheaps.s
+
+# target to generate assembly for a file
+os/oslib/src/chmemheaps.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.s
+.PHONY : os/oslib/src/chmemheaps.c.s
+
+os/oslib/src/chmempools.obj: os/oslib/src/chmempools.c.obj
+.PHONY : os/oslib/src/chmempools.obj
+
+# target to build an object file
+os/oslib/src/chmempools.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj
+.PHONY : os/oslib/src/chmempools.c.obj
+
+os/oslib/src/chmempools.i: os/oslib/src/chmempools.c.i
+.PHONY : os/oslib/src/chmempools.i
+
+# target to preprocess a source file
+os/oslib/src/chmempools.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.i
+.PHONY : os/oslib/src/chmempools.c.i
+
+os/oslib/src/chmempools.s: os/oslib/src/chmempools.c.s
+.PHONY : os/oslib/src/chmempools.s
+
+# target to generate assembly for a file
+os/oslib/src/chmempools.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.s
+.PHONY : os/oslib/src/chmempools.c.s
+
+os/oslib/src/chobjcaches.obj: os/oslib/src/chobjcaches.c.obj
+.PHONY : os/oslib/src/chobjcaches.obj
+
+# target to build an object file
+os/oslib/src/chobjcaches.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj
+.PHONY : os/oslib/src/chobjcaches.c.obj
+
+os/oslib/src/chobjcaches.i: os/oslib/src/chobjcaches.c.i
+.PHONY : os/oslib/src/chobjcaches.i
+
+# target to preprocess a source file
+os/oslib/src/chobjcaches.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.i
+.PHONY : os/oslib/src/chobjcaches.c.i
+
+os/oslib/src/chobjcaches.s: os/oslib/src/chobjcaches.c.s
+.PHONY : os/oslib/src/chobjcaches.s
+
+# target to generate assembly for a file
+os/oslib/src/chobjcaches.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.s
+.PHONY : os/oslib/src/chobjcaches.c.s
+
+os/oslib/src/chpipes.obj: os/oslib/src/chpipes.c.obj
+.PHONY : os/oslib/src/chpipes.obj
+
+# target to build an object file
+os/oslib/src/chpipes.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj
+.PHONY : os/oslib/src/chpipes.c.obj
+
+os/oslib/src/chpipes.i: os/oslib/src/chpipes.c.i
+.PHONY : os/oslib/src/chpipes.i
+
+# target to preprocess a source file
+os/oslib/src/chpipes.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.i
+.PHONY : os/oslib/src/chpipes.c.i
+
+os/oslib/src/chpipes.s: os/oslib/src/chpipes.c.s
+.PHONY : os/oslib/src/chpipes.s
+
+# target to generate assembly for a file
+os/oslib/src/chpipes.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.s
+.PHONY : os/oslib/src/chpipes.c.s
 
 os/rt/src/chcond.obj: os/rt/src/chcond.c.obj
 .PHONY : os/rt/src/chcond.obj
@@ -2074,30 +2700,6 @@ os/various/cpp_wrappers/ch.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.s
 .PHONY : os/various/cpp_wrappers/ch.cpp.s
 
-os/various/syscalls.obj: os/various/syscalls.c.obj
-.PHONY : os/various/syscalls.obj
-
-# target to build an object file
-os/various/syscalls.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/various/syscalls.c.obj
-.PHONY : os/various/syscalls.c.obj
-
-os/various/syscalls.i: os/various/syscalls.c.i
-.PHONY : os/various/syscalls.i
-
-# target to preprocess a source file
-os/various/syscalls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/various/syscalls.c.i
-.PHONY : os/various/syscalls.c.i
-
-os/various/syscalls.s: os/various/syscalls.c.s
-.PHONY : os/various/syscalls.s
-
-# target to generate assembly for a file
-os/various/syscalls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/various/syscalls.c.s
-.PHONY : os/various/syscalls.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -2108,16 +2710,33 @@ help:
 	@echo ... rebuild_cache
 	@echo ... CMSIS_DSP
 	@echo ... ChibiOS
+	@echo ... LCD_PROJ
 	@echo ... LIGHT_LED
+	@echo ... SERIAL_PROJ
+	@echo ... dev/application/lcd_proj/main.obj
+	@echo ... dev/application/lcd_proj/main.i
+	@echo ... dev/application/lcd_proj/main.s
 	@echo ... dev/application/light_led/main.obj
 	@echo ... dev/application/light_led/main.i
 	@echo ... dev/application/light_led/main.s
+	@echo ... dev/application/serial_proj/main.obj
+	@echo ... dev/application/serial_proj/main.i
+	@echo ... dev/application/serial_proj/main.s
 	@echo ... dev/board_cfg/board.obj
 	@echo ... dev/board_cfg/board.i
 	@echo ... dev/board_cfg/board.s
+	@echo ... dev/interface/lcd/lcd.obj
+	@echo ... dev/interface/lcd/lcd.i
+	@echo ... dev/interface/lcd/lcd.s
 	@echo ... dev/interface/led/led.obj
 	@echo ... dev/interface/led/led.i
 	@echo ... dev/interface/led/led.s
+	@echo ... dev/interface/serial/serial.obj
+	@echo ... dev/interface/serial/serial.i
+	@echo ... dev/interface/serial/serial.s
+	@echo ... dev/interface/shell/shell.obj
+	@echo ... dev/interface/shell/shell.i
+	@echo ... dev/interface/shell/shell.s
 	@echo ... os/common/ports/ARMv7-M/chcore.obj
 	@echo ... os/common/ports/ARMv7-M/chcore.i
 	@echo ... os/common/ports/ARMv7-M/chcore.s
@@ -2160,6 +2779,15 @@ help:
 	@echo ... os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.obj
 	@echo ... os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.i
 	@echo ... os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.s
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.obj
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.i
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.s
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.obj
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.i
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.s
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.obj
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.i
+	@echo ... os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.s
 	@echo ... os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.obj
 	@echo ... os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.i
 	@echo ... os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.s
@@ -2208,6 +2836,9 @@ help:
 	@echo ... os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.obj
 	@echo ... os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.i
 	@echo ... os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.s
+	@echo ... os/hal/ports/STM32/STM32F4xx/hal_efl_lld.obj
+	@echo ... os/hal/ports/STM32/STM32F4xx/hal_efl_lld.i
+	@echo ... os/hal/ports/STM32/STM32F4xx/hal_efl_lld.s
 	@echo ... os/hal/ports/STM32/STM32F4xx/hal_lld.obj
 	@echo ... os/hal/ports/STM32/STM32F4xx/hal_lld.i
 	@echo ... os/hal/ports/STM32/STM32F4xx/hal_lld.s
@@ -2238,6 +2869,12 @@ help:
 	@echo ... os/hal/src/hal_efl.obj
 	@echo ... os/hal/src/hal_efl.i
 	@echo ... os/hal/src/hal_efl.s
+	@echo ... os/hal/src/hal_flash.obj
+	@echo ... os/hal/src/hal_flash.i
+	@echo ... os/hal/src/hal_flash.s
+	@echo ... os/hal/src/hal_fsmc.obj
+	@echo ... os/hal/src/hal_fsmc.i
+	@echo ... os/hal/src/hal_fsmc.s
 	@echo ... os/hal/src/hal_gpt.obj
 	@echo ... os/hal/src/hal_gpt.i
 	@echo ... os/hal/src/hal_gpt.s
@@ -2259,6 +2896,9 @@ help:
 	@echo ... os/hal/src/hal_mmcsd.obj
 	@echo ... os/hal/src/hal_mmcsd.i
 	@echo ... os/hal/src/hal_mmcsd.s
+	@echo ... os/hal/src/hal_nand.obj
+	@echo ... os/hal/src/hal_nand.i
+	@echo ... os/hal/src/hal_nand.s
 	@echo ... os/hal/src/hal_pal.obj
 	@echo ... os/hal/src/hal_pal.i
 	@echo ... os/hal/src/hal_pal.s
@@ -2274,18 +2914,30 @@ help:
 	@echo ... os/hal/src/hal_sdc.obj
 	@echo ... os/hal/src/hal_sdc.i
 	@echo ... os/hal/src/hal_sdc.s
+	@echo ... os/hal/src/hal_sdram.obj
+	@echo ... os/hal/src/hal_sdram.i
+	@echo ... os/hal/src/hal_sdram.s
 	@echo ... os/hal/src/hal_serial.obj
 	@echo ... os/hal/src/hal_serial.i
 	@echo ... os/hal/src/hal_serial.s
 	@echo ... os/hal/src/hal_serial_usb.obj
 	@echo ... os/hal/src/hal_serial_usb.i
 	@echo ... os/hal/src/hal_serial_usb.s
+	@echo ... os/hal/src/hal_sio.obj
+	@echo ... os/hal/src/hal_sio.i
+	@echo ... os/hal/src/hal_sio.s
 	@echo ... os/hal/src/hal_spi.obj
 	@echo ... os/hal/src/hal_spi.i
 	@echo ... os/hal/src/hal_spi.s
+	@echo ... os/hal/src/hal_sram.obj
+	@echo ... os/hal/src/hal_sram.i
+	@echo ... os/hal/src/hal_sram.s
 	@echo ... os/hal/src/hal_st.obj
 	@echo ... os/hal/src/hal_st.i
 	@echo ... os/hal/src/hal_st.s
+	@echo ... os/hal/src/hal_trng.obj
+	@echo ... os/hal/src/hal_trng.i
+	@echo ... os/hal/src/hal_trng.s
 	@echo ... os/hal/src/hal_uart.obj
 	@echo ... os/hal/src/hal_uart.i
 	@echo ... os/hal/src/hal_uart.s
@@ -2295,6 +2947,33 @@ help:
 	@echo ... os/hal/src/hal_wdg.obj
 	@echo ... os/hal/src/hal_wdg.i
 	@echo ... os/hal/src/hal_wdg.s
+	@echo ... os/hal/src/hal_wspi.obj
+	@echo ... os/hal/src/hal_wspi.i
+	@echo ... os/hal/src/hal_wspi.s
+	@echo ... os/oslib/src/chdelegates.obj
+	@echo ... os/oslib/src/chdelegates.i
+	@echo ... os/oslib/src/chdelegates.s
+	@echo ... os/oslib/src/chfactory.obj
+	@echo ... os/oslib/src/chfactory.i
+	@echo ... os/oslib/src/chfactory.s
+	@echo ... os/oslib/src/chmboxes.obj
+	@echo ... os/oslib/src/chmboxes.i
+	@echo ... os/oslib/src/chmboxes.s
+	@echo ... os/oslib/src/chmemcore.obj
+	@echo ... os/oslib/src/chmemcore.i
+	@echo ... os/oslib/src/chmemcore.s
+	@echo ... os/oslib/src/chmemheaps.obj
+	@echo ... os/oslib/src/chmemheaps.i
+	@echo ... os/oslib/src/chmemheaps.s
+	@echo ... os/oslib/src/chmempools.obj
+	@echo ... os/oslib/src/chmempools.i
+	@echo ... os/oslib/src/chmempools.s
+	@echo ... os/oslib/src/chobjcaches.obj
+	@echo ... os/oslib/src/chobjcaches.i
+	@echo ... os/oslib/src/chobjcaches.s
+	@echo ... os/oslib/src/chpipes.obj
+	@echo ... os/oslib/src/chpipes.i
+	@echo ... os/oslib/src/chpipes.s
 	@echo ... os/rt/src/chcond.obj
 	@echo ... os/rt/src/chcond.i
 	@echo ... os/rt/src/chcond.s
@@ -2349,9 +3028,6 @@ help:
 	@echo ... os/various/cpp_wrappers/ch.obj
 	@echo ... os/various/cpp_wrappers/ch.i
 	@echo ... os/various/cpp_wrappers/ch.s
-	@echo ... os/various/syscalls.obj
-	@echo ... os/various/syscalls.i
-	@echo ... os/various/syscalls.s
 .PHONY : help
 
 

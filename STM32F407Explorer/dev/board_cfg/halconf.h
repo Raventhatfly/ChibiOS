@@ -51,7 +51,7 @@
  * @brief   Enables the CAN subsystem.
  */
 #if !defined(HAL_USE_CAN) || defined(__DOXYGEN__)
-#define HAL_USE_CAN                         FALSE
+#define HAL_USE_CAN                         TRUE
 #endif
 
 /**
@@ -149,7 +149,7 @@
  * @brief   Enables the SERIAL over USB subsystem.
  */
 #if !defined(HAL_USE_SERIAL_USB) || defined(__DOXYGEN__)
-#define HAL_USE_SERIAL_USB                  FALSE
+#define HAL_USE_SERIAL_USB                  TRUE
 #endif
 
 /**
@@ -184,7 +184,7 @@
  * @brief   Enables the USB subsystem.
  */
 #if !defined(HAL_USE_USB) || defined(__DOXYGEN__)
-#define HAL_USE_USB                         FALSE
+#define HAL_USE_USB                         TRUE
 #endif
 
 /**
@@ -199,6 +199,38 @@
  */
 #if !defined(HAL_USE_WSPI) || defined(__DOXYGEN__)
 #define HAL_USE_WSPI                        FALSE
+#endif
+
+/**
+ * TODO:addedd by Wu Feiyang
+ * @brief   Enables the FSMC subsystem.
+ */
+#if !defined(HAL_USE_FSMC) || defined(__DOXYGEN__)
+#define HAL_USE_FSMC                        TRUE
+#endif
+
+/**
+ * TODO:Modified by Wu Feiyang
+ * @brief   Enables the SRAM subsystem.
+ */
+#if !defined(HAL_USE_SRAM) || defined(__DOXYGEN__)
+#define HAL_USE_SRAM                        TRUE
+#endif
+
+/**
+ * TODO:addedd by Wu Feiyang
+ * @brief   Enables the SDRAM subsystem.
+ */
+#if !defined(HAL_USE_SDRAM) || defined(__DOXYGEN__)
+#define HAL_USE_SDRAM                        FALSE
+#endif
+
+/**
+ * TODO:addedd by Wu Feiyang
+ * @brief   Enables the SDRAM subsystem.
+ */
+#if !defined(HAL_USE_NAND) || defined(__DOXYGEN__)
+#define HAL_USE_NAND                        FALSE
 #endif
 
 /*===========================================================================*/

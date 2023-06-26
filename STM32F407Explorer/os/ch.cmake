@@ -3,7 +3,7 @@
 
 # By liuzikai 2018-01-29
 
-set(CHIBIOS .) # this file is included in the discovery.cmake in the upper directory.
+set(CHIBIOS .) # this file is included in the CMakeLists.txt in the upper directory.
 
 # $(CHIBIOS)/os/license/license.mk
 include_directories(${CHIBIOS}/os/license)
@@ -27,8 +27,10 @@ include_directories(${CHIBIOS}/os/common/portability/GCC
 # $(CHIBIOS)/os/hal/hal.mk
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/src/hal.c
+        ${CHIBIOS}/os/hal/src/hal_st.c
         ${CHIBIOS}/os/hal/src/hal_buffers.c
         ${CHIBIOS}/os/hal/src/hal_queues.c
+        ${CHIBIOS}/os/hal/src/hal_flash.c
         ${CHIBIOS}/os/hal/src/hal_mmcsd.c
         ${CHIBIOS}/os/hal/src/hal_adc.c
         ${CHIBIOS}/os/hal/src/hal_can.c
@@ -47,12 +49,19 @@ set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/src/hal_sdc.c
         ${CHIBIOS}/os/hal/src/hal_serial.c
         ${CHIBIOS}/os/hal/src/hal_serial_usb.c
+        ${CHIBIOS}/os/hal/src/hal_sio.c
         ${CHIBIOS}/os/hal/src/hal_spi.c
-        ${CHIBIOS}/os/hal/src/hal_st.c
+        ${CHIBIOS}/os/hal/src/hal_trng.c
         ${CHIBIOS}/os/hal/src/hal_uart.c
         ${CHIBIOS}/os/hal/src/hal_usb.c
-        ${CHIBIOS}/os/hal/src/hal_wdg.c)
-
+        ${CHIBIOS}/os/hal/src/hal_wdg.c
+        ${CHIBIOS}/os/hal/src/hal_wspi.c)
+# Contriubuted sources
+set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
+        ${CHIBIOS}/os/hal/src/hal_fsmc.c
+        ${CHIBIOS}/os/hal/src/hal_sdram.c
+        ${CHIBIOS}/os/hal/src/hal_sram.c
+        ${CHIBIOS}/os/hal/src/hal_nand.c)
 include_directories(${CHIBIOS}/os/hal/include)
 
 
@@ -60,7 +69,8 @@ include_directories(${CHIBIOS}/os/hal/include)
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/ports/common/ARMCMx/nvic.c
         ${CHIBIOS}/os/hal/ports/STM32/STM32F4xx/stm32_isr.c
-        ${CHIBIOS}/os/hal/ports/STM32/STM32F4xx/hal_lld.c)
+        ${CHIBIOS}/os/hal/ports/STM32/STM32F4xx/hal_lld.c
+        ${CHIBIOS}/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c)
 
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c
@@ -68,6 +78,10 @@ set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c
         ${CHIBIOS}/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c
         ${CHIBIOS}/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c
+        ${CHIBIOS}/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c
+        ${CHIBIOS}/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c
+        ${CHIBIOS}/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c
+
         ${CHIBIOS}/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c
 #        ${CHIBIOS}/os/hal/lib/fallback/I2C/hal_i2c_lld.c
         ${CHIBIOS}/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c
@@ -94,6 +108,7 @@ include_directories(${CHIBIOS}/os/hal/ports/STM32/LLD/ADCv2
         ${CHIBIOS}/os/hal/ports/STM32/LLD/DACv1
         ${CHIBIOS}/os/hal/ports/STM32/LLD/DMAv2
         ${CHIBIOS}/os/hal/ports/STM32/LLD/EXTIv1
+        ${CHIBIOS}/os/hal/ports/STM32/LLD/FSMCv1
         ${CHIBIOS}/os/hal/ports/STM32/LLD/GPIOv2
         ${CHIBIOS}/os/hal/ports/STM32/LLD/I2Cv1
         ${CHIBIOS}/os/hal/ports/STM32/LLD/MACv1
@@ -116,24 +131,21 @@ set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
 
 include_directories(${CHIBIOS}/os/hal/ports/STM32/LLD/TIMv1)
 
-## $(CHIBIOS)/dev/board/board.mk
-#set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
-#        ${CHIBIOS}/dev/board/board.c)
+# $(CHIBIOS)/dev/board/board.mk
+set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
+        ${CHIBIOS}/dev/board_cfg/board.c)
 
 include_directories(${CHIBIOS}/dev/board)
 
 
-# $(CHIBIOS)/os/hal/osal/rt/osal.mk :Original Version
-# $(CHIBIOS)/os/hal/osal/os-less/osal.mk : Current Version
-# TODO: I don't really know what can OSAL do.
+# $(CHIBIOS)/os/hal/osal/rt-nil/osal.mk
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/osal/rt-nil/osal.c)
 
 include_directories(${CHIBIOS}/os/hal/osal/rt-nil
         ${CHIBIOS}/os/hal/osal/lib)
 
-# TODO: better move it to a better place
-include_directories(${CHIBIOS}/os/oslib/include)
+
 
 # $(CHIBIOS)/os/rt/rt.mk
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
@@ -157,7 +169,19 @@ set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
 
 include_directories(${CHIBIOS}/os/rt/include)
 
-#
+# $(CHIBIOS)/os/oslib/oslib.mk
+set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
+        ${CHIBIOS}/os/oslib/src/chmboxes.c
+        ${CHIBIOS}/os/oslib/src/chmemcore.c
+        ${CHIBIOS}/os/oslib/src/chmemheaps.c
+        ${CHIBIOS}/os/oslib/src/chmempools.c
+        ${CHIBIOS}/os/oslib/src/chpipes.c
+        ${CHIBIOS}/os/oslib/src/chobjcaches.c
+        ${CHIBIOS}/os/oslib/src/chdelegates.c
+        ${CHIBIOS}/os/oslib/src/chfactory.c)
+include_directories(${CHIBIOS}/os/oslib/include)
+
+
 # $(CHIBIOS)/os/common/ports/ARMv7-M/compilers/GCC/mk/port.mk
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/common/ports/ARMv7-M/chcore.c)
@@ -174,10 +198,12 @@ include_directories(
 
 # $(CHIBIOS)/os/various/cpp_wrappers/chcpp.mk
 set(CHIBIOS_CPP_SRC ${CHIBIOS_CPP_SRC}
-        ${CHIBIOS}/os/various/cpp_wrappers/ch.cpp
-        ${CHIBIOS}/os/various/syscalls.c)
-
+        ${CHIBIOS}/os/various/cpp_wrappers/ch.cpp)
+#set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC} ${CHIBIOS}/os/various/syscalls.c)
+#set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}  # contributed lcd display file
+#        ${CHIBIOS}/os/various/devices_lib/lcd/ili9341.c)
 include_directories(${CHIBIOS}/os/various/cpp_wrappers)
+        #${CHIBIOS}/os/various/devices_lib/lcd)
 
 
 # $(CHIBIOS)/os/hal/lib/streams/streams.mk

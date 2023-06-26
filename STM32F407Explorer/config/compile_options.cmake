@@ -54,9 +54,10 @@ set(THUMB_FLAGS "-mthumb -DTHUMB -DTHUMB_PRESENT -mno-thumb-interwork -DTHUMB_NO
 # elseif (${BOARD_NAME} STREQUAL rm_board_2018_a)
 #     set(STARTUP_LD_DICT ${PROJECT_SOURCE_DIR}/os/common/startup/ARMCMx/compilers/GCC/ld)
 #     set(STARTUP_LD_FILE ${STARTUP_LD_DICT}/STM32F429xI.ld)
+
 if(${BOARD_NAME} STREQUAL EXPLORER)
     set(STARTUP_LD_DICT ${PROJECT_SOURCE_DIR}/os/common/startup/ARMCMx/compilers/GCC/ld)
-    set(STARTUP_LD_FILE ${STARTUP_LD_DICT}/STM32F407xE.ld) #TODO:Not sure xG or xE here
+    set(STARTUP_LD_FILE ${STARTUP_LD_DICT}/STM32F407xE.ld)
 else ()
     message(FATAL_ERROR "[ERROR] Dev board \"${BOARD_NAME}\" is not configured." )
 endif ()

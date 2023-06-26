@@ -39,6 +39,7 @@
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
@@ -55,14 +56,13 @@
 					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
-					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
 					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
-					<Add directory="D:/Program/STM32F407Explorer/dev/interface/led"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -99,6 +99,7 @@
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
@@ -115,14 +116,13 @@
 					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
-					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
 					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
-					<Add directory="D:/Program/STM32F407Explorer/dev/interface/led"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
@@ -154,6 +154,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DLIGHT_LED"/>
 					<Add option="-DBUILD_TARGET_NAME=&quot;LIGHT_LED&quot;"/>
 					<Add option="-DARM_MATH_CM4"/>
 					<Add option="-DARM_MATH_MATRIX_CHECK"/>
@@ -173,6 +174,7 @@
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
@@ -189,14 +191,15 @@
 					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
-					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
 					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
 					<Add directory="D:/Program/STM32F407Explorer/dev/interface/led"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/application/light_led"/>
 					<Add directory="D:/Program/STM32F407Explorer/cmsis/dsp/include"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
@@ -219,6 +222,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add option="-DLIGHT_LED"/>
 					<Add option="-DBUILD_TARGET_NAME=&quot;LIGHT_LED&quot;"/>
 					<Add option="-DARM_MATH_CM4"/>
 					<Add option="-DARM_MATH_MATRIX_CHECK"/>
@@ -238,6 +242,7 @@
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
@@ -254,14 +259,15 @@
 					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
-					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
 					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
 					<Add directory="D:/Program/STM32F407Explorer/dev/interface/led"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/application/light_led"/>
 					<Add directory="D:/Program/STM32F407Explorer/cmsis/dsp/include"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
@@ -272,6 +278,280 @@
 				</Compiler>
 				<MakeCommands>
 					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 LIGHT_LED/fast"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LCD_PROJ">
+				<Option output="D:/Program/STM32F407Explorer/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program/STM32F407Explorer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLCD_PROJ"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;LCD_PROJ&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/license"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/portability/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/interface/lcd"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/application/lcd_proj"/>
+					<Add directory="D:/Program/STM32F407Explorer/cmsis/dsp/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 LCD_PROJ"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LCD_PROJ/fast">
+				<Option output="D:/Program/STM32F407Explorer/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program/STM32F407Explorer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLCD_PROJ"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;LCD_PROJ&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/license"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/portability/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/interface/lcd"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/application/lcd_proj"/>
+					<Add directory="D:/Program/STM32F407Explorer/cmsis/dsp/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 LCD_PROJ/fast"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SERIAL_PROJ">
+				<Option output="D:/Program/STM32F407Explorer/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program/STM32F407Explorer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSERIAL_PROJ"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;SERIAL_PROJ&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/license"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/portability/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/interface/serial"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/application/serial_proj"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/interface/shell"/>
+					<Add directory="D:/Program/STM32F407Explorer/cmsis/dsp/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 SERIAL_PROJ"/>
+					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SERIAL_PROJ/fast">
+				<Option output="D:/Program/STM32F407Explorer/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/Program/STM32F407Explorer/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DSERIAL_PROJ"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;SERIAL_PROJ&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/license"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/portability/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/lib/streams"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/board_cfg"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/interface/serial"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/application/serial_proj"/>
+					<Add directory="D:/Program/STM32F407Explorer/dev/interface/shell"/>
+					<Add directory="D:/Program/STM32F407Explorer/cmsis/dsp/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="d:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 SERIAL_PROJ/fast"/>
 					<CompileFile command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="D:/MinGW/bin/mingw32-make.exe -f &quot;D:/Program/STM32F407Explorer/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -312,6 +592,7 @@
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
@@ -328,8 +609,8 @@
 					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
-					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
@@ -374,6 +655,7 @@
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DACv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/DMAv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/FSMCv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/GPIOv2"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/I2Cv1"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/ports/STM32/LLD/MACv1"/>
@@ -390,8 +672,8 @@
 					<Add directory="D:/Program/STM32F407Explorer/./dev/board"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/rt-nil"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/hal/osal/lib"/>
-					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/rt/include"/>
+					<Add directory="D:/Program/STM32F407Explorer/./os/oslib/include"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARM-common"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/common/ports/ARMv7-M"/>
 					<Add directory="D:/Program/STM32F407Explorer/./os/various/cpp_wrappers"/>
@@ -414,282 +696,563 @@
 		</Build>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/compilers/GCC/chcoreasm.S.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt0_v7m.S.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt1.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/vectors.S.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_adc.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_gpt.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2c.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2s.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_icu.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mac.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmc_spi.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmcsd.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_pal.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_pwm.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_queues.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_rtc.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdc.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial_usb.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_spi.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_st.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_uart.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj">
 			<Option target="LIGHT_LED"/>
-		</Unit>
-		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/various/syscalls.c.obj">
-			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/CommonTables/arm_common_tables.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/CommonTables/arm_const_structs.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/FastMathFunctions/arm_cos_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/FastMathFunctions/arm_sin_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_add_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_cmplx_mult_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_init_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_inverse_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_mult_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_scale_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_sub_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_trans_f32.c.obj">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/cmsis/dsp/src/CommonTables/arm_common_tables.c">
 			<Option target="CMSIS_DSP"/>
@@ -727,8 +1290,14 @@
 		<Unit filename="D:/Program/STM32F407Explorer/cmsis/dsp/src/MatrixFunctions/arm_mat_trans_f32.c">
 			<Option target="CMSIS_DSP"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/application/lcd_proj/main.cpp">
+			<Option target="LCD_PROJ"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/dev/application/light_led/main.cpp">
 			<Option target="LIGHT_LED"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/application/serial_proj/main.cpp">
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/dev/board_cfg/board.c">
 			<Option target="ChibiOS"/>
@@ -736,11 +1305,29 @@
 		<Unit filename="D:/Program/STM32F407Explorer/dev/board_cfg/board.h">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/lcd/lcd.cpp">
+			<Option target="LCD_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/lcd/lcd.h">
+			<Option target="LCD_PROJ"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/led/led.cpp">
 			<Option target="LIGHT_LED"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/led/led.h">
 			<Option target="LIGHT_LED"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/serial/serial.cpp">
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/serial/serial.h">
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/shell/shell.cpp">
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/dev/interface/shell/shell.h">
+			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/common/ports/ARMv7-M/chcore.c">
 			<Option target="ChibiOS"/>
@@ -824,6 +1411,24 @@
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.h">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.h">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.h">
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c">
@@ -922,6 +1527,12 @@
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.h">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.h">
+			<Option target="ChibiOS"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/ports/STM32/STM32F4xx/hal_lld.c">
 			<Option target="ChibiOS"/>
 		</Unit>
@@ -961,6 +1572,12 @@
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_efl.c">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_flash.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_fsmc.c">
+			<Option target="ChibiOS"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_gpt.c">
 			<Option target="ChibiOS"/>
 		</Unit>
@@ -982,6 +1599,9 @@
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_mmcsd.c">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_nand.c">
+			<Option target="ChibiOS"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_pal.c">
 			<Option target="ChibiOS"/>
 		</Unit>
@@ -997,16 +1617,28 @@
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_sdc.c">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_sdram.c">
+			<Option target="ChibiOS"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_serial.c">
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_serial_usb.c">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_sio.c">
+			<Option target="ChibiOS"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_spi.c">
 			<Option target="ChibiOS"/>
 		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_sram.c">
+			<Option target="ChibiOS"/>
+		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_st.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_trng.c">
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_uart.c">
@@ -1016,6 +1648,33 @@
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_wdg.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/hal/src/hal_wspi.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chdelegates.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chfactory.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chmboxes.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chmemcore.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chmemheaps.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chmempools.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chobjcaches.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/Program/STM32F407Explorer/os/oslib/src/chpipes.c">
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/rt/src/chcond.c">
@@ -1073,9 +1732,6 @@
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/os/various/cpp_wrappers/ch.hpp">
-			<Option target="ChibiOS"/>
-		</Unit>
-		<Unit filename="D:/Program/STM32F407Explorer/os/various/syscalls.c">
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/Program/STM32F407Explorer/Cmakelists.txt">

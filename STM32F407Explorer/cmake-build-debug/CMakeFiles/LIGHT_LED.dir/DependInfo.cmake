@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
   "ARM_MATH_MATRIX_CHECK"
   "ARM_MATH_ROUNDING"
   "BUILD_TARGET_NAME=\"LIGHT_LED\""
+  "LIGHT_LED"
   "__FPU_PRESENT=1U"
   )
 
@@ -38,6 +39,7 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././os/hal/ports/STM32/LLD/DACv1"
   ".././os/hal/ports/STM32/LLD/DMAv2"
   ".././os/hal/ports/STM32/LLD/EXTIv1"
+  ".././os/hal/ports/STM32/LLD/FSMCv1"
   ".././os/hal/ports/STM32/LLD/GPIOv2"
   ".././os/hal/ports/STM32/LLD/I2Cv1"
   ".././os/hal/ports/STM32/LLD/MACv1"
@@ -54,14 +56,15 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././dev/board"
   ".././os/hal/osal/rt-nil"
   ".././os/hal/osal/lib"
-  ".././os/oslib/include"
   ".././os/rt/include"
+  ".././os/oslib/include"
   ".././os/common/ports/ARM-common"
   ".././os/common/ports/ARMv7-M"
   ".././os/various/cpp_wrappers"
   ".././os/hal/lib/streams"
   "../dev/board_cfg"
   "../dev/interface/led"
+  "../dev/application/light_led"
   "../cmsis/dsp/include"
   )
 

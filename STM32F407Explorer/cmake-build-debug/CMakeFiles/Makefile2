@@ -64,6 +64,8 @@ CMAKE_BINARY_DIR = D:\Program\STM32F407Explorer\cmake-build-debug
 # The main recursive "all" target.
 all: CMakeFiles/ChibiOS.dir/all
 all: CMakeFiles/LIGHT_LED.dir/all
+all: CMakeFiles/LCD_PROJ.dir/all
+all: CMakeFiles/SERIAL_PROJ.dir/all
 all: cmsis/all
 .PHONY : all
 
@@ -74,6 +76,8 @@ preinstall: cmsis/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/ChibiOS.dir/clean
 clean: CMakeFiles/LIGHT_LED.dir/clean
+clean: CMakeFiles/LCD_PROJ.dir/clean
+clean: CMakeFiles/SERIAL_PROJ.dir/clean
 clean: cmsis/clean
 .PHONY : clean
 
@@ -99,12 +103,12 @@ cmsis/clean: cmsis/CMakeFiles/CMSIS_DSP.dir/clean
 CMakeFiles/ChibiOS.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93 "Built target ChibiOS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91 "Built target ChibiOS"
 .PHONY : CMakeFiles/ChibiOS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ChibiOS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 81
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 82
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ChibiOS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/ChibiOS.dir/rule
@@ -126,12 +130,12 @@ CMakeFiles/LIGHT_LED.dir/all: CMakeFiles/ChibiOS.dir/all
 CMakeFiles/LIGHT_LED.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=94,95,96 "Built target LIGHT_LED"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=95,96 "Built target LIGHT_LED"
 .PHONY : CMakeFiles/LIGHT_LED.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LIGHT_LED.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 96
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 93
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LIGHT_LED.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/LIGHT_LED.dir/rule
@@ -146,18 +150,72 @@ CMakeFiles/LIGHT_LED.dir/clean:
 .PHONY : CMakeFiles/LIGHT_LED.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/LCD_PROJ.dir
+
+# All Build rule for target.
+CMakeFiles/LCD_PROJ.dir/all: CMakeFiles/ChibiOS.dir/all
+CMakeFiles/LCD_PROJ.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=92,93,94 "Built target LCD_PROJ"
+.PHONY : CMakeFiles/LCD_PROJ.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/LCD_PROJ.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 94
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LCD_PROJ.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/LCD_PROJ.dir/rule
+
+# Convenience name for target.
+LCD_PROJ: CMakeFiles/LCD_PROJ.dir/rule
+.PHONY : LCD_PROJ
+
+# clean rule for target.
+CMakeFiles/LCD_PROJ.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/clean
+.PHONY : CMakeFiles/LCD_PROJ.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/SERIAL_PROJ.dir
+
+# All Build rule for target.
+CMakeFiles/SERIAL_PROJ.dir/all: CMakeFiles/ChibiOS.dir/all
+CMakeFiles/SERIAL_PROJ.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=97,98,99,100 "Built target SERIAL_PROJ"
+.PHONY : CMakeFiles/SERIAL_PROJ.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/SERIAL_PROJ.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 95
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/SERIAL_PROJ.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/SERIAL_PROJ.dir/rule
+
+# Convenience name for target.
+SERIAL_PROJ: CMakeFiles/SERIAL_PROJ.dir/rule
+.PHONY : SERIAL_PROJ
+
+# clean rule for target.
+CMakeFiles/SERIAL_PROJ.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\SERIAL_PROJ.dir\build.make CMakeFiles/SERIAL_PROJ.dir/clean
+.PHONY : CMakeFiles/SERIAL_PROJ.dir/clean
+
+#=============================================================================
 # Target rules for target cmsis/CMakeFiles/CMSIS_DSP.dir
 
 # All Build rule for target.
 cmsis/CMakeFiles/CMSIS_DSP.dir/all:
 	$(MAKE) $(MAKESILENT) -f cmsis\CMakeFiles\CMSIS_DSP.dir\build.make cmsis/CMakeFiles/CMSIS_DSP.dir/depend
 	$(MAKE) $(MAKESILENT) -f cmsis\CMakeFiles\CMSIS_DSP.dir\build.make cmsis/CMakeFiles/CMSIS_DSP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target CMSIS_DSP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target CMSIS_DSP"
 .PHONY : cmsis/CMakeFiles/CMSIS_DSP.dir/all
 
 # Build rule for subdir invocation for target.
 cmsis/CMakeFiles/CMSIS_DSP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cmsis/CMakeFiles/CMSIS_DSP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\Program\STM32F407Explorer\cmake-build-debug\CMakeFiles 0
 .PHONY : cmsis/CMakeFiles/CMSIS_DSP.dir/rule
