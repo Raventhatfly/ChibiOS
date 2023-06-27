@@ -1,23 +1,43 @@
-CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base_cmd.c \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\string.h \
+CMakeFiles/ChibiOS.dir/os/various/syscalls.c.obj: \
+ D:\robomaster\ChibiOS\STM32F427RM-A\os\various\syscalls.c \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdlib.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\ieeefp.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\newlib.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_newlib_version.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\config.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\ieeefp.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\features.h \
+ c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\reent.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\_ansi.h \
- c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_default_types.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\lock.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\cdefs.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\stdlib.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\alloca.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\errno.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\errno.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\string.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_locale.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\strings.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\string.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stat.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\time.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\time.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\types.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_stdint.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\endian.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\_endian.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\select.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_sigset.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_timeval.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\timespec.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_timespec.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_pthreadtypes.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\sched.h \
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\types.h \
  d:\robomaster\chibios\stm32f427rm-a\os\rt\include\ch.h \
  d:\robomaster\chibios\stm32f427rm-a\os\license\chlicense.h \
  d:\robomaster\chibios\stm32f427rm-a\os\license\chversion.h \
@@ -30,7 +50,6 @@ CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\stdint.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_intsup.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_stdint.h \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdbool.h \
  d:\robomaster\chibios\stm32f427rm-a\os\common\portability\gcc\ccportab.h \
  d:\robomaster\chibios\stm32f427rm-a\os\rt\include\chrfcu.h \
@@ -80,68 +99,4 @@ CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\lib\gcc\arm-none-eabi\10.3.1\include\stdarg.h \
  d:\robomaster\chibios\stm32f427rm-a\os\oslib\include\chjobs.h \
  d:\robomaster\chibios\stm32f427rm-a\os\oslib\include\chfactory.h \
- d:\robomaster\chibios\stm32f427rm-a\os\rt\include\chdynamic.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\osal\rt-nil\osal.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\board_cfg/halconf.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\board_cfg/mcuconf.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\stm32f4xx\hal_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\stm32f4xx\stm32_registry.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\stm32f4xx\hal_lld_type1.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\common\armcmx\nvic.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\common\armcmx\cache.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\common\armcmx\mpu_v7m.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\stm32f4xx\stm32_isr.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\dmav2\stm32_dma.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\extiv1\stm32_exti.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\stm32f4xx\stm32_rcc.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\timv1\stm32_tim.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_objects.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_streams.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_channels.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_files.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_ioblock.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_mmcsd.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_persistent.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_flash.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_buffers.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_queues.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_pal.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\gpiov2\hal_pal_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\gpiov2\stm32_gpio.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_adc.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_can.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\canv1\hal_can_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_crypto.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_dac.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_efl.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_gpt.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_i2c.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_i2s.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_icu.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_mac.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_pwm.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\timv1\hal_pwm_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\timv1\stm32_tim.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_rtc.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_serial.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\usartv1\hal_serial_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_sdc.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_sio.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_spi.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_trng.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_uart.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_usb.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\otgv1\hal_usb_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\otgv1\stm32_otg.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_wdg.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_wspi.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_st.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\systickv1\hal_st_lld.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_mmc_spi.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_serial_usb.h \
- d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_usb_cdc.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shellconf.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base_cmd.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.h
+ d:\robomaster\chibios\stm32f427rm-a\os\rt\include\chdynamic.h

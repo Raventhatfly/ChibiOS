@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c" "CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base.c" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.c" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/motor/can_motor_config.cpp" "CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.obj.d"
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/motor/main.cpp" "CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj.d"
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can/can_interface.cpp" "CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj.d"

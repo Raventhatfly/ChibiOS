@@ -543,6 +543,30 @@ dev/interface/shell/shell_base.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.s
 .PHONY : dev/interface/shell/shell_base.c.s
 
+dev/interface/shell/shell_base_cmd.obj: dev/interface/shell/shell_base_cmd.c.obj
+.PHONY : dev/interface/shell/shell_base_cmd.obj
+
+# target to build an object file
+dev/interface/shell/shell_base_cmd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj
+.PHONY : dev/interface/shell/shell_base_cmd.c.obj
+
+dev/interface/shell/shell_base_cmd.i: dev/interface/shell/shell_base_cmd.c.i
+.PHONY : dev/interface/shell/shell_base_cmd.i
+
+# target to preprocess a source file
+dev/interface/shell/shell_base_cmd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.i
+.PHONY : dev/interface/shell/shell_base_cmd.c.i
+
+dev/interface/shell/shell_base_cmd.s: dev/interface/shell/shell_base_cmd.c.s
+.PHONY : dev/interface/shell/shell_base_cmd.s
+
+# target to generate assembly for a file
+dev/interface/shell/shell_base_cmd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.s
+.PHONY : dev/interface/shell/shell_base_cmd.c.s
+
 dev/interface/shell/shell_dbg_cmd.obj: dev/interface/shell/shell_dbg_cmd.cpp.obj
 .PHONY : dev/interface/shell/shell_dbg_cmd.obj
 
@@ -2737,6 +2761,9 @@ help:
 	@echo ... dev/interface/shell/shell_base.obj
 	@echo ... dev/interface/shell/shell_base.i
 	@echo ... dev/interface/shell/shell_base.s
+	@echo ... dev/interface/shell/shell_base_cmd.obj
+	@echo ... dev/interface/shell/shell_base_cmd.i
+	@echo ... dev/interface/shell/shell_base_cmd.s
 	@echo ... dev/interface/shell/shell_dbg_cmd.obj
 	@echo ... dev/interface/shell/shell_dbg_cmd.i
 	@echo ... dev/interface/shell/shell_dbg_cmd.s

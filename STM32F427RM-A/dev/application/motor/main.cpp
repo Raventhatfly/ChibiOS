@@ -15,7 +15,7 @@ int main(){
     halInit();
     chibios_rt::System::init();
 
-    //Shell::start(HIGHPRIO);
+    Shell::start(HIGHPRIO);
 
     can1.start(NORMALPRIO+3);
     can2.start(NORMALPRIO+4);

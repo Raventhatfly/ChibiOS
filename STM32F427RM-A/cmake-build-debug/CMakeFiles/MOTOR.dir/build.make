@@ -152,24 +152,10 @@ CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.s"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor\can_motor_controller.cpp -o CMakeFiles\MOTOR.dir\dev\interface\can_motor\can_motor_controller.cpp.s
 
-CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj: CMakeFiles/MOTOR.dir/flags.make
-CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c
-CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj: CMakeFiles/MOTOR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj -MF CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.obj.d -o CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.c
-
-CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.c > CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.i
-
-CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.c -o CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.s
-
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj: CMakeFiles/MOTOR.dir/flags.make
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell.cpp
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj: CMakeFiles/MOTOR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj -MF CMakeFiles\MOTOR.dir\dev\interface\shell\shell.cpp.obj.d -o CMakeFiles\MOTOR.dir\dev\interface\shell\shell.cpp.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell.cpp
 
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.i: cmake_force
@@ -183,7 +169,7 @@ CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.s: cmake_force
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj: CMakeFiles/MOTOR.dir/flags.make
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base.c
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj: CMakeFiles/MOTOR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj -MF CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base.c.obj.d -o CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base.c.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base.c
 
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.i: cmake_force
@@ -193,6 +179,20 @@ CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.i: cmake_force
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.s"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base.c -o CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base.c.s
+
+CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: CMakeFiles/MOTOR.dir/flags.make
+CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.c
+CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: CMakeFiles/MOTOR.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj -MF CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base_cmd.c.obj.d -o CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base_cmd.c.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base_cmd.c
+
+CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.i"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base_cmd.c > CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base_cmd.c.i
+
+CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.s"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_base_cmd.c -o CMakeFiles\MOTOR.dir\dev\interface\shell\shell_base_cmd.c.s
 
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj: CMakeFiles/MOTOR.dir/flags.make
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.cpp
@@ -208,10 +208,24 @@ CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.s"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\shell_dbg_cmd.cpp -o CMakeFiles\MOTOR.dir\dev\interface\shell\shell_dbg_cmd.cpp.s
 
+CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj: CMakeFiles/MOTOR.dir/flags.make
+CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c
+CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj: CMakeFiles/MOTOR.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj -MF CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.obj.d -o CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.c
+
+CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.i"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.c > CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.i
+
+CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.s"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell\printf.c -o CMakeFiles\MOTOR.dir\dev\interface\shell\printf.c.s
+
 CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj: CMakeFiles/MOTOR.dir/flags.make
 CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com/usb_serial_interface.cpp
 CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj: CMakeFiles/MOTOR.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj -MF CMakeFiles\MOTOR.dir\dev\interface\usb_com\usb_serial_interface.cpp.obj.d -o CMakeFiles\MOTOR.dir\dev\interface\usb_com\usb_serial_interface.cpp.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\usb_com\usb_serial_interface.cpp
 
 CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.i: cmake_force
@@ -230,10 +244,11 @@ MOTOR_OBJECTS = \
 "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.obj" \
 "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.obj" \
 "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.obj" \
-"CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj" \
 "CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj" \
 "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj" \
+"CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj" \
 "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj" \
+"CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj" \
 "CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj"
 
 # External object files for target MOTOR
@@ -347,10 +362,11 @@ D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/int
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.obj
-D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj
+D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj
+D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt0_v7m.S.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/vectors.S.obj
@@ -457,7 +473,7 @@ D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: cmsis/CMakeFiles/CMSIS_DSP.d
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/build.make
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/objects1
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/MOTOR.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable D:\robomaster\ChibiOS\STM32F427RM-A\build\meta.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable D:\robomaster\ChibiOS\STM32F427RM-A\build\meta.elf"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Build for RM2018A"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\MOTOR.dir\link.txt --verbose=$(VERBOSE)
 	echo

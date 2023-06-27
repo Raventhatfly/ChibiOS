@@ -2078,6 +2078,153 @@ CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj: D:/robomaster/ChibiOS
   D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.h
 
+CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.c \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/string.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/newlib.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_newlib_version.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/config.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/ieeefp.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/features.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/reent.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/_ansi.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/machine/_default_types.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/lock.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/cdefs.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_locale.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/strings.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/string.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/ch.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/license/chlicense.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/license/chversion.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/license/chcustomer.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg/chconf.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chchecks.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chrestrictions.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chearly.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ports/ARM-common/chtypes.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_intsup.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/sys/_stdint.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdbool.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/portability/GCC/ccportab.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chrfcu.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chdebug.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chtime.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chlists.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chalign.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chtrace.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chport.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ports/ARMv7-M/chcore.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/startup/ARMCMx/devices/STM32F4xx/cmparams.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg/board.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ST/STM32F4xx/stm32f4xx.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ST/STM32F4xx/stm32f427xx.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ARM/CMSIS/Core/Include/core_cm4.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ARM/CMSIS/Core/Include/cmsis_version.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ARM/CMSIS/Core/Include/cmsis_compiler.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ARM/CMSIS/Core/Include/cmsis_gcc.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ARM/CMSIS/Core/Include/mpu_armv7.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ext/ST/STM32F4xx/system_stm32f4xx.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/common/ports/ARMv7-M/mpu.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/osal/rt-nil/chcore_timer.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chtm.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chstats.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chobjects.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chsys.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chinstances.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chvt.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chschd.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chthreads.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chregistry.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chsem.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chmtx.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chcond.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chevents.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chmsg.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chlib.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chbsem.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chmboxes.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chmemcore.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chmemheaps.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chmempools.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chobjfifos.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chpipes.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chobjcaches.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chdelegates.h \
+  C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chjobs.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/oslib/include/chfactory.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/include/chdynamic.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/osal/rt-nil/osal.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg/halconf.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg/mcuconf.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/hal_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/stm32_registry.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/hal_lld_type1.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/common/ARMCMx/nvic.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/common/ARMCMx/cache.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/common/ARMCMx/mpu_v7m.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/stm32_isr.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/stm32_rcc.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_objects.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_streams.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_channels.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_files.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_ioblock.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_mmcsd.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_persistent.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_flash.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_buffers.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_queues.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_pal.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/GPIOv2/stm32_gpio.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_adc.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_can.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_crypto.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_dac.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_efl.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_gpt.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_i2c.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_i2s.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_icu.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_mac.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_pwm.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/TIMv1/stm32_tim.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_rtc.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_serial.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_sdc.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_sio.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_wdg.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_wspi.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_st.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_mmc_spi.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_serial_usb.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb_cdc.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shellconf.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.h
+
 CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.cpp \
   D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/various/cpp_wrappers/ch.hpp \
@@ -3132,5 +3279,7 @@ D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base.c:
 C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/strings.h:
 
 D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.h:
+
+D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.c:
 
 D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.cpp:

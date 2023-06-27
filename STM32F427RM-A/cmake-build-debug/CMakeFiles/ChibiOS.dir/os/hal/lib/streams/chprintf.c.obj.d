@@ -111,6 +111,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj: \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\timv1\stm32_tim.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_rtc.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_serial.h \
+ d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\usartv1\hal_serial_lld.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_sdc.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_sio.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_spi.h \

@@ -68,10 +68,11 @@ set(MOTOR_SRC
         )
 
 set(SHELL_SRC
-        dev/interface/shell/printf.c
         dev/interface/shell/shell.cpp
         dev/interface/shell/shell_base.c
+        dev/interface/shell/shell_base_cmd.c
         dev/interface/shell/shell_dbg_cmd.cpp
+        dev/interface/shell/printf.c
         )
 
 add_executable(LIGHT_LED

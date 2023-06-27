@@ -17,6 +17,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj.d"
   "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj"
   "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj.d"
+  "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj"
+  "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj.d"
   "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj"
   "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj.d"
   "CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj"

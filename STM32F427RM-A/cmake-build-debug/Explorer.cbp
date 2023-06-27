@@ -1359,6 +1359,12 @@
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base.h">
 			<Option target="MOTOR"/>
 		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.c">
+			<Option target="MOTOR"/>
+		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base_cmd.h">
+			<Option target="MOTOR"/>
+		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.cpp">
 			<Option target="MOTOR"/>
 		</Unit>
