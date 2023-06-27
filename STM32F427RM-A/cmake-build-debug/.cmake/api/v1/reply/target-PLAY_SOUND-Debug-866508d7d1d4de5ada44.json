@@ -32,25 +32,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 76,
+				"line" : 90,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 121,
+				"line" : 122,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 112,
+				"line" : 113,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 80,
+				"line" : 93,
 				"parent" : 0
 			},
 			{
@@ -174,13 +174,13 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 78,
+				"line" : 92,
 				"parent" : 0
 			},
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 118,
+				"line" : 119,
 				"parent" : 0
 			}
 		]
@@ -213,11 +213,11 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "BUILD_TARGET_NAME=\"LIGHT_LED\""
+					"define" : "BUILD_TARGET_NAME=\"PLAY_SOUND\""
 				},
 				{
 					"backtrace" : 4,
-					"define" : "LIGHT_LED"
+					"define" : "PLAY_SOUND"
 				},
 				{
 					"backtrace" : 2,
@@ -400,7 +400,7 @@
 				},
 				{
 					"backtrace" : 25,
-					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/light_led"
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/play_sound"
 				},
 				{
 					"backtrace" : 2,
@@ -419,7 +419,9 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -433,7 +435,7 @@
 			"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee"
 		}
 	],
-	"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
+	"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -449,7 +451,7 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "LIGHT_LED",
+	"name" : "PLAY_SOUND",
 	"nameOnDisk" : "meta.elf",
 	"paths" : 
 	{
@@ -463,15 +465,15 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2,
+				3
 			]
 		},
 		{
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				2,
-				3,
 				4,
 				5,
 				6,
@@ -571,7 +573,9 @@
 				100,
 				101,
 				102,
-				103
+				103,
+				104,
+				105
 			]
 		}
 	],
@@ -580,13 +584,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/application/light_led/main.cpp",
+			"path" : "dev/application/play_sound/paly_sound.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "dev/interface/led/led.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/interface/buzzer/buzzer_scheduler.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/interface/buzzer/buzzer_interface.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

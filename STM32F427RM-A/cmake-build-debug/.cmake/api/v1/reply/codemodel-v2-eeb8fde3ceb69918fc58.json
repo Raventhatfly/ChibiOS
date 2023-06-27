@@ -73,28 +73,28 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ChibiOS-Debug-13ca064f50770deaec4d.json",
+					"jsonFile" : "target-ChibiOS-Debug-2f4655aa2b9fac696d6d.json",
 					"name" : "ChibiOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LIGHT_LED-Debug-23bcc9c95e23d11058e1.json",
+					"jsonFile" : "target-LIGHT_LED-Debug-b87f13537527757a2576.json",
 					"name" : "LIGHT_LED",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "MOTOR::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MOTOR-Debug-d43b07d81092644577f2.json",
+					"jsonFile" : "target-MOTOR-Debug-e1006f82b6be47ac5e5f.json",
 					"name" : "MOTOR",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PLAY_SOUND-Debug-12767fb1a7d111b26fda.json",
+					"jsonFile" : "target-PLAY_SOUND-Debug-866508d7d1d4de5ada44.json",
 					"name" : "PLAY_SOUND",
 					"projectIndex" : 0
 				}

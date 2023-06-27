@@ -11,13 +11,7 @@
 class CANMotorCFG {
 public:
     enum motor_id_t {
-        MOTOR_LEFT,
-        MOTOR_RIGHT,
-        YAW,
-        PITCH,
-        BULLET_LOADER,
-        FW_UP,
-        FW_DOWN,
+        MOTOR_ONE,
         MOTOR_COUNT
     };
     static CANMotorBase CANMotorProfile[MOTOR_COUNT];
