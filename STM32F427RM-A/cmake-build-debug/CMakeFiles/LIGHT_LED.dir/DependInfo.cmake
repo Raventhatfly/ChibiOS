@@ -62,7 +62,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././os/various/cpp_wrappers"
   ".././os/hal/lib/streams"
   "../dev/board_cfg"
+  "../common"
+  "../dev/interface/buzzer"
   "../dev/interface/led"
+  "../dev/interface/usb_com"
   "../dev/application/light_led"
   "../cmsis/dsp/include"
   )

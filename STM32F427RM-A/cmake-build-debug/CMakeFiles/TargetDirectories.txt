@@ -1,6 +1,8 @@
 D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir
 D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/LIGHT_LED.dir
+D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/PLAY_SOUND.dir
+D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir
 D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/Program/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir
 D:/Program/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/edit_cache.dir

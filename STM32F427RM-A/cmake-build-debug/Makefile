@@ -142,6 +142,32 @@ LIGHT_LED/fast:
 .PHONY : LIGHT_LED/fast
 
 #=============================================================================
+# Target rules for targets named PLAY_SOUND
+
+# Build rule for target.
+PLAY_SOUND: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 PLAY_SOUND
+.PHONY : PLAY_SOUND
+
+# fast build rule for target.
+PLAY_SOUND/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/build
+.PHONY : PLAY_SOUND/fast
+
+#=============================================================================
+# Target rules for targets named MOTOR
+
+# Build rule for target.
+MOTOR: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 MOTOR
+.PHONY : MOTOR
+
+# fast build rule for target.
+MOTOR/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/build
+.PHONY : MOTOR/fast
+
+#=============================================================================
 # Target rules for targets named CMSIS_DSP
 
 # Build rule for target.
@@ -178,6 +204,78 @@ dev/application/light_led/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/application/light_led/main.cpp.s
 .PHONY : dev/application/light_led/main.cpp.s
 
+dev/application/motor/can_motor_config.obj: dev/application/motor/can_motor_config.cpp.obj
+.PHONY : dev/application/motor/can_motor_config.obj
+
+# target to build an object file
+dev/application/motor/can_motor_config.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.obj
+.PHONY : dev/application/motor/can_motor_config.cpp.obj
+
+dev/application/motor/can_motor_config.i: dev/application/motor/can_motor_config.cpp.i
+.PHONY : dev/application/motor/can_motor_config.i
+
+# target to preprocess a source file
+dev/application/motor/can_motor_config.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.i
+.PHONY : dev/application/motor/can_motor_config.cpp.i
+
+dev/application/motor/can_motor_config.s: dev/application/motor/can_motor_config.cpp.s
+.PHONY : dev/application/motor/can_motor_config.s
+
+# target to generate assembly for a file
+dev/application/motor/can_motor_config.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.s
+.PHONY : dev/application/motor/can_motor_config.cpp.s
+
+dev/application/motor/main.obj: dev/application/motor/main.cpp.obj
+.PHONY : dev/application/motor/main.obj
+
+# target to build an object file
+dev/application/motor/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj
+.PHONY : dev/application/motor/main.cpp.obj
+
+dev/application/motor/main.i: dev/application/motor/main.cpp.i
+.PHONY : dev/application/motor/main.i
+
+# target to preprocess a source file
+dev/application/motor/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.i
+.PHONY : dev/application/motor/main.cpp.i
+
+dev/application/motor/main.s: dev/application/motor/main.cpp.s
+.PHONY : dev/application/motor/main.s
+
+# target to generate assembly for a file
+dev/application/motor/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.s
+.PHONY : dev/application/motor/main.cpp.s
+
+dev/application/play_sound/paly_sound.obj: dev/application/play_sound/paly_sound.cpp.obj
+.PHONY : dev/application/play_sound/paly_sound.obj
+
+# target to build an object file
+dev/application/play_sound/paly_sound.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/application/play_sound/paly_sound.cpp.obj
+.PHONY : dev/application/play_sound/paly_sound.cpp.obj
+
+dev/application/play_sound/paly_sound.i: dev/application/play_sound/paly_sound.cpp.i
+.PHONY : dev/application/play_sound/paly_sound.i
+
+# target to preprocess a source file
+dev/application/play_sound/paly_sound.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/application/play_sound/paly_sound.cpp.i
+.PHONY : dev/application/play_sound/paly_sound.cpp.i
+
+dev/application/play_sound/paly_sound.s: dev/application/play_sound/paly_sound.cpp.s
+.PHONY : dev/application/play_sound/paly_sound.s
+
+# target to generate assembly for a file
+dev/application/play_sound/paly_sound.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/application/play_sound/paly_sound.cpp.s
+.PHONY : dev/application/play_sound/paly_sound.cpp.s
+
 dev/board_cfg/board.obj: dev/board_cfg/board.c.obj
 .PHONY : dev/board_cfg/board.obj
 
@@ -202,12 +300,157 @@ dev/board_cfg/board.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.s
 .PHONY : dev/board_cfg/board.c.s
 
+dev/interface/buzzer/buzzer_interface.obj: dev/interface/buzzer/buzzer_interface.cpp.obj
+.PHONY : dev/interface/buzzer/buzzer_interface.obj
+
+# target to build an object file
+dev/interface/buzzer/buzzer_interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/buzzer/buzzer_interface.cpp.obj
+.PHONY : dev/interface/buzzer/buzzer_interface.cpp.obj
+
+dev/interface/buzzer/buzzer_interface.i: dev/interface/buzzer/buzzer_interface.cpp.i
+.PHONY : dev/interface/buzzer/buzzer_interface.i
+
+# target to preprocess a source file
+dev/interface/buzzer/buzzer_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/buzzer/buzzer_interface.cpp.i
+.PHONY : dev/interface/buzzer/buzzer_interface.cpp.i
+
+dev/interface/buzzer/buzzer_interface.s: dev/interface/buzzer/buzzer_interface.cpp.s
+.PHONY : dev/interface/buzzer/buzzer_interface.s
+
+# target to generate assembly for a file
+dev/interface/buzzer/buzzer_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/buzzer/buzzer_interface.cpp.s
+.PHONY : dev/interface/buzzer/buzzer_interface.cpp.s
+
+dev/interface/buzzer/buzzer_scheduler.obj: dev/interface/buzzer/buzzer_scheduler.cpp.obj
+.PHONY : dev/interface/buzzer/buzzer_scheduler.obj
+
+# target to build an object file
+dev/interface/buzzer/buzzer_scheduler.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/buzzer/buzzer_scheduler.cpp.obj
+.PHONY : dev/interface/buzzer/buzzer_scheduler.cpp.obj
+
+dev/interface/buzzer/buzzer_scheduler.i: dev/interface/buzzer/buzzer_scheduler.cpp.i
+.PHONY : dev/interface/buzzer/buzzer_scheduler.i
+
+# target to preprocess a source file
+dev/interface/buzzer/buzzer_scheduler.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/buzzer/buzzer_scheduler.cpp.i
+.PHONY : dev/interface/buzzer/buzzer_scheduler.cpp.i
+
+dev/interface/buzzer/buzzer_scheduler.s: dev/interface/buzzer/buzzer_scheduler.cpp.s
+.PHONY : dev/interface/buzzer/buzzer_scheduler.s
+
+# target to generate assembly for a file
+dev/interface/buzzer/buzzer_scheduler.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/buzzer/buzzer_scheduler.cpp.s
+.PHONY : dev/interface/buzzer/buzzer_scheduler.cpp.s
+
+dev/interface/can/can_interface.obj: dev/interface/can/can_interface.cpp.obj
+.PHONY : dev/interface/can/can_interface.obj
+
+# target to build an object file
+dev/interface/can/can_interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj
+.PHONY : dev/interface/can/can_interface.cpp.obj
+
+dev/interface/can/can_interface.i: dev/interface/can/can_interface.cpp.i
+.PHONY : dev/interface/can/can_interface.i
+
+# target to preprocess a source file
+dev/interface/can/can_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.i
+.PHONY : dev/interface/can/can_interface.cpp.i
+
+dev/interface/can/can_interface.s: dev/interface/can/can_interface.cpp.s
+.PHONY : dev/interface/can/can_interface.s
+
+# target to generate assembly for a file
+dev/interface/can/can_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.s
+.PHONY : dev/interface/can/can_interface.cpp.s
+
+dev/interface/can_motor/can_motor_controller.obj: dev/interface/can_motor/can_motor_controller.cpp.obj
+.PHONY : dev/interface/can_motor/can_motor_controller.obj
+
+# target to build an object file
+dev/interface/can_motor/can_motor_controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.obj
+.PHONY : dev/interface/can_motor/can_motor_controller.cpp.obj
+
+dev/interface/can_motor/can_motor_controller.i: dev/interface/can_motor/can_motor_controller.cpp.i
+.PHONY : dev/interface/can_motor/can_motor_controller.i
+
+# target to preprocess a source file
+dev/interface/can_motor/can_motor_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.i
+.PHONY : dev/interface/can_motor/can_motor_controller.cpp.i
+
+dev/interface/can_motor/can_motor_controller.s: dev/interface/can_motor/can_motor_controller.cpp.s
+.PHONY : dev/interface/can_motor/can_motor_controller.s
+
+# target to generate assembly for a file
+dev/interface/can_motor/can_motor_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.s
+.PHONY : dev/interface/can_motor/can_motor_controller.cpp.s
+
+dev/interface/can_motor/can_motor_feedback.obj: dev/interface/can_motor/can_motor_feedback.cpp.obj
+.PHONY : dev/interface/can_motor/can_motor_feedback.obj
+
+# target to build an object file
+dev/interface/can_motor/can_motor_feedback.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.obj
+.PHONY : dev/interface/can_motor/can_motor_feedback.cpp.obj
+
+dev/interface/can_motor/can_motor_feedback.i: dev/interface/can_motor/can_motor_feedback.cpp.i
+.PHONY : dev/interface/can_motor/can_motor_feedback.i
+
+# target to preprocess a source file
+dev/interface/can_motor/can_motor_feedback.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.i
+.PHONY : dev/interface/can_motor/can_motor_feedback.cpp.i
+
+dev/interface/can_motor/can_motor_feedback.s: dev/interface/can_motor/can_motor_feedback.cpp.s
+.PHONY : dev/interface/can_motor/can_motor_feedback.s
+
+# target to generate assembly for a file
+dev/interface/can_motor/can_motor_feedback.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.s
+.PHONY : dev/interface/can_motor/can_motor_feedback.cpp.s
+
+dev/interface/can_motor/can_motor_interface.obj: dev/interface/can_motor/can_motor_interface.cpp.obj
+.PHONY : dev/interface/can_motor/can_motor_interface.obj
+
+# target to build an object file
+dev/interface/can_motor/can_motor_interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.obj
+.PHONY : dev/interface/can_motor/can_motor_interface.cpp.obj
+
+dev/interface/can_motor/can_motor_interface.i: dev/interface/can_motor/can_motor_interface.cpp.i
+.PHONY : dev/interface/can_motor/can_motor_interface.i
+
+# target to preprocess a source file
+dev/interface/can_motor/can_motor_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.i
+.PHONY : dev/interface/can_motor/can_motor_interface.cpp.i
+
+dev/interface/can_motor/can_motor_interface.s: dev/interface/can_motor/can_motor_interface.cpp.s
+.PHONY : dev/interface/can_motor/can_motor_interface.s
+
+# target to generate assembly for a file
+dev/interface/can_motor/can_motor_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.s
+.PHONY : dev/interface/can_motor/can_motor_interface.cpp.s
+
 dev/interface/led/led.obj: dev/interface/led/led.cpp.obj
 .PHONY : dev/interface/led/led.obj
 
 # target to build an object file
 dev/interface/led/led.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/led/led.cpp.obj
 .PHONY : dev/interface/led/led.cpp.obj
 
 dev/interface/led/led.i: dev/interface/led/led.cpp.i
@@ -216,6 +459,7 @@ dev/interface/led/led.i: dev/interface/led/led.cpp.i
 # target to preprocess a source file
 dev/interface/led/led.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/led/led.cpp.i
 .PHONY : dev/interface/led/led.cpp.i
 
 dev/interface/led/led.s: dev/interface/led/led.cpp.s
@@ -224,7 +468,152 @@ dev/interface/led/led.s: dev/interface/led/led.cpp.s
 # target to generate assembly for a file
 dev/interface/led/led.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/led/led.cpp.s
 .PHONY : dev/interface/led/led.cpp.s
+
+dev/interface/shell/chprintf_core.obj: dev/interface/shell/chprintf_core.c.obj
+.PHONY : dev/interface/shell/chprintf_core.obj
+
+# target to build an object file
+dev/interface/shell/chprintf_core.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/chprintf_core.c.obj
+.PHONY : dev/interface/shell/chprintf_core.c.obj
+
+dev/interface/shell/chprintf_core.i: dev/interface/shell/chprintf_core.c.i
+.PHONY : dev/interface/shell/chprintf_core.i
+
+# target to preprocess a source file
+dev/interface/shell/chprintf_core.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/chprintf_core.c.i
+.PHONY : dev/interface/shell/chprintf_core.c.i
+
+dev/interface/shell/chprintf_core.s: dev/interface/shell/chprintf_core.c.s
+.PHONY : dev/interface/shell/chprintf_core.s
+
+# target to generate assembly for a file
+dev/interface/shell/chprintf_core.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/chprintf_core.c.s
+.PHONY : dev/interface/shell/chprintf_core.c.s
+
+dev/interface/shell/printf.obj: dev/interface/shell/printf.c.obj
+.PHONY : dev/interface/shell/printf.obj
+
+# target to build an object file
+dev/interface/shell/printf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj
+.PHONY : dev/interface/shell/printf.c.obj
+
+dev/interface/shell/printf.i: dev/interface/shell/printf.c.i
+.PHONY : dev/interface/shell/printf.i
+
+# target to preprocess a source file
+dev/interface/shell/printf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.i
+.PHONY : dev/interface/shell/printf.c.i
+
+dev/interface/shell/printf.s: dev/interface/shell/printf.c.s
+.PHONY : dev/interface/shell/printf.s
+
+# target to generate assembly for a file
+dev/interface/shell/printf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.s
+.PHONY : dev/interface/shell/printf.c.s
+
+dev/interface/shell/shell.obj: dev/interface/shell/shell.cpp.obj
+.PHONY : dev/interface/shell/shell.obj
+
+# target to build an object file
+dev/interface/shell/shell.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj
+.PHONY : dev/interface/shell/shell.cpp.obj
+
+dev/interface/shell/shell.i: dev/interface/shell/shell.cpp.i
+.PHONY : dev/interface/shell/shell.i
+
+# target to preprocess a source file
+dev/interface/shell/shell.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.i
+.PHONY : dev/interface/shell/shell.cpp.i
+
+dev/interface/shell/shell.s: dev/interface/shell/shell.cpp.s
+.PHONY : dev/interface/shell/shell.s
+
+# target to generate assembly for a file
+dev/interface/shell/shell.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.s
+.PHONY : dev/interface/shell/shell.cpp.s
+
+dev/interface/shell/shell_base.obj: dev/interface/shell/shell_base.c.obj
+.PHONY : dev/interface/shell/shell_base.obj
+
+# target to build an object file
+dev/interface/shell/shell_base.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj
+.PHONY : dev/interface/shell/shell_base.c.obj
+
+dev/interface/shell/shell_base.i: dev/interface/shell/shell_base.c.i
+.PHONY : dev/interface/shell/shell_base.i
+
+# target to preprocess a source file
+dev/interface/shell/shell_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.i
+.PHONY : dev/interface/shell/shell_base.c.i
+
+dev/interface/shell/shell_base.s: dev/interface/shell/shell_base.c.s
+.PHONY : dev/interface/shell/shell_base.s
+
+# target to generate assembly for a file
+dev/interface/shell/shell_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.s
+.PHONY : dev/interface/shell/shell_base.c.s
+
+dev/interface/shell/shell_base_cmd.obj: dev/interface/shell/shell_base_cmd.c.obj
+.PHONY : dev/interface/shell/shell_base_cmd.obj
+
+# target to build an object file
+dev/interface/shell/shell_base_cmd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj
+.PHONY : dev/interface/shell/shell_base_cmd.c.obj
+
+dev/interface/shell/shell_base_cmd.i: dev/interface/shell/shell_base_cmd.c.i
+.PHONY : dev/interface/shell/shell_base_cmd.i
+
+# target to preprocess a source file
+dev/interface/shell/shell_base_cmd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.i
+.PHONY : dev/interface/shell/shell_base_cmd.c.i
+
+dev/interface/shell/shell_base_cmd.s: dev/interface/shell/shell_base_cmd.c.s
+.PHONY : dev/interface/shell/shell_base_cmd.s
+
+# target to generate assembly for a file
+dev/interface/shell/shell_base_cmd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.s
+.PHONY : dev/interface/shell/shell_base_cmd.c.s
+
+dev/interface/shell/shell_dbg_cmd.obj: dev/interface/shell/shell_dbg_cmd.cpp.obj
+.PHONY : dev/interface/shell/shell_dbg_cmd.obj
+
+# target to build an object file
+dev/interface/shell/shell_dbg_cmd.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj
+.PHONY : dev/interface/shell/shell_dbg_cmd.cpp.obj
+
+dev/interface/shell/shell_dbg_cmd.i: dev/interface/shell/shell_dbg_cmd.cpp.i
+.PHONY : dev/interface/shell/shell_dbg_cmd.i
+
+# target to preprocess a source file
+dev/interface/shell/shell_dbg_cmd.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.i
+.PHONY : dev/interface/shell/shell_dbg_cmd.cpp.i
+
+dev/interface/shell/shell_dbg_cmd.s: dev/interface/shell/shell_dbg_cmd.cpp.s
+.PHONY : dev/interface/shell/shell_dbg_cmd.s
+
+# target to generate assembly for a file
+dev/interface/shell/shell_dbg_cmd.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.s
+.PHONY : dev/interface/shell/shell_dbg_cmd.cpp.s
 
 os/common/ports/ARMv7-M/chcore.obj: os/common/ports/ARMv7-M/chcore.c.obj
 .PHONY : os/common/ports/ARMv7-M/chcore.obj
@@ -2397,15 +2786,62 @@ help:
 	@echo ... CMSIS_DSP
 	@echo ... ChibiOS
 	@echo ... LIGHT_LED
+	@echo ... MOTOR
+	@echo ... PLAY_SOUND
 	@echo ... dev/application/light_led/main.obj
 	@echo ... dev/application/light_led/main.i
 	@echo ... dev/application/light_led/main.s
+	@echo ... dev/application/motor/can_motor_config.obj
+	@echo ... dev/application/motor/can_motor_config.i
+	@echo ... dev/application/motor/can_motor_config.s
+	@echo ... dev/application/motor/main.obj
+	@echo ... dev/application/motor/main.i
+	@echo ... dev/application/motor/main.s
+	@echo ... dev/application/play_sound/paly_sound.obj
+	@echo ... dev/application/play_sound/paly_sound.i
+	@echo ... dev/application/play_sound/paly_sound.s
 	@echo ... dev/board_cfg/board.obj
 	@echo ... dev/board_cfg/board.i
 	@echo ... dev/board_cfg/board.s
+	@echo ... dev/interface/buzzer/buzzer_interface.obj
+	@echo ... dev/interface/buzzer/buzzer_interface.i
+	@echo ... dev/interface/buzzer/buzzer_interface.s
+	@echo ... dev/interface/buzzer/buzzer_scheduler.obj
+	@echo ... dev/interface/buzzer/buzzer_scheduler.i
+	@echo ... dev/interface/buzzer/buzzer_scheduler.s
+	@echo ... dev/interface/can/can_interface.obj
+	@echo ... dev/interface/can/can_interface.i
+	@echo ... dev/interface/can/can_interface.s
+	@echo ... dev/interface/can_motor/can_motor_controller.obj
+	@echo ... dev/interface/can_motor/can_motor_controller.i
+	@echo ... dev/interface/can_motor/can_motor_controller.s
+	@echo ... dev/interface/can_motor/can_motor_feedback.obj
+	@echo ... dev/interface/can_motor/can_motor_feedback.i
+	@echo ... dev/interface/can_motor/can_motor_feedback.s
+	@echo ... dev/interface/can_motor/can_motor_interface.obj
+	@echo ... dev/interface/can_motor/can_motor_interface.i
+	@echo ... dev/interface/can_motor/can_motor_interface.s
 	@echo ... dev/interface/led/led.obj
 	@echo ... dev/interface/led/led.i
 	@echo ... dev/interface/led/led.s
+	@echo ... dev/interface/shell/chprintf_core.obj
+	@echo ... dev/interface/shell/chprintf_core.i
+	@echo ... dev/interface/shell/chprintf_core.s
+	@echo ... dev/interface/shell/printf.obj
+	@echo ... dev/interface/shell/printf.i
+	@echo ... dev/interface/shell/printf.s
+	@echo ... dev/interface/shell/shell.obj
+	@echo ... dev/interface/shell/shell.i
+	@echo ... dev/interface/shell/shell.s
+	@echo ... dev/interface/shell/shell_base.obj
+	@echo ... dev/interface/shell/shell_base.i
+	@echo ... dev/interface/shell/shell_base.s
+	@echo ... dev/interface/shell/shell_base_cmd.obj
+	@echo ... dev/interface/shell/shell_base_cmd.i
+	@echo ... dev/interface/shell/shell_base_cmd.s
+	@echo ... dev/interface/shell/shell_dbg_cmd.obj
+	@echo ... dev/interface/shell/shell_dbg_cmd.i
+	@echo ... dev/interface/shell/shell_dbg_cmd.s
 	@echo ... os/common/ports/ARMv7-M/chcore.obj
 	@echo ... os/common/ports/ARMv7-M/chcore.i
 	@echo ... os/common/ports/ARMv7-M/chcore.s

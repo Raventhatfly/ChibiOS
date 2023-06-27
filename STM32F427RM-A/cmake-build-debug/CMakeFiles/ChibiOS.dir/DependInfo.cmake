@@ -60,6 +60,10 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   ".././os/various/cpp_wrappers"
   ".././os/hal/lib/streams"
   "../dev/board_cfg"
+  "../common"
+  "../dev/interface/buzzer"
+  "../dev/interface/led"
+  "../dev/interface/usb_com"
   )
 set(CMAKE_DEPENDS_CHECK_C
   "D:/Program/STM32F427RM-A/dev/board_cfg/board.c" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj"
@@ -198,6 +202,10 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   ".././os/various/cpp_wrappers"
   ".././os/hal/lib/streams"
   "../dev/board_cfg"
+  "../common"
+  "../dev/interface/buzzer"
+  "../dev/interface/led"
+  "../dev/interface/usb_com"
   )
 set(CMAKE_DEPENDS_CHECK_CXX
   "D:/Program/STM32F427RM-A/os/various/cpp_wrappers/ch.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj"
@@ -248,6 +256,10 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   ".././os/various/cpp_wrappers"
   ".././os/hal/lib/streams"
   "../dev/board_cfg"
+  "../common"
+  "../dev/interface/buzzer"
+  "../dev/interface/led"
+  "../dev/interface/usb_com"
   )
 
 # The set of dependency files which are needed:

@@ -330,7 +330,3 @@ D:/Program/STM32F427RM-A/os/common/ports/ARMv7-M/compilers/GCC/chconf.h
 chcore.h
 D:/Program/STM32F427RM-A/os/common/ports/ARMv7-M/compilers/GCC/chcore.h
 
-D:/Program/STM32F427RM-A/os/common/startup/ARMCMx/compilers/GCC/vectors.S
-cmparams.h
-D:/Program/STM32F427RM-A/os/common/startup/ARMCMx/compilers/GCC/cmparams.h
-

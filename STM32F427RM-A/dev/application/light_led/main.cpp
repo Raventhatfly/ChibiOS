@@ -10,4 +10,7 @@ int main(){
     halInit();
     chibios_rt::System::init();
     Led::led_init(THREAD_LED);
+    palSetPadMode(GPIOA,12,PAL_MODE_OUTPUT_PUSHPULL);
+    palSetPad(GPIOA,12);
+    palClearPad(GPIOA,12);
 }
