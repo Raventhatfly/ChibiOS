@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "cmsis",
+					"jsonFile" : "directory-cmsis-Debug-fd5d3bd55b229be8798a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cmsis",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Explorer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee",
+					"jsonFile" : "target-CMSIS_DSP-Debug-bda7f15626b1a40c0a34.json",
+					"name" : "CMSIS_DSP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ChibiOS-Debug-13ca064f50770deaec4d.json",
+					"name" : "ChibiOS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LIGHT_LED-Debug-23bcc9c95e23d11058e1.json",
+					"name" : "LIGHT_LED",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MOTOR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MOTOR-Debug-d43b07d81092644577f2.json",
+					"name" : "MOTOR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PLAY_SOUND-Debug-12767fb1a7d111b26fda.json",
+					"name" : "PLAY_SOUND",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug",
+		"source" : "D:/robomaster/ChibiOS/STM32F427RM-A"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

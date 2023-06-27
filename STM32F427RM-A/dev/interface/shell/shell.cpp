@@ -117,6 +117,7 @@ int Shell::printf(const char *fmt, ...) {
     va_end(ap);
 
     return formatted_bytes;
+    USBSerialIF::SDU;
 }
 
 int Shell::printfI(const char *fmt, ...) {

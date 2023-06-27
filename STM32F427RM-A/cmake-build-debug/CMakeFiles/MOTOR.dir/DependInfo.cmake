@@ -4,153 +4,21 @@ set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
 
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
-  "C"
-  "CXX"
-  )
-# The set of files for implicit dependencies of each language:
-set(CMAKE_DEPENDS_CHECK_C
-  "D:/Program/STM32F427RM-A/dev/interface/shell/chprintf_core.c" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/shell/chprintf_core.c.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/shell/printf.c" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/shell/shell_base.c" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/shell/shell_base_cmd.c" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj"
-  )
-set(CMAKE_C_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_C
-  "ARM_MATH_CM4"
-  "ARM_MATH_MATRIX_CHECK"
-  "ARM_MATH_ROUNDING"
-  "BUILD_TARGET_NAME=\"MOTOR\""
-  "MOTOR"
-  "__FPU_PRESENT=1U"
-  )
-
-# The include file search paths:
-set(CMAKE_C_TARGET_INCLUDE_PATH
-  ".././os/license"
-  ".././os/common/portability/GCC"
-  ".././os/common/startup/ARMCMx/compilers/GCC"
-  ".././os/common/startup/ARMCMx/devices/STM32F4xx"
-  ".././os/common/ext/ARM/CMSIS/Core/Include"
-  ".././os/common/ext/ST/STM32F4xx"
-  ".././os/hal/include"
-  ".././os/hal/ports/common/ARMCMx"
-  ".././os/hal/ports/STM32/STM32F4xx"
-  ".././os/hal/ports/STM32/LLD/ADCv2"
-  ".././os/hal/ports/STM32/LLD/CANv1"
-  ".././os/hal/ports/STM32/LLD/DACv1"
-  ".././os/hal/ports/STM32/LLD/DMAv2"
-  ".././os/hal/ports/STM32/LLD/EXTIv1"
-  ".././os/hal/ports/STM32/LLD/GPIOv2"
-  ".././os/hal/ports/STM32/LLD/I2Cv1"
-  ".././os/hal/ports/STM32/LLD/MACv1"
-  ".././os/hal/ports/STM32/LLD/OTGv1"
-  ".././os/hal/ports/STM32/LLD/QUADSPIv1"
-  ".././os/hal/ports/STM32/LLD/RTCv2"
-  ".././os/hal/ports/STM32/LLD/SPIv1"
-  ".././os/hal/ports/STM32/LLD/SDIOv1"
-  ".././os/hal/ports/STM32/LLD/SYSTICKv1"
-  ".././os/hal/ports/STM32/LLD/TIMv1"
-  ".././os/hal/ports/STM32/LLD/USART"
-  ".././os/hal/ports/STM32/LLD/USARTv1"
-  ".././os/hal/ports/STM32/LLD/xWDGv1"
-  ".././dev/board"
-  ".././os/hal/osal/rt-nil"
-  ".././os/hal/osal/lib"
-  ".././os/rt/include"
-  ".././os/oslib/include"
-  ".././os/common/ports/ARM-common"
-  ".././os/common/ports/ARMv7-M"
-  ".././os/various/cpp_wrappers"
-  ".././os/hal/lib/streams"
-  "../dev/board_cfg"
-  "../common"
-  "../dev/interface/buzzer"
-  "../dev/interface/led"
-  "../dev/interface/usb_com"
-  "../dev/application/motor"
-  "../dev/interface/can_motor"
-  "../dev/interface/can"
-  "../dev/module"
-  "../dev/interface/shell"
-  "../cmsis/dsp/include"
-  )
-set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/Program/STM32F427RM-A/dev/application/motor/can_motor_config.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/application/motor/main.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/can/can_interface.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/can_motor/can_motor_controller.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/can_motor/can_motor_feedback.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/can_motor/can_motor_interface.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/shell/shell.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj"
-  "D:/Program/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.cpp" "D:/Program/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj"
-  )
-set(CMAKE_CXX_COMPILER_ID "GNU")
-
-# Preprocessor definitions for this target.
-set(CMAKE_TARGET_DEFINITIONS_CXX
-  "ARM_MATH_CM4"
-  "ARM_MATH_MATRIX_CHECK"
-  "ARM_MATH_ROUNDING"
-  "BUILD_TARGET_NAME=\"MOTOR\""
-  "MOTOR"
-  "__FPU_PRESENT=1U"
-  )
-
-# The include file search paths:
-set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  ".././os/license"
-  ".././os/common/portability/GCC"
-  ".././os/common/startup/ARMCMx/compilers/GCC"
-  ".././os/common/startup/ARMCMx/devices/STM32F4xx"
-  ".././os/common/ext/ARM/CMSIS/Core/Include"
-  ".././os/common/ext/ST/STM32F4xx"
-  ".././os/hal/include"
-  ".././os/hal/ports/common/ARMCMx"
-  ".././os/hal/ports/STM32/STM32F4xx"
-  ".././os/hal/ports/STM32/LLD/ADCv2"
-  ".././os/hal/ports/STM32/LLD/CANv1"
-  ".././os/hal/ports/STM32/LLD/DACv1"
-  ".././os/hal/ports/STM32/LLD/DMAv2"
-  ".././os/hal/ports/STM32/LLD/EXTIv1"
-  ".././os/hal/ports/STM32/LLD/GPIOv2"
-  ".././os/hal/ports/STM32/LLD/I2Cv1"
-  ".././os/hal/ports/STM32/LLD/MACv1"
-  ".././os/hal/ports/STM32/LLD/OTGv1"
-  ".././os/hal/ports/STM32/LLD/QUADSPIv1"
-  ".././os/hal/ports/STM32/LLD/RTCv2"
-  ".././os/hal/ports/STM32/LLD/SPIv1"
-  ".././os/hal/ports/STM32/LLD/SDIOv1"
-  ".././os/hal/ports/STM32/LLD/SYSTICKv1"
-  ".././os/hal/ports/STM32/LLD/TIMv1"
-  ".././os/hal/ports/STM32/LLD/USART"
-  ".././os/hal/ports/STM32/LLD/USARTv1"
-  ".././os/hal/ports/STM32/LLD/xWDGv1"
-  ".././dev/board"
-  ".././os/hal/osal/rt-nil"
-  ".././os/hal/osal/lib"
-  ".././os/rt/include"
-  ".././os/oslib/include"
-  ".././os/common/ports/ARM-common"
-  ".././os/common/ports/ARMv7-M"
-  ".././os/various/cpp_wrappers"
-  ".././os/hal/lib/streams"
-  "../dev/board_cfg"
-  "../common"
-  "../dev/interface/buzzer"
-  "../dev/interface/led"
-  "../dev/interface/usb_com"
-  "../dev/application/motor"
-  "../dev/interface/can_motor"
-  "../dev/interface/can"
-  "../dev/module"
-  "../dev/interface/shell"
-  "../cmsis/dsp/include"
   )
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c" "CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_base.c" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/motor/can_motor_config.cpp" "CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/application/motor/can_motor_config.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/motor/main.cpp" "CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can/can_interface.cpp" "CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can_motor/can_motor_controller.cpp" "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_controller.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can_motor/can_motor_feedback.cpp" "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_feedback.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can_motor/can_motor_interface.cpp" "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell.cpp" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/shell_dbg_cmd.cpp" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com/usb_serial_interface.cpp" "CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj" "gcc" "CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj.d"
   )
 
 # Targets to which this target links.

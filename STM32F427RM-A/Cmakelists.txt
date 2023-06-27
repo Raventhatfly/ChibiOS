@@ -34,6 +34,12 @@ include_directories(dev/board_cfg)
 add_library(ChibiOS OBJECT ${CHIBIOS_XASM_SRC} ${CHIBIOS_C_SRC} ${CHIBIOS_CPP_SRC} dev/board_cfg/board.c)
 
 # ========================== Files and Targets Configurations ==========================
+include_directories(common)
+include_directories(dev/interface/buzzer
+        dev/interface/led)
+include_directories(dev/interface/usb_com)
+include_directories(dev/interface/shell)
+include_directories(os/hal/include)
 set(BUZZER_SRC
         dev/interface/buzzer/buzzer_scheduler.cpp
         dev/interface/buzzer/buzzer_interface.cpp)
@@ -46,10 +52,7 @@ set(CRC8_SRC
 set(USB_SRC
         dev/interface/usb_com/usb_serial_interface.cpp)
 
-include_directories(common)
-include_directories(dev/interface/buzzer
-        dev/interface/led)
-include_directories(dev/interface/usb_com)
+
 
 set(LIGHT_LED_SRC
         dev/application/light_led/main.cpp
@@ -65,11 +68,9 @@ set(MOTOR_SRC
         )
 
 set(SHELL_SRC
-        dev/interface/shell/chprintf_core.c
         dev/interface/shell/printf.c
         dev/interface/shell/shell.cpp
         dev/interface/shell/shell_base.c
-        dev/interface/shell/shell_base_cmd.c
         dev/interface/shell/shell_dbg_cmd.cpp)
 
 add_executable(LIGHT_LED
@@ -92,7 +93,8 @@ target_compile_definitions(PLAY_SOUND PRIVATE PLAY_SOUND)
 
 add_executable(MOTOR
         ${MOTOR_SRC}
-        ${SHELL_SRC})
+        ${SHELL_SRC}
+        ${USB_SRC})
 target_include_directories(MOTOR PRIVATE dev/application/motor
         dev/interface/can_motor
         dev/interface/can

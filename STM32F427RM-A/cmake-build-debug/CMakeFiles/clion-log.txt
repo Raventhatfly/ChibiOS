@@ -1,6 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - MinGW Makefiles" D:\Program\STM32F427RM-A
-[Notice] Current profile is configurated for dev board "RM2018A".
-[Notice] All executables are built to D:/Program/STM32F427RM-A/build/meta.elf
--- Configuring done
--- Generating done
--- Build files have been written to: D:/Program/STM32F427RM-A/cmake-build-debug

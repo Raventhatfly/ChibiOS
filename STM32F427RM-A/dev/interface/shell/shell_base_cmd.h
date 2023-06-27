@@ -18,12 +18,12 @@
  * @file    shell_cmd.h
  * @brief   Simple CLI shell common commands header.
  *
- * @addtogroup shell_chibios
+ * @addtogroup SHELL
  * @{
  */
 
-#ifndef SHELL_BASE_CMD_H
-#define SHELL_BASE_CMD_H
+#ifndef SHELLCMD_H
+#define SHELLCMD_H
 
 /*===========================================================================*/
 /* Module constants.                                                         */
@@ -109,6 +109,6 @@ extern "C" {
 /* Module inline functions.                                                  */
 /*===========================================================================*/
 
-#endif /* SHELL_BASE_CMD_H */
+#endif /* SHELLCMD_H */
 
 /** @} */

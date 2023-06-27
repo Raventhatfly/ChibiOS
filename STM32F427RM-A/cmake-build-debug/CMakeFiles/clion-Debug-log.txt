@@ -1,0 +1,6 @@
+"C:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S D:\robomaster\ChibiOS\STM32F427RM-A -B D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug
+[Notice] Current profile is configurated for dev board "RM2018A".
+[Notice] All executables are built to D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug

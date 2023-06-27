@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "../build/meta.elf"
-  "../build/meta.elf.manifest"
-  "../build/meta.elf.pdb"
   "CMakeFiles/LIGHT_LED.dir/dev/application/light_led/main.cpp.obj"
+  "CMakeFiles/LIGHT_LED.dir/dev/application/light_led/main.cpp.obj.d"
   "CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.obj"
+  "CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf.manifest"
+  "D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

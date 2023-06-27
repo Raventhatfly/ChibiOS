@@ -196,12 +196,12 @@ include_directories(${CHIBIOS}/os/various/cpp_wrappers)
 
 # $(CHIBIOS)/os/hal/lib/streams/streams.mk
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
-        ${CHIBIOS}/os/hal/lib/streams/chprintf.c        # Delete it in the future
-        ${CHIBIOS}/os/hal/lib/streams/chscanf.c         # Delete it in the future
+        #${CHIBIOS}/os/hal/lib/streams/chprintf.c        # Delete it in the future
+        #${CHIBIOS}/os/hal/lib/streams/chscanf.c         # Delete it in the future
         ${CHIBIOS}/os/hal/lib/streams/memstreams.c
         ${CHIBIOS}/os/hal/lib/streams/nullstreams.c
-        ${CHIBIOS}/os/hal/lib/streams/bufstreams.c)     # Delete it in the future
-
+        #${CHIBIOS}/os/hal/lib/streams/bufstreams.c)     # Delete it in the future
+        )
 include_directories(${CHIBIOS}/os/hal/lib/streams)
 
 
