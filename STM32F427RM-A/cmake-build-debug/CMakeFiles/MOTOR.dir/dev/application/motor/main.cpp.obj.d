@@ -128,11 +128,10 @@ CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj: \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_mmc_spi.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_serial_usb.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_usb_cdc.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\led/led.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\application\motor\thread_priorities.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor/can_motor_controller.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor/can_motor_interface.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can/can_interface.h \
+ D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\led/led.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell/shell.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\shell/shellconf.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\usb_com/usb_serial_interface.h \
@@ -258,4 +257,6 @@ CMakeFiles/MOTOR.dir/dev/application/motor/main.cpp.obj: \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor/can_motor_feedback.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\module/pid_controller.hpp \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor/can_motor_controller.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor/can_motor_interface.h
+ D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can_motor/can_motor_interface.h \
+ d:\robomaster\chibios\stm32f427rm-a\os\hal\lib\streams\chprintf.h \
+ d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_serial_usb.h

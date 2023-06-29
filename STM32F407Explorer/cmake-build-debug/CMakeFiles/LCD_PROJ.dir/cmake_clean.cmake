@@ -1,9 +1,11 @@
 file(REMOVE_RECURSE
-  "../build/meta.elf"
-  "../build/meta.elf.manifest"
-  "../build/meta.elf.pdb"
   "CMakeFiles/LCD_PROJ.dir/dev/application/lcd_proj/main.cpp.obj"
+  "CMakeFiles/LCD_PROJ.dir/dev/application/lcd_proj/main.cpp.obj.d"
   "CMakeFiles/LCD_PROJ.dir/dev/interface/lcd/lcd.cpp.obj"
+  "CMakeFiles/LCD_PROJ.dir/dev/interface/lcd/lcd.cpp.obj.d"
+  "D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf"
+  "D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf.manifest"
+  "D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

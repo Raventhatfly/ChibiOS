@@ -1,0 +1,115 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					]
+				},
+				{
+					"build" : "cmsis",
+					"jsonFile" : "directory-cmsis-Debug-fd5d3bd55b229be8798a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cmsis",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Explorer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee",
+					"jsonFile" : "target-CMSIS_DSP-Debug-5151d242685a64309ce3.json",
+					"name" : "CMSIS_DSP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ChibiOS-Debug-63fbc7782cf2ab576c9b.json",
+					"name" : "ChibiOS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LCD_PROJ::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LCD_PROJ-Debug-c9aa26b4d0c8ec9fd19e.json",
+					"name" : "LCD_PROJ",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LIGHT_LED-Debug-285d8ceb1cada1548718.json",
+					"name" : "LIGHT_LED",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "SERIAL_PROJ::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-SERIAL_PROJ-Debug-022f88591c5ff8aa6cbb.json",
+					"name" : "SERIAL_PROJ",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug",
+		"source" : "D:/robomaster/ChibiOS/STM32F407Explorer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
