@@ -33,7 +33,7 @@ private:
     CANMotorFeedback feedback;
     void main() final{
         feedback = CANMotorIF::motor_feedback[CANMotorCFG::MOTOR_ONE];
-        chprintf((BaseSequentialStream*)&USBD1,"%f\n\r",10.f);
+        //chprintf((BaseSequentialStream*)&USBD1,"%f\n\r",feedback.accumulate_angle());
         //Shell::printf("%f\n\r",feedback.accumulate_angle());
         LOG("%f\n\r",feedback.accumulate_angle());
         chThdSleepMilliseconds(500);
@@ -45,7 +45,7 @@ int main(){
     Led::red_on();
     chibios_rt::System::init();
 
-    Shell::start(HIGHPRIO);
+    Shell::start(LOWPRIO);
 
     can1.start(NORMALPRIO+3);
     can2.start(NORMALPRIO+4);

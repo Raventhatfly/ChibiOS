@@ -347,9 +347,11 @@
 /*
  * SRAM driver system settings  TODO: added by Wu Feiyang
  */
-#define STM32_SRAM_USE_SRAM1                TRUE
-#define STM32_SRAM_USE_SRAM2                FALSE
-#define STM32_SRAM_USE_SRAM3                FALSE
-#define STM32_SRAM_USE_SRAM4                FALSE
+//#define STM32_SRAM_USE_SRAM1                FALSE
+//#define STM32_SRAM_USE_SRAM2                FALSE
+//#define STM32_SRAM_USE_SRAM3                FALSE
+//#define STM32_SRAM_USE_SRAM4                TRUE
+
+#include "mcuconf_community.h" /* Community MCU header */
 
 #endif /* MCUCONF_H */

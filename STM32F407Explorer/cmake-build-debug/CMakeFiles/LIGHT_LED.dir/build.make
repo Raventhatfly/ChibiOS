@@ -137,6 +137,7 @@ LIGHT_LED_EXTERNAL_OBJECTS = \
 "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj" \
 "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj" \
 "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj" \
+"D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj" \
 "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj" \
 "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj" \
 "D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj" \
@@ -252,6 +253,7 @@ D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/o
 D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj
 D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj
 D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj
+D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj
 D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj
 D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj
 D:/robomaster/ChibiOS/STM32F407Explorer/build/meta.elf: CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj

@@ -53,7 +53,8 @@ set(LCD_SRC
 add_executable(LCD_PROJ
         ${LCD_SRC})
 target_include_directories(LCD_PROJ PRIVATE dev/interface/lcd
-        dev/application/lcd_proj)
+        dev/application/lcd_proj
+        dev/interface/led)
 target_compile_definitions(LCD_PROJ PRIVATE LCD_PROJ)
 
 

@@ -541,10 +541,24 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.s"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_wspi.c -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_wspi.c.s
 
+CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj: CMakeFiles/ChibiOS.dir/flags.make
+CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_community.c
+CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\src\hal_community.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_community.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_community.c
+
+CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.i"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_community.c > CMakeFiles\ChibiOS.dir\os\hal\src\hal_community.c.i
+
+CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.s"
+	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_community.c -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_community.c.s
+
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_fsmc.c
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\src\hal_fsmc.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_fsmc.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_fsmc.c
 
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.i: cmake_force
@@ -558,7 +572,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_sdram.c
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\src\hal_sdram.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_sdram.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_sdram.c
 
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.i: cmake_force
@@ -572,7 +586,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_sram.c
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\src\hal_sram.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_sram.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_sram.c
 
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.i: cmake_force
@@ -586,7 +600,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_nand.c
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\src\hal_nand.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\src\hal_nand.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\src\hal_nand.c
 
 CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.i: cmake_force
@@ -600,7 +614,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_nand.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/common/ARMCMx/nvic.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\common\ARMCMx\nvic.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\common\ARMCMx\nvic.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\common\ARMCMx\nvic.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.i: cmake_force
@@ -614,7 +628,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/STM32F4xx/stm32_isr.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\STM32F4xx\stm32_isr.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\STM32F4xx\stm32_isr.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\STM32F4xx\stm32_isr.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.i: cmake_force
@@ -628,7 +642,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/STM32F4xx/hal_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_41) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\STM32F4xx\hal_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\STM32F4xx\hal_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\STM32F4xx\hal_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.i: cmake_force
@@ -642,7 +656,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_42) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\STM32F4xx\hal_efl_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\STM32F4xx\hal_efl_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\STM32F4xx\hal_efl_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.i: cmake_force
@@ -656,7 +670,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_43) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\ADCv2\hal_adc_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\ADCv2\hal_adc_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\ADCv2\hal_adc_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.i: cmake_force
@@ -670,7 +684,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_44) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\CANv1\hal_can_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\CANv1\hal_can_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\CANv1\hal_can_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.i: cmake_force
@@ -684,7 +698,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_45) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\DACv1\hal_dac_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.i: cmake_force
@@ -698,7 +712,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_46) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\DMAv2\stm32_dma.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.i: cmake_force
@@ -712,7 +726,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_47) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\EXTIv1\stm32_exti.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\EXTIv1\stm32_exti.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\EXTIv1\stm32_exti.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.i: cmake_force
@@ -726,7 +740,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_48) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\FSMCv1\hal_sdram_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\FSMCv1\hal_sdram_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\FSMCv1\hal_sdram_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.i: cmake_force
@@ -740,7 +754,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sdram_lld.c.s: cmake_fo
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_49) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\FSMCv1\hal_sram_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\FSMCv1\hal_sram_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\FSMCv1\hal_sram_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.i: cmake_force
@@ -754,7 +768,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_sram_lld.c.s: cmake_for
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_50) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\FSMCv1\hal_nand_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\FSMCv1\hal_nand_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\FSMCv1\hal_nand_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.i: cmake_force
@@ -768,7 +782,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/FSMCv1/hal_nand_lld.c.s: cmake_for
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_51) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\GPIOv2\hal_pal_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.i: cmake_force
@@ -782,7 +796,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.s: cmake_forc
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_52) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\I2Cv1\hal_i2c_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\I2Cv1\hal_i2c_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\I2Cv1\hal_i2c_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.i: cmake_force
@@ -796,7 +810,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_53) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\MACv1\hal_mac_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\MACv1\hal_mac_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\MACv1\hal_mac_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.i: cmake_force
@@ -810,7 +824,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_54) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\OTGv1\hal_usb_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\OTGv1\hal_usb_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\OTGv1\hal_usb_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.i: cmake_force
@@ -824,7 +838,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_55) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\QUADSPIv1\hal_wspi_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\QUADSPIv1\hal_wspi_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\QUADSPIv1\hal_wspi_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.i: cmake_force
@@ -838,7 +852,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.s: cmake_
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_56) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\RTCv2\hal_rtc_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.i: cmake_force
@@ -852,7 +866,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_57) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SPIv1\hal_i2s_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SPIv1\hal_i2s_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\SPIv1\hal_i2s_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.i: cmake_force
@@ -866,7 +880,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_58) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SPIv1\hal_spi_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SPIv1\hal_spi_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\SPIv1\hal_spi_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.i: cmake_force
@@ -880,7 +894,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_59) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SDIOv1\hal_sdc_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SDIOv1\hal_sdc_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\SDIOv1\hal_sdc_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.i: cmake_force
@@ -894,7 +908,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.s: cmake_forc
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_60) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\TIMv1\hal_gpt_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.i: cmake_force
@@ -908,7 +922,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_61) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\TIMv1\hal_icu_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.i: cmake_force
@@ -922,7 +936,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_62) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\TIMv1\hal_pwm_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.i: cmake_force
@@ -936,7 +950,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_63) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\USARTv1\hal_serial_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\USARTv1\hal_serial_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\USARTv1\hal_serial_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.i: cmake_force
@@ -950,7 +964,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.s: cmake_
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_64) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\USARTv1\hal_uart_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\USARTv1\hal_uart_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\USARTv1\hal_uart_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.i: cmake_force
@@ -964,7 +978,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.s: cmake_fo
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_65) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\xWDGv1\hal_wdg_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\xWDGv1\hal_wdg_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\xWDGv1\hal_wdg_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.i: cmake_force
@@ -978,7 +992,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.s: cmake_forc
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_66) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SYSTICKv1\hal_st_lld.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\ports\STM32\LLD\SYSTICKv1\hal_st_lld.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\ports\STM32\LLD\SYSTICKv1\hal_st_lld.c
 
 CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.i: cmake_force
@@ -992,7 +1006,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.s: cmake_fo
 CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/dev/board_cfg/board.c
 CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_67) "Building C object CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj -MF CMakeFiles\ChibiOS.dir\dev\board_cfg\board.c.obj.d -o CMakeFiles\ChibiOS.dir\dev\board_cfg\board.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\dev\board_cfg\board.c
 
 CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.i: cmake_force
@@ -1006,7 +1020,7 @@ CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/osal/rt-nil/osal.c
 CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_68) "Building C object CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\osal\rt-nil\osal.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\osal\rt-nil\osal.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\osal\rt-nil\osal.c
 
 CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.i: cmake_force
@@ -1020,7 +1034,7 @@ CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chsys.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_69) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chsys.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chsys.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chsys.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.i: cmake_force
@@ -1034,7 +1048,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chrfcu.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_70) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chrfcu.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chrfcu.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chrfcu.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.i: cmake_force
@@ -1048,7 +1062,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chdebug.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_71) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chdebug.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chdebug.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chdebug.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.i: cmake_force
@@ -1062,7 +1076,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chtrace.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_72) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chtrace.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chtrace.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chtrace.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.i: cmake_force
@@ -1076,7 +1090,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chvt.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chvt.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chvt.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chvt.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.i: cmake_force
@@ -1090,7 +1104,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chschd.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_74) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chschd.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chschd.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chschd.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.i: cmake_force
@@ -1104,7 +1118,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chinstances.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_75) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chinstances.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chinstances.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chinstances.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.i: cmake_force
@@ -1118,7 +1132,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chthreads.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_76) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chthreads.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chthreads.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chthreads.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.i: cmake_force
@@ -1132,7 +1146,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chtm.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_77) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chtm.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chtm.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chtm.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.i: cmake_force
@@ -1146,7 +1160,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chstats.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_78) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chstats.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chstats.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chstats.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.i: cmake_force
@@ -1160,7 +1174,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chregistry.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_79) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chregistry.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chregistry.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chregistry.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.i: cmake_force
@@ -1174,7 +1188,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chsem.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_80) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chsem.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chsem.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chsem.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.i: cmake_force
@@ -1188,7 +1202,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chmtx.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_81) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chmtx.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chmtx.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chmtx.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.i: cmake_force
@@ -1202,7 +1216,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chcond.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_82) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chcond.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chcond.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chcond.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.i: cmake_force
@@ -1216,7 +1230,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chevents.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_83) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chevents.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chevents.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chevents.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.i: cmake_force
@@ -1230,7 +1244,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chmsg.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_84) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chmsg.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chmsg.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chmsg.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.i: cmake_force
@@ -1244,7 +1258,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/rt/src/chdynamic.c
 CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_85) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj -MF CMakeFiles\ChibiOS.dir\os\rt\src\chdynamic.c.obj.d -o CMakeFiles\ChibiOS.dir\os\rt\src\chdynamic.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\rt\src\chdynamic.c
 
 CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.i: cmake_force
@@ -1258,7 +1272,7 @@ CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chmboxes.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_86) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chmboxes.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chmboxes.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chmboxes.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.i: cmake_force
@@ -1272,7 +1286,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chmemcore.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_87) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chmemcore.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chmemcore.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chmemcore.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.i: cmake_force
@@ -1286,7 +1300,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chmemheaps.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_88) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chmemheaps.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chmemheaps.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chmemheaps.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.i: cmake_force
@@ -1300,7 +1314,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chmempools.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_89) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chmempools.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chmempools.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chmempools.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.i: cmake_force
@@ -1314,7 +1328,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chpipes.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_90) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chpipes.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chpipes.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chpipes.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.i: cmake_force
@@ -1328,7 +1342,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chobjcaches.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_91) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chobjcaches.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chobjcaches.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chobjcaches.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.i: cmake_force
@@ -1342,7 +1356,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chdelegates.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_92) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chdelegates.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chdelegates.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chdelegates.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.i: cmake_force
@@ -1356,7 +1370,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/oslib/src/chfactory.c
 CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_93) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj -MF CMakeFiles\ChibiOS.dir\os\oslib\src\chfactory.c.obj.d -o CMakeFiles\ChibiOS.dir\os\oslib\src\chfactory.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\oslib\src\chfactory.c
 
 CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.i: cmake_force
@@ -1370,7 +1384,7 @@ CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/common/ports/ARMv7-M/chcore.c
 CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_94) "Building C object CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj -MF CMakeFiles\ChibiOS.dir\os\common\ports\ARMv7-M\chcore.c.obj.d -o CMakeFiles\ChibiOS.dir\os\common\ports\ARMv7-M\chcore.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\common\ports\ARMv7-M\chcore.c
 
 CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.i: cmake_force
@@ -1384,7 +1398,7 @@ CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/lib/streams/chprintf.c
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_95) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\lib\streams\chprintf.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\lib\streams\chprintf.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\lib\streams\chprintf.c
 
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.i: cmake_force
@@ -1398,7 +1412,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chprintf.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/lib/streams/chscanf.c
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_96) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\lib\streams\chscanf.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\lib\streams\chscanf.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\lib\streams\chscanf.c
 
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.i: cmake_force
@@ -1412,7 +1426,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/chscanf.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/lib/streams/memstreams.c
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_97) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\lib\streams\memstreams.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\lib\streams\memstreams.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\lib\streams\memstreams.c
 
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.i: cmake_force
@@ -1426,7 +1440,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/lib/streams/nullstreams.c
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_98) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\lib\streams\nullstreams.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\lib\streams\nullstreams.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\lib\streams\nullstreams.c
 
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.i: cmake_force
@@ -1440,7 +1454,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/lib/streams/bufstreams.c
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_99) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building C object CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR19DD~1.EXE $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.obj -MF CMakeFiles\ChibiOS.dir\os\hal\lib\streams\bufstreams.c.obj.d -o CMakeFiles\ChibiOS.dir\os\hal\lib\streams\bufstreams.c.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\hal\lib\streams\bufstreams.c
 
 CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.i: cmake_force
@@ -1454,7 +1468,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/bufstreams.c.s: cmake_force
 CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj: CMakeFiles/ChibiOS.dir/flags.make
 CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj: D:/robomaster/ChibiOS/STM32F407Explorer/os/various/cpp_wrappers/ch.cpp
 CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj: CMakeFiles/ChibiOS.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_100) "Building CXX object CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F407Explorer\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_101) "Building CXX object CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj -MF CMakeFiles\ChibiOS.dir\os\various\cpp_wrappers\ch.cpp.obj.d -o CMakeFiles\ChibiOS.dir\os\various\cpp_wrappers\ch.cpp.obj -c D:\robomaster\ChibiOS\STM32F407Explorer\os\various\cpp_wrappers\ch.cpp
 
 CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.i: cmake_force
@@ -1499,6 +1513,7 @@ ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_uart.c.obj
 ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj
 ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj
 ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj
+ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj
 ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_fsmc.c.obj
 ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdram.c.obj
 ChibiOS: CMakeFiles/ChibiOS.dir/os/hal/src/hal_sram.c.obj

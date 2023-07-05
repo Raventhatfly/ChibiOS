@@ -104,6 +104,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_adc.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_adc.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_adc.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_buffers.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_can.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj.d"
+  "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_community.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_crypto.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_dac.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj.d"
   "D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_efl.c" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.obj" "gcc" "CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.obj.d"

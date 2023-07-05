@@ -201,37 +201,37 @@
 #define HAL_USE_WSPI                        FALSE
 #endif
 
-/**
- * TODO:addedd by Wu Feiyang
- * @brief   Enables the FSMC subsystem.
- */
-#if !defined(HAL_USE_FSMC) || defined(__DOXYGEN__)
-#define HAL_USE_FSMC                        TRUE
-#endif
-
-/**
- * TODO:Modified by Wu Feiyang
- * @brief   Enables the SRAM subsystem.
- */
-#if !defined(HAL_USE_SRAM) || defined(__DOXYGEN__)
-#define HAL_USE_SRAM                        TRUE
-#endif
-
-/**
- * TODO:addedd by Wu Feiyang
- * @brief   Enables the SDRAM subsystem.
- */
-#if !defined(HAL_USE_SDRAM) || defined(__DOXYGEN__)
-#define HAL_USE_SDRAM                        FALSE
-#endif
-
-/**
- * TODO:addedd by Wu Feiyang
- * @brief   Enables the SDRAM subsystem.
- */
-#if !defined(HAL_USE_NAND) || defined(__DOXYGEN__)
-#define HAL_USE_NAND                        FALSE
-#endif
+///**
+// * TODO:addedd by Wu Feiyang
+// * @brief   Enables the FSMC subsystem.
+// */
+//#if !defined(HAL_USE_FSMC) || defined(__DOXYGEN__)
+//#define HAL_USE_FSMC                        TRUE
+//#endif
+//
+///**
+// * TODO:Modified by Wu Feiyang
+// * @brief   Enables the SRAM subsystem.
+// */
+//#if !defined(HAL_USE_SRAM) || defined(__DOXYGEN__)
+//#define HAL_USE_SRAM                        TRUE
+//#endif
+//
+///**
+// * TODO:addedd by Wu Feiyang
+// * @brief   Enables the SDRAM subsystem.
+// */
+//#if !defined(HAL_USE_SDRAM) || defined(__DOXYGEN__)
+//#define HAL_USE_SDRAM                        FALSE
+//#endif
+//
+///**
+// * TODO:addedd by Wu Feiyang
+// * @brief   Enables the SDRAM subsystem.
+// */
+//#if !defined(HAL_USE_NAND) || defined(__DOXYGEN__)
+//#define HAL_USE_NAND                        FALSE
+//#endif
 
 /*===========================================================================*/
 /* PAL driver related settings.                                              */
@@ -577,6 +577,7 @@
 #define WSPI_USE_MUTUAL_EXCLUSION           TRUE
 #endif
 
+#include "halconf_community.h"  /* Community hal header */
 #endif /* HALCONF_H */
 
 /** @} */

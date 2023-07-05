@@ -326,6 +326,7 @@
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/board_cfg"/>
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/lcd"/>
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/application/lcd_proj"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/led"/>
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/cmsis/dsp/include"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
@@ -394,6 +395,7 @@
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/board_cfg"/>
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/lcd"/>
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/application/lcd_proj"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/led"/>
 					<Add directory="D:/robomaster/ChibiOS/STM32F407Explorer/cmsis/dsp/include"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
 					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
@@ -910,6 +912,11 @@
 			<Option target="SERIAL_PROJ"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj">
+			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
+			<Option target="SERIAL_PROJ"/>
+		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="LCD_PROJ"/>
 			<Option target="SERIAL_PROJ"/>
@@ -1561,6 +1568,9 @@
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_can.c">
+			<Option target="ChibiOS"/>
+		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_community.c">
 			<Option target="ChibiOS"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/os/hal/src/hal_crypto.c">

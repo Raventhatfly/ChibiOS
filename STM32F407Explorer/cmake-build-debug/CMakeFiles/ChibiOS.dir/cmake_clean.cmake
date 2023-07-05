@@ -84,6 +84,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj.d"
   "CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj"
   "CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj.d"
+  "CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj"
+  "CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj.d"
   "CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj"
   "CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj.d"
   "CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj"

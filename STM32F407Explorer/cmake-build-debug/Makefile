@@ -1356,6 +1356,30 @@ os/hal/src/hal_can.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.s
 .PHONY : os/hal/src/hal_can.c.s
 
+os/hal/src/hal_community.obj: os/hal/src/hal_community.c.obj
+.PHONY : os/hal/src/hal_community.obj
+
+# target to build an object file
+os/hal/src/hal_community.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.obj
+.PHONY : os/hal/src/hal_community.c.obj
+
+os/hal/src/hal_community.i: os/hal/src/hal_community.c.i
+.PHONY : os/hal/src/hal_community.i
+
+# target to preprocess a source file
+os/hal/src/hal_community.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.i
+.PHONY : os/hal/src/hal_community.c.i
+
+os/hal/src/hal_community.s: os/hal/src/hal_community.c.s
+.PHONY : os/hal/src/hal_community.s
+
+# target to generate assembly for a file
+os/hal/src/hal_community.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/os/hal/src/hal_community.c.s
+.PHONY : os/hal/src/hal_community.c.s
+
 os/hal/src/hal_crypto.obj: os/hal/src/hal_crypto.c.obj
 .PHONY : os/hal/src/hal_crypto.obj
 
@@ -2860,6 +2884,9 @@ help:
 	@echo ... os/hal/src/hal_can.obj
 	@echo ... os/hal/src/hal_can.i
 	@echo ... os/hal/src/hal_can.s
+	@echo ... os/hal/src/hal_community.obj
+	@echo ... os/hal/src/hal_community.i
+	@echo ... os/hal/src/hal_community.s
 	@echo ... os/hal/src/hal_crypto.obj
 	@echo ... os/hal/src/hal_crypto.i
 	@echo ... os/hal/src/hal_crypto.s

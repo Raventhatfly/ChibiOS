@@ -55,7 +55,9 @@ set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/src/hal_uart.c
         ${CHIBIOS}/os/hal/src/hal_usb.c
         ${CHIBIOS}/os/hal/src/hal_wdg.c
-        ${CHIBIOS}/os/hal/src/hal_wspi.c)
+        ${CHIBIOS}/os/hal/src/hal_wspi.c
+        ${CHIBIOS}/os/hal/src/hal_community.c   # Community C file
+        )
 # Contriubuted sources
 set(CHIBIOS_C_SRC ${CHIBIOS_C_SRC}
         ${CHIBIOS}/os/hal/src/hal_fsmc.c
