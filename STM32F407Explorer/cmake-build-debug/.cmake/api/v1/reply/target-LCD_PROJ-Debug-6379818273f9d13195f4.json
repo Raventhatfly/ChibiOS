@@ -32,25 +32,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 65,
+				"line" : 54,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 88,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 79,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 70,
+				"line" : 59,
 				"parent" : 0
 			},
 			{
@@ -144,13 +144,13 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 67,
+				"line" : 56,
 				"parent" : 0
 			},
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 85,
+				"line" : 86,
 				"parent" : 0
 			}
 		]
@@ -183,11 +183,11 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "BUILD_TARGET_NAME=\"SERIAL_PROJ\""
+					"define" : "BUILD_TARGET_NAME=\"LCD_PROJ\""
 				},
 				{
 					"backtrace" : 4,
-					"define" : "SERIAL_PROJ"
+					"define" : "LCD_PROJ"
 				},
 				{
 					"backtrace" : 2,
@@ -350,15 +350,15 @@
 				},
 				{
 					"backtrace" : 20,
-					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/serial"
+					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/lcd"
 				},
 				{
 					"backtrace" : 20,
-					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/application/serial_proj"
+					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/application/lcd_proj"
 				},
 				{
 					"backtrace" : 20,
-					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/shell"
+					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/led"
 				},
 				{
 					"backtrace" : 2,
@@ -392,7 +392,7 @@
 			"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee"
 		}
 	],
-	"id" : "SERIAL_PROJ::@6890427a1f51a3e7e1df",
+	"id" : "LCD_PROJ::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -408,7 +408,7 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "SERIAL_PROJ",
+	"name" : "LCD_PROJ",
 	"nameOnDisk" : "meta.elf",
 	"paths" : 
 	{
@@ -551,19 +551,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/application/serial_proj/main.cpp",
+			"path" : "dev/application/lcd_proj/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/serial/serial.cpp",
+			"path" : "dev/interface/lcd/lcd.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/shell/shell.cpp",
+			"path" : "dev/interface/led/led.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

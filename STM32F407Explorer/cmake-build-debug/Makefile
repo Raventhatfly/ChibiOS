@@ -306,6 +306,7 @@ dev/interface/led/led.obj: dev/interface/led/led.cpp.obj
 # target to build an object file
 dev/interface/led/led.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/interface/led/led.cpp.obj
 .PHONY : dev/interface/led/led.cpp.obj
 
 dev/interface/led/led.i: dev/interface/led/led.cpp.i
@@ -314,6 +315,7 @@ dev/interface/led/led.i: dev/interface/led/led.cpp.i
 # target to preprocess a source file
 dev/interface/led/led.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/interface/led/led.cpp.i
 .PHONY : dev/interface/led/led.cpp.i
 
 dev/interface/led/led.s: dev/interface/led/led.cpp.s
@@ -322,6 +324,7 @@ dev/interface/led/led.s: dev/interface/led/led.cpp.s
 # target to generate assembly for a file
 dev/interface/led/led.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\LCD_PROJ.dir\build.make CMakeFiles/LCD_PROJ.dir/dev/interface/led/led.cpp.s
 .PHONY : dev/interface/led/led.cpp.s
 
 dev/interface/serial/serial.obj: dev/interface/serial/serial.cpp.obj

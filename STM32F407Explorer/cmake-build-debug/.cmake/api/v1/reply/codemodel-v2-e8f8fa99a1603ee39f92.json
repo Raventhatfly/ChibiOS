@@ -73,28 +73,28 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ChibiOS-Debug-7c2c34e983c5657faccf.json",
+					"jsonFile" : "target-ChibiOS-Debug-4737e494045d2241aa63.json",
 					"name" : "ChibiOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "LCD_PROJ::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LCD_PROJ-Debug-b39e06f2167d99006b90.json",
+					"jsonFile" : "target-LCD_PROJ-Debug-6379818273f9d13195f4.json",
 					"name" : "LCD_PROJ",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LIGHT_LED-Debug-206d6f99d34e4ccc6edd.json",
+					"jsonFile" : "target-LIGHT_LED-Debug-497447da1acfc5e6ab68.json",
 					"name" : "LIGHT_LED",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "SERIAL_PROJ::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-SERIAL_PROJ-Debug-227baf28436b9c585983.json",
+					"jsonFile" : "target-SERIAL_PROJ-Debug-c628f2909e06cf864da0.json",
 					"name" : "SERIAL_PROJ",
 					"projectIndex" : 0
 				}

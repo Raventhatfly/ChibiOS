@@ -6,6 +6,8 @@
 #define LCD_H
 #include "hal.h"
 #include "ch.hpp"
+#include "led.h"
+#include <cstdio>
 
 typedef uint8_t u8;
 typedef uint16_t u16;
@@ -155,11 +157,45 @@ private:
     static u16 LCD_BGR2RGB(u16 c);
     static void opt_delay(u8 i);
     static u32 LCD_Pow(u8 m,u8 n);
-    class LcdThread:public chibios_rt::BaseStaticThread<512>{
-        void main() final{
-            
+public:
+    class LcdThread:public chibios_rt::BaseStaticThread<512> {
+        void main() final {
+            setName("lcdThread");
+            u8 x=0;
+            u8 lcd_id[12];
+            Lcd::LCD_Init();
+            sprintf((char*)lcd_id,"LCD ID:%04X",Lcd::lcddev.id);
+
+            while (!shouldTerminate()) {
+                switch(x)
+                {
+                    case 0:Lcd::LCD_Clear(WHITE);break;
+                    case 1:Lcd::LCD_Clear(BLACK);break;
+                    case 2:Lcd::LCD_Clear(BLUE);break;
+                    case 3:Lcd::LCD_Clear(RED);break;
+                    case 4:Lcd::LCD_Clear(MAGENTA);break;
+                    case 5:Lcd::LCD_Clear(GREEN);break;
+                    case 6:Lcd::LCD_Clear(CYAN);break;
+                    case 7:Lcd::LCD_Clear(YELLOW);break;
+                    case 8:Lcd::LCD_Clear(BRRED);break;
+                    case 9:Lcd::LCD_Clear(GRAY);break;
+                    case 10:Lcd::LCD_Clear(LGRAY);break;
+                    case 11:Lcd::LCD_Clear(BROWN);break;
+                }
+                Lcd::LCD_ShowString(30, 40, 210, 24, 24, (uint8_t *) "Explorer STM32F4");
+                Lcd::LCD_ShowString(30, 70, 200, 16, 16, (uint8_t *) "TFTLCD TEST");
+                Lcd::LCD_ShowString(30, 90, 200, 16, 16, (uint8_t *) "ATOM@ALIENTEK");
+                Lcd::LCD_ShowString(30,110,200,16,16,lcd_id);
+                Lcd::LCD_ShowString(30, 130, 200, 12, 12, (uint8_t *) "2014/5/4");
+                Lcd::LCD_Draw_Circle(50,50,50);
+                x++;
+                if(x==12)x=0;
+                chThdSleepMilliseconds(1000);
+            }
         }
     };
+
+    static LcdThread lcd_thread;
 };
 
 //LCD分辨率设置

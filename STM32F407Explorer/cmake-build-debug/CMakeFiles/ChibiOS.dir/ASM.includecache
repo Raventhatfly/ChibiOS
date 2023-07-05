@@ -308,6 +308,8 @@ D:/robomaster/ChibiOS/STM32F407Explorer/os/common/ports/ARMv7-M/compilers/GCC/ch
 
 D:/robomaster/ChibiOS/STM32F407Explorer/os/common/ports/ARMv7-M/mpu.h
 
+D:/robomaster/ChibiOS/STM32F407Explorer/os/common/startup/ARMCMx/compilers/GCC/crt0_v7m.S
+
 D:/robomaster/ChibiOS/STM32F407Explorer/os/common/startup/ARMCMx/compilers/GCC/vectors.S
 cmparams.h
 D:/robomaster/ChibiOS/STM32F407Explorer/os/common/startup/ARMCMx/compilers/GCC/cmparams.h

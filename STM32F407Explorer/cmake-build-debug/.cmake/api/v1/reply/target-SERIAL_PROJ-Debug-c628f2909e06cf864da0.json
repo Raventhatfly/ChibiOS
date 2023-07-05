@@ -32,25 +32,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 41,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 88,
+				"line" : 89,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 79,
+				"line" : 80,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 45,
+				"line" : 71,
 				"parent" : 0
 			},
 			{
@@ -144,13 +144,13 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 43,
+				"line" : 68,
 				"parent" : 0
 			},
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 85,
+				"line" : 86,
 				"parent" : 0
 			}
 		]
@@ -183,11 +183,11 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "BUILD_TARGET_NAME=\"LIGHT_LED\""
+					"define" : "BUILD_TARGET_NAME=\"SERIAL_PROJ\""
 				},
 				{
 					"backtrace" : 4,
-					"define" : "LIGHT_LED"
+					"define" : "SERIAL_PROJ"
 				},
 				{
 					"backtrace" : 2,
@@ -350,11 +350,15 @@
 				},
 				{
 					"backtrace" : 20,
-					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/led"
+					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/serial"
 				},
 				{
 					"backtrace" : 20,
-					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/application/light_led"
+					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/application/serial_proj"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/shell"
 				},
 				{
 					"backtrace" : 2,
@@ -373,7 +377,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -387,7 +392,7 @@
 			"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee"
 		}
 	],
-	"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
+	"id" : "SERIAL_PROJ::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -403,7 +408,7 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "LIGHT_LED",
+	"name" : "SERIAL_PROJ",
 	"nameOnDisk" : "meta.elf",
 	"paths" : 
 	{
@@ -417,14 +422,14 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		},
 		{
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
-				2,
 				3,
 				4,
 				5,
@@ -536,7 +541,8 @@
 				111,
 				112,
 				113,
-				114
+				114,
+				115
 			]
 		}
 	],
@@ -545,13 +551,19 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/application/light_led/main.cpp",
+			"path" : "dev/application/serial_proj/main.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/led/led.cpp",
+			"path" : "dev/interface/serial/serial.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/interface/shell/shell.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

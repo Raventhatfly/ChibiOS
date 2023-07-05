@@ -49,6 +49,7 @@ target_compile_definitions(LIGHT_LED PRIVATE LIGHT_LED)
 set(LCD_SRC
         dev/application/lcd_proj/main.cpp
         dev/interface/lcd/lcd.cpp
+        dev/interface/led/led.cpp
         )
 add_executable(LCD_PROJ
         ${LCD_SRC})

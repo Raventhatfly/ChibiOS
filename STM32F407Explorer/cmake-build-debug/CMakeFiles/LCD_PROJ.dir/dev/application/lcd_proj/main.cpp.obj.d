@@ -165,5 +165,4 @@ CMakeFiles/LCD_PROJ.dir/dev/application/lcd_proj/main.cpp.obj: \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\_pthreadtypes.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\sched.h \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\machine\types.h \
- c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stdio.h \
- d:\robomaster\chibios\stm32f407explorer\os\common\ext\st\stm32f4xx\stm32f407xx.h
+ c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\sys\stdio.h

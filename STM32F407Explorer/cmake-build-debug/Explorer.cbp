@@ -1320,9 +1320,11 @@
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/led/led.cpp">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/led/led.h">
 			<Option target="LIGHT_LED"/>
+			<Option target="LCD_PROJ"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F407Explorer/dev/interface/serial/serial.cpp">
 			<Option target="SERIAL_PROJ"/>
