@@ -155,6 +155,11 @@ private:
     static u16 LCD_BGR2RGB(u16 c);
     static void opt_delay(u8 i);
     static u32 LCD_Pow(u8 m,u8 n);
+    class LcdThread:public chibios_rt::BaseStaticThread<512>{
+        void main() final{
+            
+        }
+    };
 };
 
 //LCD分辨率设置

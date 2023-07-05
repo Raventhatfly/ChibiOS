@@ -6,7 +6,6 @@
 #include "lcd.h"
 #include "led.h"
 #include <cstdio>
-#include <stm32f407xx.h>
 static SRAMConfig sram_cfg = {
         (FSMC_BCR_MWID_16 | FSMC_BCR_MTYP_SRAM | FSMC_BCR_WREN | FSMC_BCR_EXTMOD |FSMC_BCR_MBKEN ),
         (0 << 16) | (60 << 8) | (15 << 0),
@@ -44,7 +43,6 @@ int main(){
             case 10:Lcd::LCD_Clear(LGRAY);break;
             case 11:Lcd::LCD_Clear(BROWN);break;
         }
-//        POINT_COLOR=RED;
         Lcd::LCD_ShowString(30, 40, 210, 24, 24, (uint8_t *) "Explorer STM32F4");
         Lcd::LCD_ShowString(30, 70, 200, 16, 16, (uint8_t *) "TFTLCD TEST");
         Lcd::LCD_ShowString(30, 90, 200, 16, 16, (uint8_t *) "ATOM@ALIENTEK");
@@ -56,6 +54,4 @@ int main(){
         Led::green_toggle();
         chThdSleepMilliseconds(1000);
     }
-
-
 }
