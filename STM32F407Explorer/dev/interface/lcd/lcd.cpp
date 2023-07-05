@@ -34,25 +34,25 @@ u16 BACK_COLOR=0xFFFF;  //背景色
 
 //管理LCD重要参数
 //默认为竖屏
-lcd_dev lcddev;
+Lcd::lcd_dev_t lcddev;
 
 //写寄存器函数
 //regval:寄存器值
-void LCD_WR_REG(vu16 regval)
+void Lcd::LCD_WR_REG(vu16 regval)
 {
     regval=regval;		//使用-O2优化的时候,必须插入的延时
     LCD->LCD_REG=regval;//写入要写的寄存器序号
 }
 //写LCD数据
 //data:要写入的值
-void LCD_WR_DATA(vu16 data)
+void Lcd::LCD_WR_DATA(vu16 data)
 {
     data=data;			//使用-O2优化的时候,必须插入的延时
     LCD->LCD_RAM=data;
 }
 //读LCD数据
 //返回值:读到的值
-u16 LCD_RD_DATA()
+u16 Lcd::LCD_RD_DATA()
 {
     vu16 ram;			//防止被优化
     ram=LCD->LCD_RAM;
@@ -61,7 +61,7 @@ u16 LCD_RD_DATA()
 //写寄存器
 //LCD_Reg:寄存器地址
 //LCD_RegValue:要写入的数据
-void LCD_WriteReg(u16 LCD_Reg,u16 LCD_RegValue)
+void Lcd::LCD_WriteReg(u16 LCD_Reg,u16 LCD_RegValue)
 {
     LCD->LCD_REG = LCD_Reg;		//写入要写的寄存器序号
     LCD->LCD_RAM = LCD_RegValue;//写入数据
@@ -69,20 +69,20 @@ void LCD_WriteReg(u16 LCD_Reg,u16 LCD_RegValue)
 //读寄存器
 //LCD_Reg:寄存器地址
 //返回值:读到的数据
-u16 LCD_ReadReg(u16 LCD_Reg)
+u16 Lcd::LCD_ReadReg(u16 LCD_Reg)
 {
     LCD_WR_REG(LCD_Reg);		//写入要读的寄存器序号
     chThdSleepMicroseconds(5);
     return LCD_RD_DATA();		//返回读到的值
 }
 //开始写GRAM
-void LCD_WriteRAM_Prepare()
+void Lcd::LCD_WriteRAM_Prepare()
 {
     LCD->LCD_REG=lcddev.wramcmd;
 }
 //LCD写GRAM
 //RGB_Code:颜色值
-void LCD_WriteRAM(u16 RGB_Code)
+void Lcd::LCD_WriteRAM(u16 RGB_Code)
 {
     LCD->LCD_RAM = RGB_Code;//写十六位GRAM
 }
@@ -90,7 +90,7 @@ void LCD_WriteRAM(u16 RGB_Code)
 //通过该函数转换
 //c:GBR格式的颜色值
 //返回值：RGB格式的颜色值
-u16 LCD_BGR2RGB(u16 c)
+u16 Lcd::LCD_BGR2RGB(u16 c)
 {
     u16  r,g,b,rgb;
     b=(c>>0)&0x1f;
@@ -101,14 +101,14 @@ u16 LCD_BGR2RGB(u16 c)
 }
 //当mdk -O1时间优化时需要设置
 //延时i
-void opt_delay(u8 i)
+void Lcd::opt_delay(u8 i)
 {
     while(i--);
 }
 //读取个某点的颜色值
 //x,y:坐标
 //返回值:此点的颜色
-u16 LCD_ReadPoint(u16 x,u16 y)
+u16 Lcd::LCD_ReadPoint(u16 x,u16 y)
 {
     u16 r=0,g=0,b=0;
     if(x>=lcddev.width||y>=lcddev.height)return 0;	//超过了范围,直接返回
@@ -136,7 +136,7 @@ u16 LCD_ReadPoint(u16 x,u16 y)
 }
 
 //LCD开启显示
-void LCD_DisplayOn()
+void Lcd::LCD_DisplayOn()
 {
     if (lcddev.id == 0X5510)    //5510开启显示指令
     {
@@ -148,7 +148,7 @@ void LCD_DisplayOn()
     }
 }
 //LCD关闭显示
-void LCD_DisplayOff()
+void Lcd::LCD_DisplayOff()
 {
     if (lcddev.id == 0X5510)    //5510关闭显示指令
     {
@@ -162,7 +162,7 @@ void LCD_DisplayOff()
 //设置光标位置
 //Xpos:横坐标
 //Ypos:纵坐标
-void LCD_SetCursor(u16 Xpos, u16 Ypos)
+void Lcd::LCD_SetCursor(u16 Xpos, u16 Ypos)
 {
     if (lcddev.id == 0X1963)
     {
@@ -219,7 +219,7 @@ void LCD_SetCursor(u16 Xpos, u16 Ypos)
 //注意:其他函数可能会受到此函数设置的影响(尤其是9341),
 //所以,一般设置为L2R_U2D即可,如果设置为其他扫描方式,可能导致显示不正常.
 
-void LCD_Scan_Dir(u8 dir)
+void Lcd::LCD_Scan_Dir(u8 dir)
 {
     u16 regval=0;
     u16 dirreg=0;
@@ -368,7 +368,7 @@ void LCD_Scan_Dir(u8 dir)
 //画点
 //x,y:坐标
 //POINT_COLOR:此点的颜色
-void LCD_DrawPoint(u16 x,u16 y)
+void Lcd::LCD_DrawPoint(u16 x,u16 y)
 {
     LCD_SetCursor(x,y);		//设置光标位置
     LCD_WriteRAM_Prepare();	//开始写入GRAM
@@ -377,7 +377,7 @@ void LCD_DrawPoint(u16 x,u16 y)
 //快速画点
 //x,y:坐标
 //color:颜色
-void LCD_Fast_DrawPoint(u16 x,u16 y,u16 color)
+void Lcd::LCD_Fast_DrawPoint(u16 x,u16 y,u16 color)
 {
     if (lcddev.id == 0X5510)
     {
@@ -421,7 +421,7 @@ void LCD_Fast_DrawPoint(u16 x,u16 y,u16 color)
 
 //SSD1963 背光设置
 //pwm:背光等级,0~100.越大越亮.
-void LCD_SSD_BackLightSet(u8 pwm)
+void Lcd::LCD_SSD_BackLightSet(u8 pwm)
 {
     LCD_WR_REG(0xBE);	//配置PWM输出
     LCD_WR_DATA(0x05);	//1设置PWM频率
@@ -434,7 +434,7 @@ void LCD_SSD_BackLightSet(u8 pwm)
 
 //设置LCD显示方向
 //dir:0,竖屏；1,横屏
-void LCD_Display_Dir(u8 dir)
+void Lcd::LCD_Display_Dir(u8 dir)
 {
     lcddev.dir = dir;       //竖屏/横屏
 
@@ -514,7 +514,7 @@ void LCD_Display_Dir(u8 dir)
 //sx,sy:窗口起始坐标(左上角)
 //width,height:窗口宽度和高度,必须大于0!!
 //窗体大小:width*height.
-void LCD_Set_Window(u16 sx, u16 sy, u16 width, u16 height)
+void Lcd::LCD_Set_Window(u16 sx, u16 sy, u16 width, u16 height)
 {
     u16 twidth, theight;
     twidth = sx + width - 1;
@@ -572,118 +572,10 @@ void LCD_Set_Window(u16 sx, u16 sy, u16 width, u16 height)
 //初始化lcd
 //该初始化函数可以初始化各种ILI93XX液晶,但是其他函数是基于ILI9320的!!!
 //在其他型号的驱动芯片上没有测试!
-void LCD_Init()
+void Lcd::LCD_Init()
 {
     vu32 i=0;
-
-//    GPIO_InitTypeDef  GPIO_InitStructure;
-//    FSMC_NORSRAMInitTypeDef  FSMC_NORSRAMInitStructure;
-//    FSMC_NORSRAMTimingInitTypeDef  readWriteTiming;
-//    FSMC_NORSRAMTimingInitTypeDef  writeTiming;
-//
-//    RCC_AHB1PeriphClockCmd(RCC_AHB1Periph_GPIOB|RCC_AHB1Periph_GPIOD|RCC_AHB1Periph_GPIOE|RCC_AHB1Periph_GPIOF|RCC_AHB1Periph_GPIOG, ENABLE);//使能PD,PE,PF,PG时钟
-//    RCC_AHB3PeriphClockCmd(RCC_AHB3Periph_FSMC,ENABLE);//使能FSMC时钟
-//
-//
-//    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_15;//PB15 推挽输出,控制背光
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_OUT;//普通输出模式
-//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz;//100MHz
-//    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-//    GPIO_Init(GPIOB, &GPIO_InitStructure);//初始化 //PB15 推挽输出,控制背光
     palSetPad(GPIOB,LCD_LED);
-//
-//    GPIO_InitStructure.GPIO_Pin = (3<<0)|(3<<4)|(7<<8)|(3<<14);//PD0,1,4,5,8,9,10,14,15 AF OUT
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;//复用输出
-//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
-//    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-//    GPIO_Init(GPIOD, &GPIO_InitStructure);//初始化
-//
-//    GPIO_InitStructure.GPIO_Pin = (0X1FF<<7);//PE7~15,AF OUT
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;//复用输出
-//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
-//    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-//    GPIO_Init(GPIOE, &GPIO_InitStructure);//初始化
-//
-//    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;//PF12,FSMC_A6
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;//复用输出
-//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
-//    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-//    GPIO_Init(GPIOF, &GPIO_InitStructure);//初始化
-//
-//    GPIO_InitStructure.GPIO_Pin = GPIO_Pin_12;//PF12,FSMC_A6
-//    GPIO_InitStructure.GPIO_Mode = GPIO_Mode_AF;//复用输出
-//    GPIO_InitStructure.GPIO_OType = GPIO_OType_PP;//推挽输出
-//    GPIO_InitStructure.GPIO_Speed = GPIO_Speed_100MHz;//100MHz
-//    GPIO_InitStructure.GPIO_PuPd = GPIO_PuPd_UP;//上拉
-//    GPIO_Init(GPIOG, &GPIO_InitStructure);//初始化
-//
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource0,GPIO_AF_FSMC);//PD0,AF12
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource1,GPIO_AF_FSMC);//PD1,AF12
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource4,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource5,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource8,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource9,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource10,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource14,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOD,GPIO_PinSource15,GPIO_AF_FSMC);//PD15,AF12
-//
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource7,GPIO_AF_FSMC);//PE7,AF12
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource8,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource9,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource10,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource11,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource12,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource13,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource14,GPIO_AF_FSMC);
-//    GPIO_PinAFConfig(GPIOE,GPIO_PinSource15,GPIO_AF_FSMC);//PE15,AF12
-//
-//    GPIO_PinAFConfig(GPIOF,GPIO_PinSource12,GPIO_AF_FSMC);//PF12,AF12
-//    GPIO_PinAFConfig(GPIOG,GPIO_PinSource12,GPIO_AF_FSMC);
-//
-//
-//    readWriteTiming.FSMC_AddressSetupTime = 0XF;	 //地址建立时间（ADDSET）为16个HCLK 1/168M=6ns*16=96ns
-//    readWriteTiming.FSMC_AddressHoldTime = 0x00;	 //地址保持时间（ADDHLD）模式A未用到
-//    readWriteTiming.FSMC_DataSetupTime = 60;			//数据保存时间为60个HCLK	=6*60=360ns
-//    readWriteTiming.FSMC_BusTurnAroundDuration = 0x00;
-//    readWriteTiming.FSMC_CLKDivision = 0x00;
-//    readWriteTiming.FSMC_DataLatency = 0x00;
-//    readWriteTiming.FSMC_AccessMode = FSMC_AccessMode_A;	 //模式A
-//
-//
-//    writeTiming.FSMC_AddressSetupTime =9;	      //地址建立时间（ADDSET）为9个HCLK =54ns
-//    writeTiming.FSMC_AddressHoldTime = 0x00;	 //地址保持时间（A
-//    writeTiming.FSMC_DataSetupTime = 8;		 //数据保存时间为6ns*9个HCLK=54ns
-//    writeTiming.FSMC_BusTurnAroundDuration = 0x00;
-//    writeTiming.FSMC_CLKDivision = 0x00;
-//    writeTiming.FSMC_DataLatency = 0x00;
-//    writeTiming.FSMC_AccessMode = FSMC_AccessMode_A;	 //模式A
-//
-//
-//    FSMC_NORSRAMInitStructure.FSMC_Bank = FSMC_Bank1_NORSRAM4;//  这里我们使用NE4 ，也就对应BTCR[6],[7]。
-//    FSMC_NORSRAMInitStructure.FSMC_DataAddressMux = FSMC_DataAddressMux_Disable; // 不复用数据地址
-//    FSMC_NORSRAMInitStructure.FSMC_MemoryType =FSMC_MemoryType_SRAM;// FSMC_MemoryType_SRAM;  //SRAM
-//    FSMC_NORSRAMInitStructure.FSMC_MemoryDataWidth = FSMC_MemoryDataWidth_16b;//存储器数据宽度为16bit
-//    FSMC_NORSRAMInitStructure.FSMC_BurstAccessMode =FSMC_BurstAccessMode_Disable;// FSMC_BurstAccessMode_Disable;
-//    FSMC_NORSRAMInitStructure.FSMC_WaitSignalPolarity = FSMC_WaitSignalPolarity_Low;
-//    FSMC_NORSRAMInitStructure.FSMC_AsynchronousWait=FSMC_AsynchronousWait_Disable;
-//    FSMC_NORSRAMInitStructure.FSMC_WrapMode = FSMC_WrapMode_Disable;
-//    FSMC_NORSRAMInitStructure.FSMC_WaitSignalActive = FSMC_WaitSignalActive_BeforeWaitState;
-//    FSMC_NORSRAMInitStructure.FSMC_WriteOperation = FSMC_WriteOperation_Enable;	//  存储器写使能
-//    FSMC_NORSRAMInitStructure.FSMC_WaitSignal = FSMC_WaitSignal_Disable;
-//    FSMC_NORSRAMInitStructure.FSMC_ExtendedMode = FSMC_ExtendedMode_Enable; // 读写使用不同的时序
-//    FSMC_NORSRAMInitStructure.FSMC_WriteBurst = FSMC_WriteBurst_Disable;
-//    FSMC_NORSRAMInitStructure.FSMC_ReadWriteTimingStruct = &readWriteTiming; //读写时序
-//    FSMC_NORSRAMInitStructure.FSMC_WriteTimingStruct = &writeTiming;  //写时序
-//
-//    FSMC_NORSRAMInit(&FSMC_NORSRAMInitStructure);  //初始化FSMC配置
-//
-//    FSMC_NORSRAMCmd(FSMC_Bank1_NORSRAM4, ENABLE);  // 使能BANK1
-
-//    delay_ms(50); // delay 50 ms
     chThdSleepMilliseconds(50);
 
     //尝试9341 ID的读取
@@ -2119,7 +2011,7 @@ void LCD_Init()
 }
 //清屏函数
 //color:要清屏的填充色
-void LCD_Clear(u16 color)
+void Lcd::LCD_Clear(u16 color)
 {
     u32 index = 0;
     u32 totalpoint = lcddev.width;
@@ -2138,7 +2030,7 @@ void LCD_Clear(u16 color)
 //区域大小:(xend-xsta+1)*(yend-ysta+1)
 //xsta
 //color:要填充的颜色
-void LCD_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 color)
+void Lcd::LCD_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 color)
 {
     u16 i, j;
     u16 xlen = 0;
@@ -2160,7 +2052,7 @@ void LCD_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 color)
 //在指定区域内填充指定颜色块
 //(sx,sy),(ex,ey):填充矩形对角坐标,区域大小为:(ex-sx+1)*(ey-sy+1)
 //color:要填充的颜色
-void LCD_Color_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 *color)
+void Lcd::LCD_Color_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 *color)
 {
     u16 height, width;
     u16 i, j;
@@ -2182,7 +2074,7 @@ void LCD_Color_Fill(u16 sx, u16 sy, u16 ex, u16 ey, u16 *color)
 //画线
 //x1,y1:起点坐标
 //x2,y2:终点坐标
-void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2)
+void Lcd::LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2)
 {
     u16 t;
     int xerr = 0, yerr = 0, delta_x, delta_y, distance;
@@ -2233,7 +2125,7 @@ void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2)
 
 //画矩形
 //(x1,y1),(x2,y2):矩形的对角坐标
-void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
+void Lcd::LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
 {
     LCD_DrawLine(x1,y1,x2,y1);
     LCD_DrawLine(x1,y1,x1,y2);
@@ -2243,7 +2135,7 @@ void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2)
 //在指定位置画一个指定大小的圆
 //(x,y):中心点
 //r    :半径
-void LCD_Draw_Circle(u16 x0,u16 y0,u8 r)
+void Lcd::LCD_Draw_Circle(u16 x0,u16 y0,u8 r)
 {
     int a, b;
     int di;
@@ -2279,7 +2171,7 @@ void LCD_Draw_Circle(u16 x0,u16 y0,u8 r)
 //num:要显示的字符:" "--->"~"
 //size:字体大小 12/16/24
 //mode:叠加方式(1)还是非叠加方式(0)
-void LCD_ShowChar(u16 x,u16 y,u8 num,u8 size,u8 mode)
+void Lcd::LCD_ShowChar(u16 x,u16 y,u8 num,u8 size,u8 mode)
 {
     u8 temp,t1,t;
     u16 y0=y;
@@ -2310,7 +2202,7 @@ void LCD_ShowChar(u16 x,u16 y,u8 num,u8 size,u8 mode)
 }
 //m^n函数
 //返回值:m^n次方.
-u32 LCD_Pow(u8 m,u8 n)
+u32 Lcd::LCD_Pow(u8 m,u8 n)
 {
     u32 result=1;
     while(n--)result*=m;
@@ -2322,7 +2214,7 @@ u32 LCD_Pow(u8 m,u8 n)
 //size:字体大小
 //color:颜色
 //num:数值(0~4294967295);
-void LCD_ShowNum(u16 x, u16 y, u32 num, u8 len, u8 size)
+void Lcd::LCD_ShowNum(u16 x, u16 y, u32 num, u8 len, u8 size)
 {
     u8 t, temp;
     u8 enshow = 0;
@@ -2355,7 +2247,7 @@ void LCD_ShowNum(u16 x, u16 y, u32 num, u8 len, u8 size)
 //[7]:0,不填充;1,填充0.
 //[6:1]:保留
 //[0]:0,非叠加显示;1,叠加显示.
-void LCD_ShowxNum(u16 x, u16 y, u32 num, u8 len, u8 size, u8 mode)
+void Lcd::LCD_ShowxNum(u16 x, u16 y, u32 num, u8 len, u8 size, u8 mode)
 {
     u8 t, temp;
     u8 enshow = 0;
@@ -2386,7 +2278,7 @@ void LCD_ShowxNum(u16 x, u16 y, u32 num, u8 len, u8 size, u8 mode)
 //width,height:区域大小
 //size:字体大小
 //*p:字符串起始地址
-void LCD_ShowString(u16 x, u16 y, u16 width, u16 height, u8 size, u8 *p)
+void Lcd::LCD_ShowString(u16 x, u16 y, u16 width, u16 height, u8 size, u8 *p)
 {
     u8 x0 = x;
     width += x;
@@ -2407,30 +2299,3 @@ void LCD_ShowString(u16 x, u16 y, u16 width, u16 height, u8 size, u8 *p)
         p++;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

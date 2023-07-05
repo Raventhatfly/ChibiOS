@@ -15,33 +15,15 @@ typedef uint8_t u8;
 typedef volatile uint16_t vu16;
 typedef volatile uint32_t vu32;
 typedef volatile uint64_t vu64;
-//LCD重要参数集
-typedef struct
-{
-    u16 width;			//LCD width
-    u16 height;			//LCD height
-    u16 id;				//LCD ID
-    u8  dir;			//0，竖屏；1，横屏
-    u16	wramcmd;		//begin to write gram instruction
-    u16  setxcmd;		//set x coordinate command
-    u16  setycmd;		//set y coordinate command
-}lcd_dev;
+
 
 //LCD参数
-extern lcd_dev lcddev;	//manage important lcd features
-extern u16  POINT_COLOR;//default point color red
-extern u16 BACK_COLOR; //default point color white
+//extern lcd_dev lcddev;	//manage important lcd features
+//extern u16  POINT_COLOR;//default point color red
+//extern u16 BACK_COLOR; //default point color white
 
 
 //////////////////////////////////////////////////////////////////////////////////
-//-----------------LCD端口定义----------------
-//#define	LCD_LED PBout(15)  		//LCD背光    		 PB15
-//LCD地址结构体
-typedef struct
-{
-    vu16 LCD_REG;
-    vu16 LCD_RAM;
-} LCD_TypeDef;
 //使用NOR/SRAM的 Bank1.sector4,地址位HADDR[27,26]=11 A6作为数据命令区分线
 //注意设置时STM32内部会右移一位对其! 111 1110=0X7E
 #define LCD_BASE        ((vu32)(0x6C000000 | 0x0000007E))
@@ -89,33 +71,92 @@ typedef struct
 
 #define LGRAYBLUE        0XA651 //浅灰蓝色(中间层颜色)
 #define LBBLUE           0X2B12 //浅棕蓝色(选择条目的反色)
+class Lcd{
+public:
 
-void LCD_Init();													   	//初始化
-void LCD_DisplayOn();													//开显示
-void LCD_DisplayOff();													//关显示
-void LCD_Clear(u16 Color);	 												//清屏
-void LCD_SetCursor(u16 Xpos, u16 Ypos);										//设置光标
-void LCD_DrawPoint(u16 x,u16 y);											//画点
-void LCD_Fast_DrawPoint(u16 x,u16 y,u16 color);								//快速画点
-u16  LCD_ReadPoint(u16 x,u16 y); 											//读点
-void LCD_Draw_Circle(u16 x0,u16 y0,u8 r);						 			//画圆
-void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2);							//画线
-void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2);		   				//画矩形
-void LCD_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 color);		   				//填充单色
-void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color);				//填充指定颜色
-void LCD_ShowChar(u16 x,u16 y,u8 num,u8 size,u8 mode);						//显示一个字符
-void LCD_ShowNum(u16 x,u16 y,u32 num,u8 len,u8 size);  						//显示一个数字
-void LCD_ShowxNum(u16 x,u16 y,u32 num,u8 len,u8 size,u8 mode);				//显示 数字
-void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);		//显示一个字符串,12/16字体
+//LCD重要参数集
+typedef struct
+{
+    u16 width;			//LCD width
+    u16 height;			//LCD height
+    u16 id;				//LCD ID
+    u8  dir;			//0，竖屏；1，横屏
+    u16	wramcmd;		//begin to write gram instruction
+    u16  setxcmd;		//set x coordinate command
+    u16  setycmd;		//set y coordinate command
+}lcd_dev_t;
+    static lcd_dev_t lcddev;
+private:
+    //-----------------LCD端口定义----------------
+//#define	LCD_LED PBout(15)  		//LCD背光    		 PB15
+//LCD地址结构体
+    typedef struct
+    {
+        vu16 LCD_REG;
+        vu16 LCD_RAM;
+    } LCD_TypeDef;
 
-void LCD_WriteReg(u16 LCD_Reg, u16 LCD_RegValue);
-u16 LCD_ReadReg(u16 LCD_Reg);
-void LCD_WriteRAM_Prepare();
-void LCD_WriteRAM(u16 RGB_Code);
-void LCD_SSD_BackLightSet(u8 pwm);							//SSD1963 背光控制
-void LCD_Scan_Dir(u8 dir);									//设置屏扫描方向
-void LCD_Display_Dir(u8 dir);								//设置屏幕显示方向
-void LCD_Set_Window(u16 sx,u16 sy,u16 width,u16 height);	//设置窗口
+
+
+public:
+    static void LCD_Init();             // Initilization
+    static void LCD_DisplayOn();
+    static void LCD_DisplayOff();													//关显示
+    static void LCD_Clear(u16 Color);	 												//清屏
+    static void LCD_SetCursor(u16 Xpos, u16 Ypos);										//设置光标
+    static void LCD_DrawPoint(u16 x,u16 y);											//画点
+    static void LCD_Fast_DrawPoint(u16 x,u16 y,u16 color);								//快速画点
+    static u16  LCD_ReadPoint(u16 x,u16 y); 											//读点
+    static void LCD_Draw_Circle(u16 x0,u16 y0,u8 r);						 			//画圆
+    static void LCD_DrawLine(u16 x1, u16 y1, u16 x2, u16 y2);							//画线
+    static void LCD_DrawRectangle(u16 x1, u16 y1, u16 x2, u16 y2);		   				//画矩形
+    static void LCD_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 color);		   				//填充单色
+    static void LCD_Color_Fill(u16 sx,u16 sy,u16 ex,u16 ey,u16 *color);				//填充指定颜色
+    static void LCD_ShowChar(u16 x,u16 y,u8 num,u8 size,u8 mode);						//显示一个字符
+    static void LCD_ShowNum(u16 x,u16 y,u32 num,u8 len,u8 size);  						//显示一个数字
+    static void LCD_ShowxNum(u16 x,u16 y,u32 num,u8 len,u8 size,u8 mode);				//显示 数字
+    static void LCD_ShowString(u16 x,u16 y,u16 width,u16 height,u8 size,u8 *p);		//显示一个字符串,12/16字体
+
+    static void LCD_WriteReg(u16 LCD_Reg, u16 LCD_RegValue);
+    static u16 LCD_ReadReg(u16 LCD_Reg);
+    static void LCD_WriteRAM_Prepare();
+    static void LCD_WriteRAM(u16 RGB_Code);
+    static void LCD_SSD_BackLightSet(u8 pwm);							//SSD1963 背光控制
+    static void LCD_Scan_Dir(u8 dir);									//设置屏扫描方向
+    static void LCD_Display_Dir(u8 dir);								//设置屏幕显示方向
+    static void LCD_Set_Window(u16 sx,u16 sy,u16 width,u16 height);	//设置窗口
+//    u16 width;			//LCD width
+//    u16 height;			//LCD height
+//    u16 id;				//LCD ID
+//    u8  dir;			//0，竖屏；1，横屏
+//    u16	wramcmd;		//begin to write gram instruction
+//    u16  setxcmd;		//set x coordinate command
+//    u16  setycmd;		//set y coordinate command
+    static u16 getLcdID()    {return lcddev.id;}
+    static u16 getLcdHeight(){return lcddev.height;}
+    static u16 getLcdWidth(){ return lcddev.width;}
+    static u8 getLcdDir(){return lcddev.dir;}
+    static u16 getWriteCmd(){return lcddev.wramcmd;}
+    static u16 getLcdX(){return lcddev.setxcmd;}
+    static u16 getLcdY(){return lcddev.setycmd;}
+
+    static void setLcdID(u16 id)    {lcddev.id = id;}
+    static void setLcdHeight(u16 height){lcddev.height = height;}
+    static void setLcdWidth(u16 width){ lcddev.width = width;}
+    static void setLcdDir(u8 dir){lcddev.dir = dir;}
+    static void setLcdX(u16 x){lcddev.setxcmd = x;}
+    static void setLcdY(u16 y){lcddev.setycmd = y;}
+    static void setWriteCmd(u16 cmd){lcddev.wramcmd = cmd;}
+
+private:
+    static void LCD_WR_REG(vu16 regval);
+    static void LCD_WR_DATA(vu16 data);
+    static u16 LCD_RD_DATA();
+    static u16 LCD_BGR2RGB(u16 c);
+    static void opt_delay(u8 i);
+    static u32 LCD_Pow(u8 m,u8 n);
+};
+
 //LCD分辨率设置
 #define SSD_HOR_RESOLUTION		800		//LCD水平分辨率
 #define SSD_VER_RESOLUTION		480		//LCD垂直分辨率
