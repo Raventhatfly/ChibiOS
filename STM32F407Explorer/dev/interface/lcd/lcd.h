@@ -184,13 +184,12 @@ public:
                 }
                 Lcd::LCD_ShowString(30, 40, 210, 24, 24, (uint8_t *) "Explorer STM32F4");
                 Lcd::LCD_ShowString(30, 70, 200, 16, 16, (uint8_t *) "TFTLCD TEST");
-                Lcd::LCD_ShowString(30, 90, 200, 16, 16, (uint8_t *) "ATOM@ALIENTEK");
+                Lcd::LCD_ShowString(30, 90, 200, 16, 16, (uint8_t *) "ZJU-UIUC Institude");
                 Lcd::LCD_ShowString(30,110,200,16,16,lcd_id);
-                Lcd::LCD_ShowString(30, 130, 200, 12, 12, (uint8_t *) "2014/5/4");
-                Lcd::LCD_Draw_Circle(50,50,50);
-                x++;
-                if(x==12)x=0;
-                chThdSleepMilliseconds(1000);
+                Lcd::LCD_ShowString(30, 130, 200, 12, 12, (uint8_t *) "2023/7/5");
+//                x++;
+//                if(x==12)x=0;
+                chThdSleepMilliseconds(5000);
             }
         }
     };

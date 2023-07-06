@@ -44,19 +44,20 @@ int main(){
     halInit();
     Led::red_on();
     chibios_rt::System::init();
-
     Shell::start(LOWPRIO);
 
     can1.start(NORMALPRIO+3);
     can2.start(NORMALPRIO+4);
     flash_light_thread.start(NORMALPRIO);
-    CANMotorController::start(LOWPRIO+1,LOWPRIO+2,&can1,&can2);
+
     CANMotorCFG::enable_v2i[CANMotorCFG::MOTOR_ONE] = true;
-    CANMotorFeedback feedback = CANMotorIF::motor_feedback[CANMotorCFG::MOTOR_ONE];
+    CANMotorController::start(HIGHPRIO-1,HIGHPRIO-2,&can1,&can2);
 
-    print_thread.start(LOWPRIO+5);
+    //CANMotorFeedback feedback = CANMotorIF::motor_feedback[CANMotorCFG::MOTOR_ONE];
 
-    CANMotorController::set_target_vel(CANMotorCFG::MOTOR_ONE,100);
+    print_thread.start(NORMALPRIO-1);
+
+    CANMotorController::set_target_vel(CANMotorCFG::MOTOR_ONE,1000);
 
 #if CH_CFG_NO_IDLE_THREAD // see chconf.h for what this #define means
     // ChibiOS idle thread has been disabled, main() should implement infinite loop
