@@ -104,6 +104,16 @@ target_include_directories(MOTOR PRIVATE dev/application/motor
         dev/interface/shell)
 target_compile_definitions(MOTOR PRIVATE MOTOR)
 
+add_executable(UART
+        dev/application/usb/usb.cpp
+)
+target_compile_definitions(UART PRIVATE UART)
+
+add_executable(RUDDER_TEST
+        dev/interface/rudder/rudder_test_main.cpp
+        dev/interface/rudder/rudder_interface.cpp)
+target_include_directories(RUDDER_TEST  PRIVATE dev/interface/rudder)
+target_compile_definitions(RUDDER_TEST  PRIVATE RUDDER_TEST )
 # ================================= Post Configurations for all targets =================================
 
 # Make all targets compile to this filename to allow upload script to work properly

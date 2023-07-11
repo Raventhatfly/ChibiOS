@@ -2,6 +2,8 @@ D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/LIGHT_LED.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/PLAY_SOUND.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/MOTOR.dir
+D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/UART.dir
+D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/RUDDER_TEST.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir

@@ -58,7 +58,7 @@
  * MCU type as defined in the ST header.
  */
 #define STM32F427xx
-
+#define BOARD_OTG_NOVBUSSENS        /* This is vital if you want to use USB*/
 /*
  * IO pins assignments.
  */
@@ -125,7 +125,7 @@
 #define GPIOD_PIN9                  9U
 #define CAN1_TX0                 10U
 #define CAN1_TX1                 11U
-#define GPIOD_LED4                  12U
+#define PWM_RUDDER                  12U
 #define GPIOD_LED3                  13U
 #define GPIOD_LED5                  14U
 #define GPIOD_LED6                  15U
@@ -671,7 +671,7 @@
                                      PIN_MODE_INPUT(GPIOD_PIN9) |           \
                                      PIN_MODE_INPUT(CAN1_TX0) |          \
                                      PIN_MODE_INPUT(CAN1_TX1) |          \
-                                     PIN_MODE_OUTPUT(GPIOD_LED4) |          \
+                                     PIN_MODE_ALTERNATE(PWM_RUDDER) |          \
                                      PIN_MODE_OUTPUT(GPIOD_LED3) |          \
                                      PIN_MODE_OUTPUT(GPIOD_LED5) |          \
                                      PIN_MODE_OUTPUT(GPIOD_LED6))
@@ -687,7 +687,7 @@
                                      PIN_OTYPE_PUSHPULL(GPIOD_PIN9) |       \
                                      PIN_OTYPE_PUSHPULL(CAN1_TX0) |      \
                                      PIN_OTYPE_PUSHPULL(CAN1_TX1) |      \
-                                     PIN_OTYPE_PUSHPULL(GPIOD_LED4) |       \
+                                     PIN_OTYPE_PUSHPULL(PWM_RUDDER) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOD_LED3) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOD_LED5) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOD_LED6))
@@ -703,7 +703,7 @@
                                      PIN_OSPEED_HIGH(GPIOD_PIN9) |          \
                                      PIN_OSPEED_HIGH(CAN1_TX0) |         \
                                      PIN_OSPEED_HIGH(CAN1_TX1) |         \
-                                     PIN_OSPEED_HIGH(GPIOD_LED4) |          \
+                                     PIN_OSPEED_HIGH(PWM_RUDDER) |          \
                                      PIN_OSPEED_HIGH(GPIOD_LED3) |          \
                                      PIN_OSPEED_HIGH(GPIOD_LED5) |          \
                                      PIN_OSPEED_HIGH(GPIOD_LED6))
@@ -719,7 +719,7 @@
                                      PIN_PUPDR_PULLUP(GPIOD_PIN9) |         \
                                      PIN_PUPDR_PULLUP(CAN1_TX0) |        \
                                      PIN_PUPDR_PULLUP(CAN1_TX1) |        \
-                                     PIN_PUPDR_FLOATING(GPIOD_LED4) |       \
+                                     PIN_PUPDR_FLOATING(PWM_RUDDER) |       \
                                      PIN_PUPDR_FLOATING(GPIOD_LED3) |       \
                                      PIN_PUPDR_FLOATING(GPIOD_LED5) |       \
                                      PIN_PUPDR_FLOATING(GPIOD_LED6))
@@ -735,7 +735,7 @@
                                      PIN_ODR_HIGH(GPIOD_PIN9) |             \
                                      PIN_ODR_HIGH(CAN1_TX0) |            \
                                      PIN_ODR_HIGH(CAN1_TX1) |            \
-                                     PIN_ODR_LOW(GPIOD_LED4) |              \
+                                     PIN_ODR_LOW(PWM_RUDDER) |              \
                                      PIN_ODR_LOW(GPIOD_LED3) |              \
                                      PIN_ODR_LOW(GPIOD_LED5) |              \
                                      PIN_ODR_LOW(GPIOD_LED6))
@@ -751,7 +751,7 @@
                                      PIN_AFIO_AF(GPIOD_PIN9, 0U) |          \
                                      PIN_AFIO_AF(CAN1_TX0, 0U) |         \
                                      PIN_AFIO_AF(CAN1_TX1, 0U) |         \
-                                     PIN_AFIO_AF(GPIOD_LED4, 0U) |          \
+                                     PIN_AFIO_AF(PWM_RUDDER, 2U) |          \
                                      PIN_AFIO_AF(GPIOD_LED3, 0U) |          \
                                      PIN_AFIO_AF(GPIOD_LED5, 0U) |          \
                                      PIN_AFIO_AF(GPIOD_LED6, 0U))

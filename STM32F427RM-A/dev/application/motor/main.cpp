@@ -28,15 +28,18 @@ void flahsLightThread::main(){
     }
 }
 
-class printThread: public BaseStaticThread<128>{
+class printThread: public BaseStaticThread<512>{
 private:
     CANMotorFeedback feedback;
     void main() final{
-        feedback = CANMotorIF::motor_feedback[CANMotorCFG::MOTOR_ONE];
-        //chprintf((BaseSequentialStream*)&USBD1,"%f\n\r",feedback.accumulate_angle());
-        //Shell::printf("%f\n\r",feedback.accumulate_angle());
-        LOG("%f\n\r",feedback.accumulate_angle());
-        chThdSleepMilliseconds(500);
+        setName("print");
+        while(!shouldTerminate()){
+            feedback = CANMotorIF::motor_feedback[CANMotorCFG::MOTOR_ONE];
+            LOG("%f\n\r",feedback.accumulate_angle());
+            chprintf((BaseSequentialStream*)&USBSerialIF::SDU,"hello\r\n");
+            chThdSleepMilliseconds(500);
+        }
+
     }
 }print_thread;
 
@@ -48,16 +51,25 @@ int main(){
 
     can1.start(NORMALPRIO+3);
     can2.start(NORMALPRIO+4);
-    flash_light_thread.start(NORMALPRIO);
+    flash_light_thread.start(NORMALPRIO-1);
 
     CANMotorCFG::enable_v2i[CANMotorCFG::MOTOR_ONE] = true;
     CANMotorController::start(HIGHPRIO-1,HIGHPRIO-2,&can1,&can2);
 
+    //LOG("1\r\n");
+//    Shell::printf("hello\r\n");
+
+
     //CANMotorFeedback feedback = CANMotorIF::motor_feedback[CANMotorCFG::MOTOR_ONE];
 
-    print_thread.start(NORMALPRIO-1);
+    print_thread.start(HIGHPRIO);
+
 
     CANMotorController::set_target_vel(CANMotorCFG::MOTOR_ONE,1000);
+
+    chThdSleepSeconds(5);
+    chprintf((BaseSequentialStream*)&USBSerialIF::SDU,"hello world\r\n");
+
 
 #if CH_CFG_NO_IDLE_THREAD // see chconf.h for what this #define means
     // ChibiOS idle thread has been disabled, main() should implement infinite loop

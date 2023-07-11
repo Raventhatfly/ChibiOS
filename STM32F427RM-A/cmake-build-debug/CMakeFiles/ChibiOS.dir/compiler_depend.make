@@ -119,6 +119,7 @@ CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj: D:/robomaster/ChibiOS/STM32F42
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -366,6 +367,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj: D:/robomaster/ChibiO
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -496,6 +498,7 @@ CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj: D:/robomaster/Chibi
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -696,6 +699,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -825,6 +829,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -954,6 +959,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1083,6 +1089,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj: D:/robomast
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1212,6 +1219,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1341,6 +1349,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj: D:/robom
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1470,6 +1479,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1613,6 +1623,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1756,6 +1767,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -1885,6 +1897,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj: D:/r
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2014,6 +2027,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2157,6 +2171,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj: D:/robom
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2286,6 +2301,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2415,6 +2431,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2544,6 +2561,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj: D:/rob
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2673,6 +2691,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2802,6 +2821,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -2931,6 +2951,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3060,6 +3081,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj: D:/r
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3189,6 +3211,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj: D:/rob
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3318,6 +3341,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj: D:/robom
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3461,6 +3485,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj: D:/roboma
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3590,6 +3615,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj: D:/robomaster
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3719,6 +3745,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj: D:/robomast
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -3880,6 +3907,7 @@ CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj: D:/robomaster/Chib
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4009,6 +4037,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4138,6 +4167,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_adc.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4281,6 +4311,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj: D:/robomaster/ChibiOS/STM32
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4410,6 +4441,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4539,6 +4571,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj: D:/robomaster/ChibiOS/STM32F
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4668,6 +4701,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4797,6 +4831,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -4926,6 +4961,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.obj: D:/robomaster/ChibiOS/STM32F4
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5056,6 +5092,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_gpt.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5185,6 +5222,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2c.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5314,6 +5352,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2s.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5443,6 +5482,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_icu.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5572,6 +5612,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_mac.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5715,6 +5756,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmc_spi.c.obj: D:/robomaster/ChibiOS/STM32
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5844,6 +5886,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmcsd.c.obj: D:/robomaster/ChibiOS/STM32F4
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -5973,6 +6016,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_pal.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6102,6 +6146,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_pwm.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6245,6 +6290,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_queues.c.obj: D:/robomaster/ChibiOS/STM32F
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6374,6 +6420,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_rtc.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6517,6 +6564,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdc.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6646,6 +6694,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial.c.obj: D:/robomaster/ChibiOS/STM32F
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6775,6 +6824,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial_usb.c.obj: D:/robomaster/ChibiOS/ST
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -6904,6 +6954,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7033,6 +7084,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_spi.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7162,6 +7214,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_st.c.obj: D:/robomaster/ChibiOS/STM32F427R
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7291,6 +7344,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.obj: D:/robomaster/ChibiOS/STM32F42
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7420,6 +7474,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_uart.c.obj: D:/robomaster/ChibiOS/STM32F42
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7563,6 +7618,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7692,6 +7748,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj: D:/robomaster/ChibiOS/STM32F427
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -7821,6 +7878,7 @@ CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj: D:/robomaster/ChibiOS/STM32F42
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_spi.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_trng.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_uart.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal_usb.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/OTGv1/stm32_otg.h \
@@ -9875,6 +9933,8 @@ D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg/mcuconf.h:
 D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/hal_lld.h:
 
 D:/robomaster/ChibiOS/STM32F427RM-A/os/rt/src/chrfcu.c:
+
+D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.h:
 
 D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/STM32F4xx/stm32_registry.h:
 

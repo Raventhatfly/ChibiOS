@@ -168,6 +168,32 @@ MOTOR/fast:
 .PHONY : MOTOR/fast
 
 #=============================================================================
+# Target rules for targets named UART
+
+# Build rule for target.
+UART: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 UART
+.PHONY : UART
+
+# fast build rule for target.
+UART/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UART.dir\build.make CMakeFiles/UART.dir/build
+.PHONY : UART/fast
+
+#=============================================================================
+# Target rules for targets named RUDDER_TEST
+
+# Build rule for target.
+RUDDER_TEST: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 RUDDER_TEST
+.PHONY : RUDDER_TEST
+
+# fast build rule for target.
+RUDDER_TEST/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/build
+.PHONY : RUDDER_TEST/fast
+
+#=============================================================================
 # Target rules for targets named CMSIS_DSP
 
 # Build rule for target.
@@ -275,6 +301,30 @@ dev/application/play_sound/paly_sound.s: dev/application/play_sound/paly_sound.c
 dev/application/play_sound/paly_sound.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/application/play_sound/paly_sound.cpp.s
 .PHONY : dev/application/play_sound/paly_sound.cpp.s
+
+dev/application/usb/usb.obj: dev/application/usb/usb.cpp.obj
+.PHONY : dev/application/usb/usb.obj
+
+# target to build an object file
+dev/application/usb/usb.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UART.dir\build.make CMakeFiles/UART.dir/dev/application/usb/usb.cpp.obj
+.PHONY : dev/application/usb/usb.cpp.obj
+
+dev/application/usb/usb.i: dev/application/usb/usb.cpp.i
+.PHONY : dev/application/usb/usb.i
+
+# target to preprocess a source file
+dev/application/usb/usb.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UART.dir\build.make CMakeFiles/UART.dir/dev/application/usb/usb.cpp.i
+.PHONY : dev/application/usb/usb.cpp.i
+
+dev/application/usb/usb.s: dev/application/usb/usb.cpp.s
+.PHONY : dev/application/usb/usb.s
+
+# target to generate assembly for a file
+dev/application/usb/usb.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\UART.dir\build.make CMakeFiles/UART.dir/dev/application/usb/usb.cpp.s
+.PHONY : dev/application/usb/usb.cpp.s
 
 dev/board_cfg/board.obj: dev/board_cfg/board.c.obj
 .PHONY : dev/board_cfg/board.obj
@@ -470,6 +520,54 @@ dev/interface/led/led.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/dev/interface/led/led.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/dev/interface/led/led.cpp.s
 .PHONY : dev/interface/led/led.cpp.s
+
+dev/interface/rudder/rudder_interface.obj: dev/interface/rudder/rudder_interface.cpp.obj
+.PHONY : dev/interface/rudder/rudder_interface.obj
+
+# target to build an object file
+dev/interface/rudder/rudder_interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/dev/interface/rudder/rudder_interface.cpp.obj
+.PHONY : dev/interface/rudder/rudder_interface.cpp.obj
+
+dev/interface/rudder/rudder_interface.i: dev/interface/rudder/rudder_interface.cpp.i
+.PHONY : dev/interface/rudder/rudder_interface.i
+
+# target to preprocess a source file
+dev/interface/rudder/rudder_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/dev/interface/rudder/rudder_interface.cpp.i
+.PHONY : dev/interface/rudder/rudder_interface.cpp.i
+
+dev/interface/rudder/rudder_interface.s: dev/interface/rudder/rudder_interface.cpp.s
+.PHONY : dev/interface/rudder/rudder_interface.s
+
+# target to generate assembly for a file
+dev/interface/rudder/rudder_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/dev/interface/rudder/rudder_interface.cpp.s
+.PHONY : dev/interface/rudder/rudder_interface.cpp.s
+
+dev/interface/rudder/rudder_test_main.obj: dev/interface/rudder/rudder_test_main.cpp.obj
+.PHONY : dev/interface/rudder/rudder_test_main.obj
+
+# target to build an object file
+dev/interface/rudder/rudder_test_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/dev/interface/rudder/rudder_test_main.cpp.obj
+.PHONY : dev/interface/rudder/rudder_test_main.cpp.obj
+
+dev/interface/rudder/rudder_test_main.i: dev/interface/rudder/rudder_test_main.cpp.i
+.PHONY : dev/interface/rudder/rudder_test_main.i
+
+# target to preprocess a source file
+dev/interface/rudder/rudder_test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/dev/interface/rudder/rudder_test_main.cpp.i
+.PHONY : dev/interface/rudder/rudder_test_main.cpp.i
+
+dev/interface/rudder/rudder_test_main.s: dev/interface/rudder/rudder_test_main.cpp.s
+.PHONY : dev/interface/rudder/rudder_test_main.s
+
+# target to generate assembly for a file
+dev/interface/rudder/rudder_test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\RUDDER_TEST.dir\build.make CMakeFiles/RUDDER_TEST.dir/dev/interface/rudder/rudder_test_main.cpp.s
+.PHONY : dev/interface/rudder/rudder_test_main.cpp.s
 
 dev/interface/shell/printf.obj: dev/interface/shell/printf.c.obj
 .PHONY : dev/interface/shell/printf.obj
@@ -2716,6 +2814,8 @@ help:
 	@echo ... LIGHT_LED
 	@echo ... MOTOR
 	@echo ... PLAY_SOUND
+	@echo ... RUDDER_TEST
+	@echo ... UART
 	@echo ... dev/application/light_led/main.obj
 	@echo ... dev/application/light_led/main.i
 	@echo ... dev/application/light_led/main.s
@@ -2728,6 +2828,9 @@ help:
 	@echo ... dev/application/play_sound/paly_sound.obj
 	@echo ... dev/application/play_sound/paly_sound.i
 	@echo ... dev/application/play_sound/paly_sound.s
+	@echo ... dev/application/usb/usb.obj
+	@echo ... dev/application/usb/usb.i
+	@echo ... dev/application/usb/usb.s
 	@echo ... dev/board_cfg/board.obj
 	@echo ... dev/board_cfg/board.i
 	@echo ... dev/board_cfg/board.s
@@ -2752,6 +2855,12 @@ help:
 	@echo ... dev/interface/led/led.obj
 	@echo ... dev/interface/led/led.i
 	@echo ... dev/interface/led/led.s
+	@echo ... dev/interface/rudder/rudder_interface.obj
+	@echo ... dev/interface/rudder/rudder_interface.i
+	@echo ... dev/interface/rudder/rudder_interface.s
+	@echo ... dev/interface/rudder/rudder_test_main.obj
+	@echo ... dev/interface/rudder/rudder_test_main.i
+	@echo ... dev/interface/rudder/rudder_test_main.s
 	@echo ... dev/interface/shell/printf.obj
 	@echo ... dev/interface/shell/printf.i
 	@echo ... dev/interface/shell/printf.s

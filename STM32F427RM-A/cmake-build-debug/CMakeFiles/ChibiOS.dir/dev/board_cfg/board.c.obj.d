@@ -117,6 +117,7 @@ CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj: \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_spi.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_trng.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_uart.h \
+ d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\usartv1\hal_uart_lld.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\include\hal_usb.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\otgv1\hal_usb_lld.h \
  d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\otgv1\stm32_otg.h \

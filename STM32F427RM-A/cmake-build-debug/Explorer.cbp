@@ -585,6 +585,292 @@
 					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="UART">
+				<Option output="D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUART"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;UART&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/license"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/portability/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./dev/board"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/lib"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/rt/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/oslib/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARM-common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/various/cpp_wrappers"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/lib/streams"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/buzzer"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 UART"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="UART/fast">
+				<Option output="D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUART"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;UART&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/license"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/portability/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./dev/board"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/lib"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/rt/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/oslib/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARM-common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/various/cpp_wrappers"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/lib/streams"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/buzzer"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 UART/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUDDER_TEST">
+				<Option output="D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRUDDER_TEST"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;RUDDER_TEST&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/license"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/portability/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./dev/board"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/lib"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/rt/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/oslib/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARM-common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/various/cpp_wrappers"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/lib/streams"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/buzzer"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/rudder"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 RUDDER_TEST"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="RUDDER_TEST/fast">
+				<Option output="D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DRUDDER_TEST"/>
+					<Add option="-DBUILD_TARGET_NAME=&quot;RUDDER_TEST&quot;"/>
+					<Add option="-DARM_MATH_CM4"/>
+					<Add option="-DARM_MATH_MATRIX_CHECK"/>
+					<Add option="-DARM_MATH_ROUNDING"/>
+					<Add option="-D__FPU_PRESENT=1U"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/license"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/portability/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/compilers/GCC"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/devices/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ARM/CMSIS/Core/Include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ST/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/common/ARMCMx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/STM32F4xx"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/ADCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/CANv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DMAv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/EXTIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/GPIOv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/I2Cv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/MACv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/OTGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/QUADSPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/RTCv2"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SPIv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SDIOv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SYSTICKv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/TIMv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USART"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USARTv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/xWDGv1"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./dev/board"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/rt-nil"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/lib"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/rt/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/oslib/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARM-common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARMv7-M"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/various/cpp_wrappers"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/lib/streams"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/common"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/buzzer"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/rudder"/>
+					<Add directory="D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/arm-none-eabi"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include/c++/10.3.1/backward"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/include-fixed"/>
+					<Add directory="c:\program files (x86)\gnu arm embedded toolchain\10 2021.10\bin\../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 RUDDER_TEST/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug"/>
 				<Option type="4"/>
@@ -734,511 +1020,715 @@
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/compilers/GCC/chcoreasm.S.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt0_v7m.S.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt1.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/vectors.S.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_adc.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_gpt.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2c.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2s.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_icu.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mac.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmc_spi.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmcsd.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_pal.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_pwm.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_queues.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_rtc.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdc.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial_usb.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_spi.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_st.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_uart.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/CommonTables/arm_common_tables.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/CommonTables/arm_const_structs.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/FastMathFunctions/arm_cos_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/FastMathFunctions/arm_sin_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_add_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_cmplx_mult_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_init_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_inverse_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_mult_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_scale_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_sub_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir/dsp/src/MatrixFunctions/arm_mat_trans_f32.c.obj">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
 			<Option target="MOTOR"/>
+			<Option target="UART"/>
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/src/CommonTables/arm_common_tables.c">
 			<Option target="CMSIS_DSP"/>
@@ -1291,6 +1781,9 @@
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/play_sound/paly_sound.cpp">
 			<Option target="PLAY_SOUND"/>
 		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/usb/usb.cpp">
+			<Option target="UART"/>
+		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg/board.c">
 			<Option target="ChibiOS"/>
 		</Unit>
@@ -1340,6 +1833,15 @@
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led/led.h">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>
+		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/rudder/rudder_interface.cpp">
+			<Option target="RUDDER_TEST"/>
+		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/rudder/rudder_interface.h">
+			<Option target="RUDDER_TEST"/>
+		</Unit>
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/rudder/rudder_test_main.cpp">
+			<Option target="RUDDER_TEST"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c">
 			<Option target="MOTOR"/>

@@ -22,7 +22,9 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
 					]
 				},
 				{
@@ -57,7 +59,9 @@
 						1,
 						2,
 						3,
-						4
+						4,
+						5,
+						6
 					]
 				}
 			],
@@ -73,29 +77,43 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ChibiOS-Debug-f48ff8ecfc9bae5f3b76.json",
+					"jsonFile" : "target-ChibiOS-Debug-97f1dd894893f15a89c5.json",
 					"name" : "ChibiOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LIGHT_LED-Debug-2ca47a57b42b686d9419.json",
+					"jsonFile" : "target-LIGHT_LED-Debug-7d5660cc64169abe3ab5.json",
 					"name" : "LIGHT_LED",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "MOTOR::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MOTOR-Debug-86eafdba36533f9394b2.json",
+					"jsonFile" : "target-MOTOR-Debug-8cfea86b586c8f39e700.json",
 					"name" : "MOTOR",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PLAY_SOUND-Debug-63bcd98c77cb7236fc8f.json",
+					"jsonFile" : "target-PLAY_SOUND-Debug-6ed9335cba638455e319.json",
 					"name" : "PLAY_SOUND",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RUDDER_TEST::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RUDDER_TEST-Debug-3319ff6a2e99892108d1.json",
+					"name" : "RUDDER_TEST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UART::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UART-Debug-b9c4c234ef9da989d1f6.json",
+					"name" : "UART",
 					"projectIndex" : 0
 				}
 			]

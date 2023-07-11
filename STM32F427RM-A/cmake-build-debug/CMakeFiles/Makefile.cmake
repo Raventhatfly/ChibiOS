@@ -54,5 +54,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/LIGHT_LED.dir/DependInfo.cmake"
   "CMakeFiles/PLAY_SOUND.dir/DependInfo.cmake"
   "CMakeFiles/MOTOR.dir/DependInfo.cmake"
+  "CMakeFiles/UART.dir/DependInfo.cmake"
+  "CMakeFiles/RUDDER_TEST.dir/DependInfo.cmake"
   "cmsis/CMakeFiles/CMSIS_DSP.dir/DependInfo.cmake"
   )
