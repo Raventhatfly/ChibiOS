@@ -10,30 +10,21 @@
 
 class Rudder{
 public:
-    /**
- * @brief   Enables a PWM channel.
- * @pre     The PWM unit must have been activated using @p pwmStart().
- * @post    The channel is active using the specified configuration.
- * @note    Depending on the hardware implementation this function has
- *          effect starting on the next cycle (recommended implementation)
- *          or immediately (fallback implementation).
- *
- * @param[in] pwmp      pointer to a @p PWMDriver object
- * @param[in] channel   PWM channel identifier (0...channels-1)
- * @param[in] width     PWM pulse width as clock pulses number
- *
- * @api
- * TODO: to be modified later
- */
-    Rudder(PWMDriver* driver,PWMConfig* config,pwmchannel_t channel);
+    typedef enum{
+        MG995,
+        RUDDER_TYPE_CNT
+    }rudderType_t;
+
+    Rudder(PWMDriver* driver,PWMConfig* config,pwmchannel_t channel, rudderType_t rudderType);
     ~Rudder();
     void start();
     void stop();
     void set_rudder_angle(int angle);
+
 private:
     PWMConfig pwm_default_config = {
-            10000,
-            100, // Default playing_note: 1Hz
+            10000,    // frequency 10000Hz
+            100,        // 10 ms, 1/10000s * 100 = 0.01s = 10ms
             nullptr,
             {
                     {PWM_OUTPUT_ACTIVE_HIGH, nullptr},  // it's all CH1 for current support boards
@@ -42,11 +33,13 @@ private:
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr}
             },
             0,
+            0,
             0
     };
     PWMDriver * driver_;
     PWMConfig * config_;
     pwmchannel_t channel_;
+    rudderType_t rudderType_;
 };
 
 #endif //EXPLORER_RUDDER_INTERFACE_H
