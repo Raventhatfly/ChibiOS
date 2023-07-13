@@ -114,6 +114,31 @@ add_executable(RUDDER_TEST
         dev/interface/rudder/rudder_interface.cpp)
 target_include_directories(RUDDER_TEST  PRIVATE dev/interface/rudder)
 target_compile_definitions(RUDDER_TEST  PRIVATE RUDDER_TEST )
+
+add_executable(DAMIAO
+        dev/interface/damiao_motor/can_motor_controller.cpp
+        dev/interface/damiao_motor/can_motor_feedback.cpp
+        dev/interface/damiao_motor/can_motor_interface.cpp
+        dev/interface/damiao_motor/can_motor_config.cpp
+        dev/interface/damiao_motor/main.cpp
+        dev/interface/can/can_interface.cpp)
+target_include_directories(DAMIAO PRIVATE
+        dev/interface/damiao_motor
+        dev/interface/can
+        dev/module)
+target_compile_definitions(DAMIAO PRIVATE DAMIAO )
+
+add_executable(DAMIAO_TEST
+        ${SHELL_SRC}
+        ${USB_SRC}
+        dev/application/damiao_motor/main.cpp
+        dev/interface/can/can_interface.cpp
+        )
+target_include_directories(DAMIAO_TEST PRIVATE dev/interface/can
+        dev/application/damiao_motor
+        dev/module
+        dev/interface/shell)
+target_compile_definitions(DAMIAO_TEST PRIVATE DAMIAO_TEST )
 # ================================= Post Configurations for all targets =================================
 
 # Make all targets compile to this filename to allow upload script to work properly

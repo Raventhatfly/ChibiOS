@@ -68,6 +68,8 @@ all: CMakeFiles/PLAY_SOUND.dir/all
 all: CMakeFiles/MOTOR.dir/all
 all: CMakeFiles/UART.dir/all
 all: CMakeFiles/RUDDER_TEST.dir/all
+all: CMakeFiles/DAMIAO.dir/all
+all: CMakeFiles/DAMIAO_TEST.dir/all
 all: cmsis/all
 .PHONY : all
 
@@ -82,6 +84,8 @@ clean: CMakeFiles/PLAY_SOUND.dir/clean
 clean: CMakeFiles/MOTOR.dir/clean
 clean: CMakeFiles/UART.dir/clean
 clean: CMakeFiles/RUDDER_TEST.dir/clean
+clean: CMakeFiles/DAMIAO.dir/clean
+clean: CMakeFiles/DAMIAO_TEST.dir/clean
 clean: cmsis/clean
 .PHONY : clean
 
@@ -107,12 +111,12 @@ cmsis/clean: cmsis/CMakeFiles/CMSIS_DSP.dir/clean
 CMakeFiles/ChibiOS.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\ChibiOS.dir\build.make CMakeFiles/ChibiOS.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79 "Built target ChibiOS"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70 "Built target ChibiOS"
 .PHONY : CMakeFiles/ChibiOS.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ChibiOS.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 70
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 62
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/ChibiOS.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/ChibiOS.dir/rule
@@ -134,12 +138,12 @@ CMakeFiles/LIGHT_LED.dir/all: CMakeFiles/ChibiOS.dir/all
 CMakeFiles/LIGHT_LED.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\LIGHT_LED.dir\build.make CMakeFiles/LIGHT_LED.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=80,81,82 "Built target LIGHT_LED"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=82,83,84 "Built target LIGHT_LED"
 .PHONY : CMakeFiles/LIGHT_LED.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LIGHT_LED.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 82
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 73
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/LIGHT_LED.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/LIGHT_LED.dir/rule
@@ -161,12 +165,12 @@ CMakeFiles/PLAY_SOUND.dir/all: CMakeFiles/ChibiOS.dir/all
 CMakeFiles/PLAY_SOUND.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\PLAY_SOUND.dir\build.make CMakeFiles/PLAY_SOUND.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=93,94,95,96 "Built target PLAY_SOUND"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=94,95,96 "Built target PLAY_SOUND"
 .PHONY : CMakeFiles/PLAY_SOUND.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/PLAY_SOUND.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 83
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 73
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/PLAY_SOUND.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/PLAY_SOUND.dir/rule
@@ -188,12 +192,12 @@ CMakeFiles/MOTOR.dir/all: CMakeFiles/ChibiOS.dir/all
 CMakeFiles/MOTOR.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=83,84,85,86,87,88,89,90,91,92 "Built target MOTOR"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=85,86,87,88,89,90,91,92,93 "Built target MOTOR"
 .PHONY : CMakeFiles/MOTOR.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/MOTOR.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 89
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 79
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/MOTOR.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/MOTOR.dir/rule
@@ -220,7 +224,7 @@ CMakeFiles/UART.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/UART.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 81
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 72
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/UART.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/UART.dir/rule
@@ -247,7 +251,7 @@ CMakeFiles/RUDDER_TEST.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/RUDDER_TEST.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 81
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 72
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/RUDDER_TEST.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/RUDDER_TEST.dir/rule
@@ -262,18 +266,72 @@ CMakeFiles/RUDDER_TEST.dir/clean:
 .PHONY : CMakeFiles/RUDDER_TEST.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/DAMIAO.dir
+
+# All Build rule for target.
+CMakeFiles/DAMIAO.dir/all: CMakeFiles/ChibiOS.dir/all
+CMakeFiles/DAMIAO.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=71,72,73,74,75 "Built target DAMIAO"
+.PHONY : CMakeFiles/DAMIAO.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DAMIAO.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 75
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/DAMIAO.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/DAMIAO.dir/rule
+
+# Convenience name for target.
+DAMIAO: CMakeFiles/DAMIAO.dir/rule
+.PHONY : DAMIAO
+
+# clean rule for target.
+CMakeFiles/DAMIAO.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/clean
+.PHONY : CMakeFiles/DAMIAO.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/DAMIAO_TEST.dir
+
+# All Build rule for target.
+CMakeFiles/DAMIAO_TEST.dir/all: CMakeFiles/ChibiOS.dir/all
+CMakeFiles/DAMIAO_TEST.dir/all: cmsis/CMakeFiles/CMSIS_DSP.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=76,77,78,79,80,81 "Built target DAMIAO_TEST"
+.PHONY : CMakeFiles/DAMIAO_TEST.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/DAMIAO_TEST.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 76
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/DAMIAO_TEST.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
+.PHONY : CMakeFiles/DAMIAO_TEST.dir/rule
+
+# Convenience name for target.
+DAMIAO_TEST: CMakeFiles/DAMIAO_TEST.dir/rule
+.PHONY : DAMIAO_TEST
+
+# clean rule for target.
+CMakeFiles/DAMIAO_TEST.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/clean
+.PHONY : CMakeFiles/DAMIAO_TEST.dir/clean
+
+#=============================================================================
 # Target rules for target cmsis/CMakeFiles/CMSIS_DSP.dir
 
 # All Build rule for target.
 cmsis/CMakeFiles/CMSIS_DSP.dir/all:
 	$(MAKE) $(MAKESILENT) -f cmsis\CMakeFiles\CMSIS_DSP.dir\build.make cmsis/CMakeFiles/CMSIS_DSP.dir/depend
 	$(MAKE) $(MAKESILENT) -f cmsis\CMakeFiles\CMSIS_DSP.dir\build.make cmsis/CMakeFiles/CMSIS_DSP.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target CMSIS_DSP"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target CMSIS_DSP"
 .PHONY : cmsis/CMakeFiles/CMSIS_DSP.dir/all
 
 # Build rule for subdir invocation for target.
 cmsis/CMakeFiles/CMSIS_DSP.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cmsis/CMakeFiles/CMSIS_DSP.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles 0
 .PHONY : cmsis/CMakeFiles/CMSIS_DSP.dir/rule

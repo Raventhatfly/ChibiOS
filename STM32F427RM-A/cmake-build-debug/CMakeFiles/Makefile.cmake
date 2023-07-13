@@ -56,5 +56,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/MOTOR.dir/DependInfo.cmake"
   "CMakeFiles/UART.dir/DependInfo.cmake"
   "CMakeFiles/RUDDER_TEST.dir/DependInfo.cmake"
+  "CMakeFiles/DAMIAO.dir/DependInfo.cmake"
+  "CMakeFiles/DAMIAO_TEST.dir/DependInfo.cmake"
   "cmsis/CMakeFiles/CMSIS_DSP.dir/DependInfo.cmake"
   )

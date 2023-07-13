@@ -24,7 +24,9 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8
 					]
 				},
 				{
@@ -61,7 +63,9 @@
 						3,
 						4,
 						5,
-						6
+						6,
+						7,
+						8
 					]
 				}
 			],
@@ -77,42 +81,56 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ChibiOS-Debug-97f1dd894893f15a89c5.json",
+					"jsonFile" : "target-ChibiOS-Debug-108aa227a68410c108aa.json",
 					"name" : "ChibiOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
+					"id" : "DAMIAO::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DAMIAO-Debug-1e1022ad94a6411bfb2c.json",
+					"name" : "DAMIAO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DAMIAO_TEST::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DAMIAO_TEST-Debug-365f3ddf649d79098c3c.json",
+					"name" : "DAMIAO_TEST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
 					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LIGHT_LED-Debug-7d5660cc64169abe3ab5.json",
+					"jsonFile" : "target-LIGHT_LED-Debug-530abd66013b9e0e551f.json",
 					"name" : "LIGHT_LED",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "MOTOR::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MOTOR-Debug-8cfea86b586c8f39e700.json",
+					"jsonFile" : "target-MOTOR-Debug-59a14599945378e7dce8.json",
 					"name" : "MOTOR",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PLAY_SOUND-Debug-6ed9335cba638455e319.json",
+					"jsonFile" : "target-PLAY_SOUND-Debug-b39802f20115197035dc.json",
 					"name" : "PLAY_SOUND",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "RUDDER_TEST::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RUDDER_TEST-Debug-3319ff6a2e99892108d1.json",
+					"jsonFile" : "target-RUDDER_TEST-Debug-c13599af0bcd9afb6240.json",
 					"name" : "RUDDER_TEST",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "UART::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-UART-Debug-b9c4c234ef9da989d1f6.json",
+					"jsonFile" : "target-UART-Debug-d28524ce0da0c3139967.json",
 					"name" : "UART",
 					"projectIndex" : 0
 				}
