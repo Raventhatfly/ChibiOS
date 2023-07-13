@@ -116,10 +116,9 @@ target_include_directories(RUDDER_TEST  PRIVATE dev/interface/rudder)
 target_compile_definitions(RUDDER_TEST  PRIVATE RUDDER_TEST )
 
 add_executable(DAMIAO
-        dev/interface/damiao_motor/can_motor_controller.cpp
-        dev/interface/damiao_motor/can_motor_feedback.cpp
-        dev/interface/damiao_motor/can_motor_interface.cpp
-        dev/interface/damiao_motor/can_motor_config.cpp
+        dev/interface/damiao_motor/damiao_motor_controller.cpp
+        dev/interface/damiao_motor/damiao_motor_feedback.cpp
+        dev/interface/damiao_motor/damiao_motor_interface.cpp
         dev/interface/damiao_motor/main.cpp
         dev/interface/can/can_interface.cpp)
 target_include_directories(DAMIAO PRIVATE

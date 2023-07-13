@@ -13,33 +13,18 @@
 #ifndef META_INFANTRY_CAN_MOTOR_FEEDBACK_H
 #define META_INFANTRY_CAN_MOTOR_FEEDBACK_H
 
-#include "can_interface.h"
-
-struct CANMotorBase {
-    enum can_channel_t{
-        can_channel_1,
-        can_channel_2
-    } can_channel;
-    int CAN_SID;
-    enum motor_type_t {
-        NONE_MOTOR,
-        M3508,
-        M3508_without_deceleration,
-        GM6020,
-        M2006
-    } motor_type;
-    uint16_t initial_encoder_angle;
-};
+#include "damiao_motor_interface.h"
+#include "damiao_motor_config.h"
 
 /**
- * @author  Chen Qian
+ * @author  Wu Feiyang
  * @brief   Motor interface for single motor.
  * @usage   1. Create a instance. \n
  *          2. Call init() function. \n
  *          3. Pass CANRxFrame to the process_feedback() function.\n
  *          4. Get the available feedback from this class.
  */
-class CANMotorFeedback : public CANMotorBase {
+class DamiaoMotorFeedback{
 public:
 
     /**
@@ -47,7 +32,7 @@ public:
      * @param   motor_type_             The corresponding motor's type.
      * @param   initial_encoder_angle   The encoder's reading at zero pose. Works best when reduce ratio is 1.
      */
-    void init(motor_type_t motor_type_, uint16_t initial_encoder_angle);
+    void init(DamiaoMotorCFG::MotorName motor_name, uint16_t initial_encoder_angle);
 
     /**
      * @brief   [ms]        Last time data updated. Could be used for check CAN network.
@@ -80,23 +65,10 @@ public:
     float accumulate_angle();
 
     /**
-     * @brief               Get the torque constant of the motor.
-     * @return  [Nm/A]      Torque constant of the motor.
-     */
-    float torque_const();
-
-    /**
      * @brief               Get the output torque of the motor.
      * @return  [Nm]        Output torque of the motor.
      */
     float torque();
-
-    /**
-     * @brief               Get the torque current of the motor, from feedback
-     * @return              Torque current in encoder unit.
-     * @details             Range mapping: [-16383~16383] -> [-20A, 20A]
-     */
-    int torque_current();
 
     /**
      * @brief Reset the recorded angle of motor.
@@ -121,12 +93,7 @@ public:
     /*===========================================================================*/
 
     /**
-     * @brief Motor's type. Motor supported: M3508, M3508 without reducer. M2006, GM6020.
-     */
-    motor_type_t motor_type = NONE_MOTOR;
-
-    /**
-     * @brief Angle from encoder, varies from (0 to 8191)
+     * @brief Angle from encoder, varies from
      */
     uint16_t rotor_angle_raw = 0;
 
