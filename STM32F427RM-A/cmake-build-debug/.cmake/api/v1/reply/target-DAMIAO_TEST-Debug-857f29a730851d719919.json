@@ -16,6 +16,7 @@
 			"target_compile_definitions",
 			"include_directories",
 			"include",
+			"target_include_directories",
 			"target_sources"
 		],
 		"files" : 
@@ -31,25 +32,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 107,
+				"line" : 130,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 158,
+				"line" : 157,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 149,
+				"line" : 148,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 110,
+				"line" : 140,
 				"parent" : 0
 			},
 			{
@@ -173,7 +174,13 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 155,
+				"line" : 136,
+				"parent" : 0
+			},
+			{
+				"command" : 7,
+				"file" : 0,
+				"line" : 154,
 				"parent" : 0
 			}
 		]
@@ -206,11 +213,11 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "BUILD_TARGET_NAME=\"UART\""
+					"define" : "BUILD_TARGET_NAME=\"DAMIAO_TEST\""
 				},
 				{
 					"backtrace" : 4,
-					"define" : "UART"
+					"define" : "DAMIAO_TEST"
 				},
 				{
 					"backtrace" : 2,
@@ -392,6 +399,18 @@
 					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include"
 				},
 				{
+					"backtrace" : 25,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/damiao_motor"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/module"
+				},
+				{
 					"backtrace" : 2,
 					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/include"
 				}
@@ -407,7 +426,244 @@
 			},
 			"sourceIndexes" : 
 			[
-				0
+				0,
+				3,
+				5,
+				6,
+				7
+			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mcpu=cortex-m4 -fomit-frame-pointer -falign-functions=16 -ffunction-sections -fdata-sections -fno-common -flto -mfloat-abi=hard -mfpu=fpv4-sp-d16  -Wall -Wextra -Wundef -Wstrict-prototypes -DCORTEX_USE_FPU=TRUE -DSHELL_CONFIG_FILE -mthumb -DTHUMB -DTHUMB_PRESENT -mno-thumb-interwork -DTHUMB_NO_INTERWORKING -g -fdiagnostics-color=always"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "ARM_MATH_CM4"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ARM_MATH_MATRIX_CHECK"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "ARM_MATH_ROUNDING"
+				},
+				{
+					"backtrace" : 3,
+					"define" : "BUILD_TARGET_NAME=\"DAMIAO_TEST\""
+				},
+				{
+					"backtrace" : 4,
+					"define" : "DAMIAO_TEST"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "__FPU_PRESENT=1U"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/license"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/portability/GCC"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/compilers/GCC"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/startup/ARMCMx/devices/STM32F4xx"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ARM/CMSIS/Core/Include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ext/ST/STM32F4xx"
+				},
+				{
+					"backtrace" : 9,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/include"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/common/ARMCMx"
+				},
+				{
+					"backtrace" : 10,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/STM32F4xx"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/ADCv2"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/CANv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DACv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/DMAv2"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/EXTIv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/GPIOv2"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/I2Cv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/MACv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/OTGv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/QUADSPIv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/RTCv2"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SPIv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SDIOv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/SYSTICKv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/TIMv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USART"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/USARTv1"
+				},
+				{
+					"backtrace" : 11,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/ports/STM32/LLD/xWDGv1"
+				},
+				{
+					"backtrace" : 12,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./dev/board"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/rt-nil"
+				},
+				{
+					"backtrace" : 13,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/osal/lib"
+				},
+				{
+					"backtrace" : 14,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/rt/include"
+				},
+				{
+					"backtrace" : 15,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/oslib/include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARM-common"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/common/ports/ARMv7-M"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/various/cpp_wrappers"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/./os/hal/lib/streams"
+				},
+				{
+					"backtrace" : 19,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/board_cfg"
+				},
+				{
+					"backtrace" : 20,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/common"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/buzzer"
+				},
+				{
+					"backtrace" : 21,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led"
+				},
+				{
+					"backtrace" : 22,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/usb_com"
+				},
+				{
+					"backtrace" : 23,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell"
+				},
+				{
+					"backtrace" : 24,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/damiao_motor"
+				},
+				{
+					"backtrace" : 25,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/module"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/cmsis/dsp/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				1,
+				2,
+				4
 			]
 		}
 	],
@@ -421,7 +677,7 @@
 			"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee"
 		}
 	],
-	"id" : "UART::@6890427a1f51a3e7e1df",
+	"id" : "DAMIAO_TEST::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -437,7 +693,7 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "UART",
+	"name" : "DAMIAO_TEST",
 	"nameOnDisk" : "meta.elf",
 	"paths" : 
 	{
@@ -450,20 +706,20 @@
 			"name" : "Source Files",
 			"sourceIndexes" : 
 			[
-				0
-			]
-		},
-		{
-			"name" : "Object Libraries",
-			"sourceIndexes" : 
-			[
+				0,
 				1,
 				2,
 				3,
 				4,
 				5,
 				6,
-				7,
+				7
+			]
+		},
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
 				8,
 				9,
 				10,
@@ -558,7 +814,14 @@
 				99,
 				100,
 				101,
-				102
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109
 			]
 		}
 	],
@@ -567,545 +830,587 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/application/usb/usb.cpp",
+			"path" : "dev/interface/shell/shell.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "dev/interface/shell/shell_base.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "dev/interface/shell/shell_base_cmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/interface/shell/shell_dbg_cmd.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "dev/interface/shell/printf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/interface/usb_com/usb_serial_interface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/application/damiao_motor/main.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "dev/interface/can/can_interface.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt0_v7m.S.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/vectors.S.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/compilers/GCC/chcoreasm.S.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt1.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_st.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_buffers.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_queues.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_flash.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmcsd.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_adc.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_can.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_crypto.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_dac.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_efl.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_gpt.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2c.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_i2s.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_icu.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mac.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_mmc_spi.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_pal.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_pwm.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_rtc.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sdc.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_serial_usb.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_sio.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_spi.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_trng.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_uart.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_usb.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wdg.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/src/hal_wspi.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/common/ARMCMx/nvic.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/stm32_isr.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/STM32F4xx/hal_efl_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/ADCv2/hal_adc_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/CANv1/hal_can_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DACv1/hal_dac_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/DMAv2/stm32_dma.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/EXTIv1/stm32_exti.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/GPIOv2/hal_pal_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/I2Cv1/hal_i2c_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/MACv1/hal_mac_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/OTGv1/hal_usb_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/QUADSPIv1/hal_wspi_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/RTCv2/hal_rtc_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_i2s_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SDIOv1/hal_sdc_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_gpt_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_icu_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/TIMv1/hal_pwm_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_serial_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/USARTv1/hal_uart_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/xWDGv1/hal_wdg_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/ports/STM32/LLD/SYSTICKv1/hal_st_lld.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/dev/board_cfg/board.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/osal/rt-nil/osal.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chsys.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chrfcu.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chdebug.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chtrace.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chvt.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chschd.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chinstances.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chthreads.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chtm.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chstats.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chregistry.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chsem.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chmtx.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chcond.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chevents.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chmsg.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/rt/src/chdynamic.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmboxes.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmemcore.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmemheaps.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chmempools.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chpipes.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chobjcaches.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chdelegates.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/oslib/src/chfactory.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/common/ports/ARMv7-M/chcore.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/memstreams.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/hal/lib/streams/nullstreams.c.obj",
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 25,
+			"backtrace" : 26,
 			"isGenerated" : true,
 			"path" : "cmake-build-debug/CMakeFiles/ChibiOS.dir/os/various/cpp_wrappers/ch.cpp.obj",
 			"sourceGroupIndex" : 1

@@ -1,5 +1,5 @@
 //
-// Created by Chen Qian on 10/28/21.
+// Created by Wu Feiyang on 7/14/23.
 //
 
 /**
@@ -91,49 +91,27 @@ public:
     /*===========================================================================*/
     /*                          Raw Data for Calculation                         */
     /*===========================================================================*/
+    uint8_t ctr_id;
 
-    /**
-     * @brief Angle from encoder, varies from
-     */
-    uint16_t rotor_angle_raw = 0;
+    uint8_t err_code;
 
-    /**
-     * @brief rpm from encoder.
-     */
-    int16_t rotor_rpm_raw = 0;
+    uint16_t pos_raw;
 
-    /**
-     * @brief Torque current from encoder.
-     */
-    int16_t torque_current_raw = 0;
+    uint16_t vel_raw;
 
-    /**
-     * @brief Temperature feedback from encoder (If support).
-     */
-    uint8_t temperature_raw = 0;
+    uint16_t torque_raw;
 
-    /**
-     * @brief Angle from last loop, to calculate the displacement.
-     */
-    uint16_t last_rotor_angle_raw = 0;
+    uint8_t mos_avg_tempr_raw;
 
-    /**
-     * @brief Attached external reducer's reduce ratio.
-     */
-    float external_reduce_ratio = 1.0;
-
-    /*===========================================================================*/
-    /*                   Constant for processing the feedback                    */
-    /*===========================================================================*/
+    uint8_t rotor_avg_tempr_raw;
 private:
+    uint16_t last_pos_raw;
 
-    static float constexpr M3508_TORQUE_CONST = 0.3;          // 0.3Nm/A  on the data sheet
-    static float constexpr M3508_REDUCE_RATIO = 3591.0/187.0; // 3591/187 on the data sheet
-    static float constexpr M2006_TORQUE_CONST = 1.0;          // 1.0 for feedback as the feedback is its torque.
-    static float constexpr M2006_REDUCE_RATIO = 36.0;         // 36/1     on the data sheet
-    static float constexpr ENCODER_ANGLE_RATIO = 360.0f/8192.0f;
-    static float constexpr ENCODER_CURRENT_RATIO =  20.0/16384.0;//       on the data sheet
+    DamiaoMotorCFG::MotorName motor_name_;
 
+    static float raw2actrual(uint16_t raw,float actual_max,uint8_t bits);
+
+    static uint16_t actual2raw(float actual, float actual_max, uint8_t bits);
 };
 
 

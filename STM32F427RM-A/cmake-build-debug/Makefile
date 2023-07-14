@@ -550,101 +550,77 @@ dev/interface/can_motor/can_motor_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can_motor/can_motor_interface.cpp.s
 .PHONY : dev/interface/can_motor/can_motor_interface.cpp.s
 
-dev/interface/damiao_motor/can_motor_config.obj: dev/interface/damiao_motor/can_motor_config.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_config.obj
+dev/interface/damiao_motor/damiao_motor_controller.obj: dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
+.PHONY : dev/interface/damiao_motor/damiao_motor_controller.obj
 
 # target to build an object file
-dev/interface/damiao_motor/can_motor_config.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_config.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_config.cpp.obj
+dev/interface/damiao_motor/damiao_motor_controller.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
+.PHONY : dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
 
-dev/interface/damiao_motor/can_motor_config.i: dev/interface/damiao_motor/can_motor_config.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_config.i
+dev/interface/damiao_motor/damiao_motor_controller.i: dev/interface/damiao_motor/damiao_motor_controller.cpp.i
+.PHONY : dev/interface/damiao_motor/damiao_motor_controller.i
 
 # target to preprocess a source file
-dev/interface/damiao_motor/can_motor_config.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_config.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_config.cpp.i
+dev/interface/damiao_motor/damiao_motor_controller.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.i
+.PHONY : dev/interface/damiao_motor/damiao_motor_controller.cpp.i
 
-dev/interface/damiao_motor/can_motor_config.s: dev/interface/damiao_motor/can_motor_config.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_config.s
+dev/interface/damiao_motor/damiao_motor_controller.s: dev/interface/damiao_motor/damiao_motor_controller.cpp.s
+.PHONY : dev/interface/damiao_motor/damiao_motor_controller.s
 
 # target to generate assembly for a file
-dev/interface/damiao_motor/can_motor_config.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_config.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_config.cpp.s
+dev/interface/damiao_motor/damiao_motor_controller.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.s
+.PHONY : dev/interface/damiao_motor/damiao_motor_controller.cpp.s
 
-dev/interface/damiao_motor/can_motor_controller.obj: dev/interface/damiao_motor/can_motor_controller.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_controller.obj
+dev/interface/damiao_motor/damiao_motor_feedback.obj: dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
+.PHONY : dev/interface/damiao_motor/damiao_motor_feedback.obj
 
 # target to build an object file
-dev/interface/damiao_motor/can_motor_controller.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_controller.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_controller.cpp.obj
+dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
+.PHONY : dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
 
-dev/interface/damiao_motor/can_motor_controller.i: dev/interface/damiao_motor/can_motor_controller.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_controller.i
+dev/interface/damiao_motor/damiao_motor_feedback.i: dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
+.PHONY : dev/interface/damiao_motor/damiao_motor_feedback.i
 
 # target to preprocess a source file
-dev/interface/damiao_motor/can_motor_controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_controller.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_controller.cpp.i
+dev/interface/damiao_motor/damiao_motor_feedback.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
+.PHONY : dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
 
-dev/interface/damiao_motor/can_motor_controller.s: dev/interface/damiao_motor/can_motor_controller.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_controller.s
+dev/interface/damiao_motor/damiao_motor_feedback.s: dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
+.PHONY : dev/interface/damiao_motor/damiao_motor_feedback.s
 
 # target to generate assembly for a file
-dev/interface/damiao_motor/can_motor_controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_controller.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_controller.cpp.s
+dev/interface/damiao_motor/damiao_motor_feedback.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
+.PHONY : dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
 
-dev/interface/damiao_motor/can_motor_feedback.obj: dev/interface/damiao_motor/can_motor_feedback.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_feedback.obj
+dev/interface/damiao_motor/damiao_motor_interface.obj: dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
+.PHONY : dev/interface/damiao_motor/damiao_motor_interface.obj
 
 # target to build an object file
-dev/interface/damiao_motor/can_motor_feedback.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_feedback.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_feedback.cpp.obj
+dev/interface/damiao_motor/damiao_motor_interface.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
+.PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
 
-dev/interface/damiao_motor/can_motor_feedback.i: dev/interface/damiao_motor/can_motor_feedback.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_feedback.i
-
-# target to preprocess a source file
-dev/interface/damiao_motor/can_motor_feedback.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_feedback.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_feedback.cpp.i
-
-dev/interface/damiao_motor/can_motor_feedback.s: dev/interface/damiao_motor/can_motor_feedback.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_feedback.s
-
-# target to generate assembly for a file
-dev/interface/damiao_motor/can_motor_feedback.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_feedback.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_feedback.cpp.s
-
-dev/interface/damiao_motor/can_motor_interface.obj: dev/interface/damiao_motor/can_motor_interface.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_interface.obj
-
-# target to build an object file
-dev/interface/damiao_motor/can_motor_interface.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_interface.cpp.obj
-.PHONY : dev/interface/damiao_motor/can_motor_interface.cpp.obj
-
-dev/interface/damiao_motor/can_motor_interface.i: dev/interface/damiao_motor/can_motor_interface.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_interface.i
+dev/interface/damiao_motor/damiao_motor_interface.i: dev/interface/damiao_motor/damiao_motor_interface.cpp.i
+.PHONY : dev/interface/damiao_motor/damiao_motor_interface.i
 
 # target to preprocess a source file
-dev/interface/damiao_motor/can_motor_interface.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_interface.cpp.i
-.PHONY : dev/interface/damiao_motor/can_motor_interface.cpp.i
+dev/interface/damiao_motor/damiao_motor_interface.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.i
+.PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.i
 
-dev/interface/damiao_motor/can_motor_interface.s: dev/interface/damiao_motor/can_motor_interface.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_interface.s
+dev/interface/damiao_motor/damiao_motor_interface.s: dev/interface/damiao_motor/damiao_motor_interface.cpp.s
+.PHONY : dev/interface/damiao_motor/damiao_motor_interface.s
 
 # target to generate assembly for a file
-dev/interface/damiao_motor/can_motor_interface.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/can_motor_interface.cpp.s
-.PHONY : dev/interface/damiao_motor/can_motor_interface.cpp.s
+dev/interface/damiao_motor/damiao_motor_interface.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.s
+.PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.s
 
 dev/interface/damiao_motor/main.obj: dev/interface/damiao_motor/main.cpp.obj
 .PHONY : dev/interface/damiao_motor/main.obj
@@ -3051,18 +3027,15 @@ help:
 	@echo ... dev/interface/can_motor/can_motor_interface.obj
 	@echo ... dev/interface/can_motor/can_motor_interface.i
 	@echo ... dev/interface/can_motor/can_motor_interface.s
-	@echo ... dev/interface/damiao_motor/can_motor_config.obj
-	@echo ... dev/interface/damiao_motor/can_motor_config.i
-	@echo ... dev/interface/damiao_motor/can_motor_config.s
-	@echo ... dev/interface/damiao_motor/can_motor_controller.obj
-	@echo ... dev/interface/damiao_motor/can_motor_controller.i
-	@echo ... dev/interface/damiao_motor/can_motor_controller.s
-	@echo ... dev/interface/damiao_motor/can_motor_feedback.obj
-	@echo ... dev/interface/damiao_motor/can_motor_feedback.i
-	@echo ... dev/interface/damiao_motor/can_motor_feedback.s
-	@echo ... dev/interface/damiao_motor/can_motor_interface.obj
-	@echo ... dev/interface/damiao_motor/can_motor_interface.i
-	@echo ... dev/interface/damiao_motor/can_motor_interface.s
+	@echo ... dev/interface/damiao_motor/damiao_motor_controller.obj
+	@echo ... dev/interface/damiao_motor/damiao_motor_controller.i
+	@echo ... dev/interface/damiao_motor/damiao_motor_controller.s
+	@echo ... dev/interface/damiao_motor/damiao_motor_feedback.obj
+	@echo ... dev/interface/damiao_motor/damiao_motor_feedback.i
+	@echo ... dev/interface/damiao_motor/damiao_motor_feedback.s
+	@echo ... dev/interface/damiao_motor/damiao_motor_interface.obj
+	@echo ... dev/interface/damiao_motor/damiao_motor_interface.i
+	@echo ... dev/interface/damiao_motor/damiao_motor_interface.s
 	@echo ... dev/interface/damiao_motor/main.obj
 	@echo ... dev/interface/damiao_motor/main.i
 	@echo ... dev/interface/damiao_motor/main.s

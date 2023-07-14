@@ -22,6 +22,7 @@ public:
     int        slaveID;
     int        mitKp;
     int        mitKd;
+    float      V_max;   // maximum rotation speed. Unit is Rad/s.
 };
 
 class DamiaoMotorCFG{
@@ -32,8 +33,8 @@ public:
         MOTOR_COUNT,
     }motor_usage_t;
     static constexpr DamiaoMotorBase motorCfg[MOTOR_COUNT] = {
-            {can_channel_1,0x00,0x01,0,0},
-            {can_channel_2,0x00,0x01,0,0}
+            {can_channel_1,0x00,0x01,0,0,45},
+            {can_channel_2,0x00,0x01,0,0,45}
     };
 private:
     friend class DamiaoMotorController;

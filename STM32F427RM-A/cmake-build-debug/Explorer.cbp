@@ -2333,28 +2333,22 @@
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can_motor/can_motor_interface.h">
 			<Option target="MOTOR"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_config.cpp">
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_controller.cpp">
 			<Option target="DAMIAO"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_config.h">
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_controller.h">
 			<Option target="DAMIAO"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_controller.cpp">
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_feedback.cpp">
 			<Option target="DAMIAO"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_controller.h">
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_feedback.h">
 			<Option target="DAMIAO"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_feedback.cpp">
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_interface.cpp">
 			<Option target="DAMIAO"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_feedback.h">
-			<Option target="DAMIAO"/>
-		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_interface.cpp">
-			<Option target="DAMIAO"/>
-		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/can_motor_interface.h">
+		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_interface.h">
 			<Option target="DAMIAO"/>
 		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/main.cpp">
