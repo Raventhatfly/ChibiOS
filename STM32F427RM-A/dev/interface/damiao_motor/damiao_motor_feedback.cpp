@@ -28,13 +28,15 @@ void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {
     rotor_avg_tempr_raw = rxmsg->data8[7];
 
     actual_velocity = raw2actrual(vel_raw,DamiaoMotorCFG::motorCfg[motor_name_].V_max,12);
+    actual_angle = raw2actrual(pos_raw,DamiaoMotorCFG::motorCfg[motor_name_].P_max,16);
+    actual_torque = raw2actrual(torque_raw,DamiaoMotorCFG::motorCfg[motor_name_].T_max,12);
 
-    if (actual_angle >= 180.0f) {   // Angle crop
-        actual_angle -= 360.0f;
+    if(actual_angle>=DamiaoMotorCFG::motorCfg[motor_name_].P_max){
+        actual_angle -= 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;
         round_count++;
     }
-    if (actual_angle < -180.0f) {
-        actual_angle += 360.0f;
+    if(actual_angle>=DamiaoMotorCFG::motorCfg[motor_name_].P_max){
+        actual_angle += 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;
         round_count--;
     }
 
@@ -42,11 +44,11 @@ void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {
 }
 
 float DamiaoMotorFeedback::accumulate_angle() {
-    return actual_angle + (float)round_count * 360.0f;
+    return actual_angle + (float)round_count * 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;;
 }
 
-float DamiaoMotorFeedback::torque() {
-    return 0;
+float DamiaoMotorFeedback::torque() const {
+    return actual_torque;
 }
 
 void DamiaoMotorFeedback::reset_accumulate_angle() {
@@ -59,11 +61,11 @@ void DamiaoMotorFeedback::reset_accumulate_angle() {
  *
  **/
 
-float raw2actrual(uint16_t raw,float actual_max, uint8_t bits) {
+float DamiaoMotorFeedback::raw2actrual(uint16_t raw,float actual_max, uint8_t bits) {
     return ((float)(raw - (2 << (bits - 2))) * 2 * actual_max)/(float)(2 << (bits - 1));
 }
 
-uint16_t actual2raw(float actual, float actual_max,uint8_t bits) {
+uint16_t DamiaoMotorFeedback::actual2raw(float actual, float actual_max,uint8_t bits) {
     return (uint16_t)(actual/(2* actual_max) * (float)(2 << (bits - 1))) + (2 << (bits - 2));
 }
 

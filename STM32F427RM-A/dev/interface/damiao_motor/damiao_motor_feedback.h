@@ -48,7 +48,10 @@ public:
      * @brief   [Degree]    Actual motor angle vary from -180 to 180.
      */
     float actual_angle = 0.0f;
-
+    /**
+     * @brief   [Degree]    Actual motor angle vary from -180 to 180.
+     */
+    float actual_torque = 0.0f;
     /**
      * @brief   [rounds]    The number of rounds motor rotate.
      */
@@ -68,7 +71,7 @@ public:
      * @brief               Get the output torque of the motor.
      * @return  [Nm]        Output torque of the motor.
      */
-    float torque();
+    float torque() const;
 
     /**
      * @brief Reset the recorded angle of motor.
