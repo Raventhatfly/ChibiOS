@@ -58,5 +58,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/RUDDER_TEST.dir/DependInfo.cmake"
   "CMakeFiles/DAMIAO.dir/DependInfo.cmake"
   "CMakeFiles/DAMIAO_TEST.dir/DependInfo.cmake"
+  "CMakeFiles/DAMIAO_CTRL.dir/DependInfo.cmake"
   "cmsis/CMakeFiles/CMSIS_DSP.dir/DependInfo.cmake"
   )

@@ -14,9 +14,7 @@
 #define META_DAMIAO_MOTOR_INTERFACE_H
 
 #include "can_interface.h"
-
-#include "damiao_motor_config.h"
-#include "damiao_motor_controller.h"
+#include "damiao_motor_feedback.h"
 
 /**
  * @author Wu Feiyang
@@ -50,22 +48,13 @@
  *               [int] initial_encoder_angle}
  * @endcode TODO: comment needs to be refactored
  */
-
 class DamiaoMotorIF{
 public:
-
-    /**
-     * @brief Damiao Motor Mode
-     */
-    typedef enum motor_mode{
-        MIT_MODE,
-        POS_VEL_MODE,
-        VEL_MODE,
-    }mode_t;
     /**
      * @brief Motors that will be liked with logical motor id.
      */
-    //static DamiaoMotorFeedback motor_feedback[MOTOR_COUNT];
+    static DamiaoMotorFeedback motor_feedback[DamiaoMotorCFG::MOTOR_COUNT];
+    static motor_mode_t motors_mode[DamiaoMotorCFG::MOTOR_COUNT];
 
 private:
 
@@ -74,23 +63,9 @@ private:
      * @param can1_             [in] The can1 channel to use.
      * @param can2_             [in] The can2 channel to use.
      */
-    static void init(CANInterface *can1_, CANInterface *can2_);
 
-    static void start(DamiaoMotorCFG::MotorName motorProfile);
-
-    static void stop(DamiaoMotorCFG::MotorName motorProfile);
-
-    static void set_mode(DamiaoMotorCFG::MotorName motorProfile, mode_t mode);
-
-    static void set_velocity(DamiaoMotorCFG::MotorName motorProfile, float vel);
-
-    static void set_position(DamiaoMotorCFG::MotorName motorProfile, float pos);
-
-    static void set_torque(DamiaoMotorCFG::MotorName motorProfile, float torq);
 
     static CANTxFrame motors_can_tx_frame[DamiaoMotorCFG::MotorName::MOTOR_COUNT];
-
-    static mode_t motors_mode[DamiaoMotorCFG::MotorName::MOTOR_COUNT];
 
     static CANInterface * can1;
 
@@ -117,6 +92,22 @@ private:
         float offset = x_min;
         return (int) ((x-offset)*((float)((1<<bits)-1))/span);
     }
+
+    static void init(CANInterface *can1_, CANInterface *can2_);
+
+    static void start(DamiaoMotorCFG::MotorName motorProfile);
+
+    static void stop(DamiaoMotorCFG::MotorName motorProfile);
+
+    static void set_mode(DamiaoMotorCFG::MotorName motorProfile, motor_mode_t mode);
+
+    static void set_velocity(DamiaoMotorCFG::MotorName motorProfile, float vel);
+
+    static void set_position(DamiaoMotorCFG::MotorName motorProfile, float pos);
+
+    static void set_torque(DamiaoMotorCFG::MotorName motorProfile, float torq);
+
+    static bool postMsg(DamiaoMotorCFG::MotorName motorProfile);
 
     friend class DamiaoMotorController;
 

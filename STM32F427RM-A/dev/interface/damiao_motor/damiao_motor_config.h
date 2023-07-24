@@ -6,14 +6,17 @@
 #define META_DAMIAO_MOTOR_CFG_H
 
 /**
- * Damiao 3410 motor.
+ * Damiao 4310 motor.
  */
 #include "hal.h"
-#include "damiao_motor_controller.h"
 #define can_channel_1 &CAND1
 #define can_channel_2 &CAND2
 
-
+typedef enum motor_mode{
+    MIT_MODE,
+    POS_VEL_MODE,
+    VEL_MODE,
+}motor_mode_t;
 
 class DamiaoMotorBase{
 public:
@@ -24,7 +27,9 @@ public:
     int        mitKd;
     float      V_max;   // maximum rotation speed. Unit is Rad/s.
     float      P_max;   // maximum Position. Unit is Rad.
-    float      T_max;   // maximum rotation speed. Unit is N*m.
+    float      T_max;   // maximum Torque. Unit is N*m.
+    float      initial_encoder_angle;
+    motor_mode_t mode;
 };
 
 class DamiaoMotorCFG{
@@ -35,11 +40,9 @@ public:
         MOTOR_COUNT,
     }motor_usage_t;
     static constexpr DamiaoMotorBase motorCfg[MOTOR_COUNT] = {
-            {can_channel_1,0x00,0x01,0,0,45,PI},
-            {can_channel_2,0x00,0x01,0,0,45,PI}
+            {can_channel_1,0x00,0x01,0,0,45,PI,0.0,0.0,VEL_MODE},
+            {can_channel_2,0x00,0x01,0,0,45,PI,0.0,0.0,VEL_MODE}
     };
-private:
-    friend class DamiaoMotorController;
 };
 
 #endif //META_DAMIAO_MOTOR_CFG_H

@@ -11,10 +11,10 @@
  */
 
 #include "damiao_motor_feedback.h"
-
-void DamiaoMotorFeedback::init(DamiaoMotorCFG::MotorName motor_name, uint16_t initial_encoder_angle) {
+constexpr DamiaoMotorBase DamiaoMotorCFG::motorCfg[DamiaoMotorCFG::MOTOR_COUNT];
+void DamiaoMotorFeedback::init(DamiaoMotorCFG::MotorName motor_name, float initial_encoder_angle) {
     motor_name_ = motor_name;
-    last_pos_raw = initial_encoder_angle;
+//    last_pos_raw = initial_encoder_angle;
 }
 
 void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {
@@ -40,7 +40,7 @@ void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {
         round_count--;
     }
 
-    last_update_time        = SYSTIME;  // Update Time
+    last_update_time   = SYSTIME;  // Update Time
 }
 
 float DamiaoMotorFeedback::accumulate_angle() {

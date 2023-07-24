@@ -13,7 +13,8 @@
 #ifndef META_INFANTRY_CAN_MOTOR_FEEDBACK_H
 #define META_INFANTRY_CAN_MOTOR_FEEDBACK_H
 
-#include "damiao_motor_interface.h"
+//#include "damiao_motor_interface.h"
+#include "common_macro.h"
 #include "damiao_motor_config.h"
 
 /**
@@ -32,7 +33,7 @@ public:
      * @param   motor_type_             The corresponding motor's type.
      * @param   initial_encoder_angle   The encoder's reading at zero pose. Works best when reduce ratio is 1.
      */
-    void init(DamiaoMotorCFG::MotorName motor_name, uint16_t initial_encoder_angle);
+    void init(DamiaoMotorCFG::MotorName motor_name, float initial_encoder_angle);
 
     /**
      * @brief   [ms]        Last time data updated. Could be used for check CAN network.
@@ -108,13 +109,13 @@ public:
 
     uint8_t rotor_avg_tempr_raw;
 private:
-    uint16_t last_pos_raw;
+//    uint16_t last_pos_raw;
 
     DamiaoMotorCFG::MotorName motor_name_;
 
-    static float raw2actrual(uint16_t raw,float actual_max,uint8_t bits);
+    float raw2actrual(uint16_t raw,float actual_max,uint8_t bits);
 
-    static uint16_t actual2raw(float actual, float actual_max, uint8_t bits);
+    uint16_t actual2raw(float actual, float actual_max, uint8_t bits);
 };
 
 

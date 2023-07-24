@@ -134,10 +134,22 @@ add_executable(DAMIAO_TEST
         dev/interface/can/can_interface.cpp
         )
 target_include_directories(DAMIAO_TEST PRIVATE dev/interface/can
-        dev/application/damiao_motor
-        dev/module
-        dev/interface/shell)
+        dev/application/damiao_motor)
 target_compile_definitions(DAMIAO_TEST PRIVATE DAMIAO_TEST )
+
+add_executable(DAMIAO_CTRL
+        ${SHELL_SRC}
+        ${USB_SRC}
+        dev/application/damiao_ctrl/main.cpp
+        dev/interface/can/can_interface.cpp
+        dev/interface/damiao_motor/damiao_motor_feedback.cpp
+        dev/interface/damiao_motor/damiao_motor_controller.cpp
+        dev/interface/damiao_motor/damiao_motor_interface.cpp
+        )
+target_include_directories(DAMIAO_CTRL PRIVATE dev/interface/can
+        dev/application/damiao_ctrl
+        dev/interface/damiao_motor)
+target_compile_definitions(DAMIAO_CTRL PRIVATE DAMIAO_CTRL)
 # ================================= Post Configurations for all targets =================================
 
 # Make all targets compile to this filename to allow upload script to work properly

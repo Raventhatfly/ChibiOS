@@ -220,6 +220,19 @@ DAMIAO_TEST/fast:
 .PHONY : DAMIAO_TEST/fast
 
 #=============================================================================
+# Target rules for targets named DAMIAO_CTRL
+
+# Build rule for target.
+DAMIAO_CTRL: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 DAMIAO_CTRL
+.PHONY : DAMIAO_CTRL
+
+# fast build rule for target.
+DAMIAO_CTRL/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/build
+.PHONY : DAMIAO_CTRL/fast
+
+#=============================================================================
 # Target rules for targets named CMSIS_DSP
 
 # Build rule for target.
@@ -231,6 +244,30 @@ CMSIS_DSP: cmake_check_build_system
 CMSIS_DSP/fast:
 	$(MAKE) $(MAKESILENT) -f cmsis\CMakeFiles\CMSIS_DSP.dir\build.make cmsis/CMakeFiles/CMSIS_DSP.dir/build
 .PHONY : CMSIS_DSP/fast
+
+dev/application/damiao_ctrl/main.obj: dev/application/damiao_ctrl/main.cpp.obj
+.PHONY : dev/application/damiao_ctrl/main.obj
+
+# target to build an object file
+dev/application/damiao_ctrl/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/application/damiao_ctrl/main.cpp.obj
+.PHONY : dev/application/damiao_ctrl/main.cpp.obj
+
+dev/application/damiao_ctrl/main.i: dev/application/damiao_ctrl/main.cpp.i
+.PHONY : dev/application/damiao_ctrl/main.i
+
+# target to preprocess a source file
+dev/application/damiao_ctrl/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/application/damiao_ctrl/main.cpp.i
+.PHONY : dev/application/damiao_ctrl/main.cpp.i
+
+dev/application/damiao_ctrl/main.s: dev/application/damiao_ctrl/main.cpp.s
+.PHONY : dev/application/damiao_ctrl/main.s
+
+# target to generate assembly for a file
+dev/application/damiao_ctrl/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/application/damiao_ctrl/main.cpp.s
+.PHONY : dev/application/damiao_ctrl/main.cpp.s
 
 dev/application/damiao_motor/main.obj: dev/application/damiao_motor/main.cpp.obj
 .PHONY : dev/application/damiao_motor/main.obj
@@ -456,6 +493,7 @@ dev/interface/can/can_interface.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/can/can_interface.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/can/can_interface.cpp.obj
 .PHONY : dev/interface/can/can_interface.cpp.obj
 
 dev/interface/can/can_interface.i: dev/interface/can/can_interface.cpp.i
@@ -466,6 +504,7 @@ dev/interface/can/can_interface.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/can/can_interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/can/can_interface.cpp.i
 .PHONY : dev/interface/can/can_interface.cpp.i
 
 dev/interface/can/can_interface.s: dev/interface/can/can_interface.cpp.s
@@ -476,6 +515,7 @@ dev/interface/can/can_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/can/can_interface.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/can/can_interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/can/can_interface.cpp.s
 .PHONY : dev/interface/can/can_interface.cpp.s
 
 dev/interface/can_motor/can_motor_controller.obj: dev/interface/can_motor/can_motor_controller.cpp.obj
@@ -556,6 +596,7 @@ dev/interface/damiao_motor/damiao_motor_controller.obj: dev/interface/damiao_mot
 # target to build an object file
 dev/interface/damiao_motor/damiao_motor_controller.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
 .PHONY : dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
 
 dev/interface/damiao_motor/damiao_motor_controller.i: dev/interface/damiao_motor/damiao_motor_controller.cpp.i
@@ -564,6 +605,7 @@ dev/interface/damiao_motor/damiao_motor_controller.i: dev/interface/damiao_motor
 # target to preprocess a source file
 dev/interface/damiao_motor/damiao_motor_controller.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.i
 .PHONY : dev/interface/damiao_motor/damiao_motor_controller.cpp.i
 
 dev/interface/damiao_motor/damiao_motor_controller.s: dev/interface/damiao_motor/damiao_motor_controller.cpp.s
@@ -572,6 +614,7 @@ dev/interface/damiao_motor/damiao_motor_controller.s: dev/interface/damiao_motor
 # target to generate assembly for a file
 dev/interface/damiao_motor/damiao_motor_controller.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.s
 .PHONY : dev/interface/damiao_motor/damiao_motor_controller.cpp.s
 
 dev/interface/damiao_motor/damiao_motor_feedback.obj: dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
@@ -580,6 +623,7 @@ dev/interface/damiao_motor/damiao_motor_feedback.obj: dev/interface/damiao_motor
 # target to build an object file
 dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
 .PHONY : dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
 
 dev/interface/damiao_motor/damiao_motor_feedback.i: dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
@@ -588,6 +632,7 @@ dev/interface/damiao_motor/damiao_motor_feedback.i: dev/interface/damiao_motor/d
 # target to preprocess a source file
 dev/interface/damiao_motor/damiao_motor_feedback.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
 .PHONY : dev/interface/damiao_motor/damiao_motor_feedback.cpp.i
 
 dev/interface/damiao_motor/damiao_motor_feedback.s: dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
@@ -596,6 +641,7 @@ dev/interface/damiao_motor/damiao_motor_feedback.s: dev/interface/damiao_motor/d
 # target to generate assembly for a file
 dev/interface/damiao_motor/damiao_motor_feedback.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
 .PHONY : dev/interface/damiao_motor/damiao_motor_feedback.cpp.s
 
 dev/interface/damiao_motor/damiao_motor_interface.obj: dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
@@ -604,6 +650,7 @@ dev/interface/damiao_motor/damiao_motor_interface.obj: dev/interface/damiao_moto
 # target to build an object file
 dev/interface/damiao_motor/damiao_motor_interface.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
 .PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
 
 dev/interface/damiao_motor/damiao_motor_interface.i: dev/interface/damiao_motor/damiao_motor_interface.cpp.i
@@ -612,6 +659,7 @@ dev/interface/damiao_motor/damiao_motor_interface.i: dev/interface/damiao_motor/
 # target to preprocess a source file
 dev/interface/damiao_motor/damiao_motor_interface.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.i
 .PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.i
 
 dev/interface/damiao_motor/damiao_motor_interface.s: dev/interface/damiao_motor/damiao_motor_interface.cpp.s
@@ -620,6 +668,7 @@ dev/interface/damiao_motor/damiao_motor_interface.s: dev/interface/damiao_motor/
 # target to generate assembly for a file
 dev/interface/damiao_motor/damiao_motor_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.s
 .PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.s
 
 dev/interface/damiao_motor/main.obj: dev/interface/damiao_motor/main.cpp.obj
@@ -728,6 +777,7 @@ dev/interface/shell/printf.obj: dev/interface/shell/printf.c.obj
 dev/interface/shell/printf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/printf.c.obj
 .PHONY : dev/interface/shell/printf.c.obj
 
 dev/interface/shell/printf.i: dev/interface/shell/printf.c.i
@@ -737,6 +787,7 @@ dev/interface/shell/printf.i: dev/interface/shell/printf.c.i
 dev/interface/shell/printf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/printf.c.i
 .PHONY : dev/interface/shell/printf.c.i
 
 dev/interface/shell/printf.s: dev/interface/shell/printf.c.s
@@ -746,6 +797,7 @@ dev/interface/shell/printf.s: dev/interface/shell/printf.c.s
 dev/interface/shell/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/printf.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/printf.c.s
 .PHONY : dev/interface/shell/printf.c.s
 
 dev/interface/shell/shell.obj: dev/interface/shell/shell.cpp.obj
@@ -755,6 +807,7 @@ dev/interface/shell/shell.obj: dev/interface/shell/shell.cpp.obj
 dev/interface/shell/shell.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell.cpp.obj
 .PHONY : dev/interface/shell/shell.cpp.obj
 
 dev/interface/shell/shell.i: dev/interface/shell/shell.cpp.i
@@ -764,6 +817,7 @@ dev/interface/shell/shell.i: dev/interface/shell/shell.cpp.i
 dev/interface/shell/shell.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell.cpp.i
 .PHONY : dev/interface/shell/shell.cpp.i
 
 dev/interface/shell/shell.s: dev/interface/shell/shell.cpp.s
@@ -773,6 +827,7 @@ dev/interface/shell/shell.s: dev/interface/shell/shell.cpp.s
 dev/interface/shell/shell.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell.cpp.s
 .PHONY : dev/interface/shell/shell.cpp.s
 
 dev/interface/shell/shell_base.obj: dev/interface/shell/shell_base.c.obj
@@ -782,6 +837,7 @@ dev/interface/shell/shell_base.obj: dev/interface/shell/shell_base.c.obj
 dev/interface/shell/shell_base.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_base.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_base.c.obj
 .PHONY : dev/interface/shell/shell_base.c.obj
 
 dev/interface/shell/shell_base.i: dev/interface/shell/shell_base.c.i
@@ -791,6 +847,7 @@ dev/interface/shell/shell_base.i: dev/interface/shell/shell_base.c.i
 dev/interface/shell/shell_base.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_base.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_base.c.i
 .PHONY : dev/interface/shell/shell_base.c.i
 
 dev/interface/shell/shell_base.s: dev/interface/shell/shell_base.c.s
@@ -800,6 +857,7 @@ dev/interface/shell/shell_base.s: dev/interface/shell/shell_base.c.s
 dev/interface/shell/shell_base.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_base.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_base.c.s
 .PHONY : dev/interface/shell/shell_base.c.s
 
 dev/interface/shell/shell_base_cmd.obj: dev/interface/shell/shell_base_cmd.c.obj
@@ -809,6 +867,7 @@ dev/interface/shell/shell_base_cmd.obj: dev/interface/shell/shell_base_cmd.c.obj
 dev/interface/shell/shell_base_cmd.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_base_cmd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_base_cmd.c.obj
 .PHONY : dev/interface/shell/shell_base_cmd.c.obj
 
 dev/interface/shell/shell_base_cmd.i: dev/interface/shell/shell_base_cmd.c.i
@@ -818,6 +877,7 @@ dev/interface/shell/shell_base_cmd.i: dev/interface/shell/shell_base_cmd.c.i
 dev/interface/shell/shell_base_cmd.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_base_cmd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_base_cmd.c.i
 .PHONY : dev/interface/shell/shell_base_cmd.c.i
 
 dev/interface/shell/shell_base_cmd.s: dev/interface/shell/shell_base_cmd.c.s
@@ -827,6 +887,7 @@ dev/interface/shell/shell_base_cmd.s: dev/interface/shell/shell_base_cmd.c.s
 dev/interface/shell/shell_base_cmd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_base_cmd.c.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_base_cmd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_base_cmd.c.s
 .PHONY : dev/interface/shell/shell_base_cmd.c.s
 
 dev/interface/shell/shell_dbg_cmd.obj: dev/interface/shell/shell_dbg_cmd.cpp.obj
@@ -836,6 +897,7 @@ dev/interface/shell/shell_dbg_cmd.obj: dev/interface/shell/shell_dbg_cmd.cpp.obj
 dev/interface/shell/shell_dbg_cmd.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_dbg_cmd.cpp.obj
 .PHONY : dev/interface/shell/shell_dbg_cmd.cpp.obj
 
 dev/interface/shell/shell_dbg_cmd.i: dev/interface/shell/shell_dbg_cmd.cpp.i
@@ -845,6 +907,7 @@ dev/interface/shell/shell_dbg_cmd.i: dev/interface/shell/shell_dbg_cmd.cpp.i
 dev/interface/shell/shell_dbg_cmd.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_dbg_cmd.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_dbg_cmd.cpp.i
 .PHONY : dev/interface/shell/shell_dbg_cmd.cpp.i
 
 dev/interface/shell/shell_dbg_cmd.s: dev/interface/shell/shell_dbg_cmd.cpp.s
@@ -854,6 +917,7 @@ dev/interface/shell/shell_dbg_cmd.s: dev/interface/shell/shell_dbg_cmd.cpp.s
 dev/interface/shell/shell_dbg_cmd.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/shell/shell_dbg_cmd.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/shell/shell_dbg_cmd.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/shell_dbg_cmd.cpp.s
 .PHONY : dev/interface/shell/shell_dbg_cmd.cpp.s
 
 dev/interface/usb_com/usb_serial_interface.obj: dev/interface/usb_com/usb_serial_interface.cpp.obj
@@ -863,6 +927,7 @@ dev/interface/usb_com/usb_serial_interface.obj: dev/interface/usb_com/usb_serial
 dev/interface/usb_com/usb_serial_interface.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/usb_com/usb_serial_interface.cpp.obj
 .PHONY : dev/interface/usb_com/usb_serial_interface.cpp.obj
 
 dev/interface/usb_com/usb_serial_interface.i: dev/interface/usb_com/usb_serial_interface.cpp.i
@@ -872,6 +937,7 @@ dev/interface/usb_com/usb_serial_interface.i: dev/interface/usb_com/usb_serial_i
 dev/interface/usb_com/usb_serial_interface.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/usb_com/usb_serial_interface.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/usb_com/usb_serial_interface.cpp.i
 .PHONY : dev/interface/usb_com/usb_serial_interface.cpp.i
 
 dev/interface/usb_com/usb_serial_interface.s: dev/interface/usb_com/usb_serial_interface.cpp.s
@@ -881,6 +947,7 @@ dev/interface/usb_com/usb_serial_interface.s: dev/interface/usb_com/usb_serial_i
 dev/interface/usb_com/usb_serial_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\MOTOR.dir\build.make CMakeFiles/MOTOR.dir/dev/interface/usb_com/usb_serial_interface.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_TEST.dir\build.make CMakeFiles/DAMIAO_TEST.dir/dev/interface/usb_com/usb_serial_interface.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/usb_com/usb_serial_interface.cpp.s
 .PHONY : dev/interface/usb_com/usb_serial_interface.cpp.s
 
 os/common/ports/ARMv7-M/chcore.obj: os/common/ports/ARMv7-M/chcore.c.obj
@@ -2982,12 +3049,16 @@ help:
 	@echo ... CMSIS_DSP
 	@echo ... ChibiOS
 	@echo ... DAMIAO
+	@echo ... DAMIAO_CTRL
 	@echo ... DAMIAO_TEST
 	@echo ... LIGHT_LED
 	@echo ... MOTOR
 	@echo ... PLAY_SOUND
 	@echo ... RUDDER_TEST
 	@echo ... UART
+	@echo ... dev/application/damiao_ctrl/main.obj
+	@echo ... dev/application/damiao_ctrl/main.i
+	@echo ... dev/application/damiao_ctrl/main.s
 	@echo ... dev/application/damiao_motor/main.obj
 	@echo ... dev/application/damiao_motor/main.i
 	@echo ... dev/application/damiao_motor/main.s

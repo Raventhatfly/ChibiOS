@@ -1,0 +1,160 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				},
+				{
+					"build" : "cmsis",
+					"jsonFile" : "directory-cmsis-Debug-fd5d3bd55b229be8798a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "cmsis",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Explorer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee",
+					"jsonFile" : "target-CMSIS_DSP-Debug-bda7f15626b1a40c0a34.json",
+					"name" : "CMSIS_DSP",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ChibiOS-Debug-2f5cdb740376bc338c3d.json",
+					"name" : "ChibiOS",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DAMIAO::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DAMIAO-Debug-ebf430076e584b01041d.json",
+					"name" : "DAMIAO",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DAMIAO_CTRL::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DAMIAO_CTRL-Debug-fa1f7c1745d530525cf4.json",
+					"name" : "DAMIAO_CTRL",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DAMIAO_TEST::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DAMIAO_TEST-Debug-6c11268d17528f9ef1c5.json",
+					"name" : "DAMIAO_TEST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LIGHT_LED-Debug-40df99e30a14f4da394e.json",
+					"name" : "LIGHT_LED",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "MOTOR::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-MOTOR-Debug-44c63acef8b9aea3bb92.json",
+					"name" : "MOTOR",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-PLAY_SOUND-Debug-ae824f194c50b3815ada.json",
+					"name" : "PLAY_SOUND",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "RUDDER_TEST::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-RUDDER_TEST-Debug-06b689ba94f7a87675da.json",
+					"name" : "RUDDER_TEST",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "UART::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-UART-Debug-00a57b1a8f6c23ec1813.json",
+					"name" : "UART",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug",
+		"source" : "D:/robomaster/ChibiOS/STM32F427RM-A"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

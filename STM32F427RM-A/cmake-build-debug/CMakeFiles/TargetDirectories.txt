@@ -6,6 +6,7 @@ D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/UART.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/RUDDER_TEST.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/DAMIAO.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/DAMIAO_TEST.dir
+D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/DAMIAO_CTRL.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/edit_cache.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 D:/robomaster/ChibiOS/STM32F427RM-A/cmake-build-debug/cmsis/CMakeFiles/CMSIS_DSP.dir
