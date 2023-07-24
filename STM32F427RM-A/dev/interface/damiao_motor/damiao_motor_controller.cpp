@@ -66,6 +66,28 @@ void DamiaoMotorController::motor_disable(DamiaoMotorCFG::MotorName name) {
     DamiaoMotorIF::stop(name);
 }
 
+void DamiaoMotorController::set_target_MIT(DamiaoMotorCFG::MotorName name) {
+    int i;
+    return;
+}
+
+void DamiaoMotorController::set_target_VEL(DamiaoMotorCFG::MotorName name, float vel) {
+    if(DamiaoMotorIF::motors_mode[name]==VEL_MODE){
+        chSysLock();
+        DamiaoMotorIF::set_velocity(name,vel);
+        chSysUnlock();
+    }
+}
+
+void DamiaoMotorController::set_target_POSVEL(DamiaoMotorCFG::MotorName name, float pos, float vel) {
+    if(DamiaoMotorIF::motors_mode[name]==POS_VEL_MODE){
+        chSysLock();
+        DamiaoMotorIF::set_velocity(name,vel);
+        DamiaoMotorIF::set_position(name,pos);
+        chSysUnlock();
+    }
+}
+
 void DamiaoMotorController::skdThread::main(){
     setName("SKD Thread");
     while(!shouldTerminate()){
@@ -83,11 +105,8 @@ void DamiaoMotorController::feedbackThread::main() {
     setName("feedback");
     while(!shouldTerminate()) {
         for (int i = 0; i < DamiaoMotorCFG::MOTOR_COUNT; i++) {
-            CANRxFrame rxmsg;
-            if(enable_feedback[i]) {
-                DamiaoMotorIF::motor_feedback[i].process_feedback(&rxmsg);
-                Shell::printf("Velocity is:%u",DamiaoMotorIF::motor_feedback[i].actual_velocity);
-            }
+            LOG("Velocity is:%f",DamiaoMotorIF::motor_feedback[i].actual_velocity);
+
         }
         tprio_t PRIO = this->getPriorityX();
         unsigned long sleep_time = THREAD_INTERVAL - (TIME_I2US(chVTGetSystemTimeX()) + PRIO)%THREAD_INTERVAL;

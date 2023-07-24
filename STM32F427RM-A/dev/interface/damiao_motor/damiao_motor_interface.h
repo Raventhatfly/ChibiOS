@@ -109,6 +109,10 @@ private:
 
     static bool postMsg(DamiaoMotorCFG::MotorName motorProfile);
 
+    static void can1_callback_func(CANRxFrame const *rxmsg);
+
+    static void can2_callback_func(CANRxFrame const *rxmsg);
+
     friend class DamiaoMotorController;
 
 };

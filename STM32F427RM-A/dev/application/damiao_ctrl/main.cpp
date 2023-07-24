@@ -79,8 +79,14 @@ int main(){
     chibios_rt::System::init();
     can1.start(HIGHPRIO);
     can2.start(HIGHPRIO-1);
-    DamiaoMotorController::start(NORMALPRIO+1,NORMALPRIO,&can1,&can2);
+    Shell::start(NORMALPRIO+2);
+//    print_thread.start(NORMALPRIO+4);
+    DamiaoMotorController::start(NORMALPRIO+1,NORMALPRIO+2,&can1,&can2);
     DamiaoMotorController::motor_enable(DamiaoMotorCFG::YAW);
-    DamiaoMotorController::set_target_vel(DamiaoMotorCFG::YAW,10);
+//    DamiaoMotorController::set_target_vel(DamiaoMotorCFG::YAW,5);
+//    DamiaoMotorController::set_target_angle(DamiaoMotorCFG::YAW,50);
+//    DamiaoMotorController::set_target_POSVEL(DamiaoMotorCFG::YAW,20,2);
+    DamiaoMotorController::set_target_VEL(DamiaoMotorCFG::YAW,10);
+
 
 }

@@ -64,11 +64,17 @@ public:
     static void motor_enable(DamiaoMotorCFG::MotorName name);
 
     static void motor_disable(DamiaoMotorCFG::MotorName name);
+
+    static void set_target_MIT(DamiaoMotorCFG::MotorName name);
+
+    static void set_target_POSVEL(DamiaoMotorCFG::MotorName name, float pos,float vel);
+
+    static void set_target_VEL(DamiaoMotorCFG::MotorName name, float vel);
 private:
 
     class feedbackThread : public BaseStaticThread<512> {
     public:
-        bool enable_feedback[DamiaoMotorCFG::MOTOR_COUNT]={false};
+        bool enable_feedback[DamiaoMotorCFG::MOTOR_COUNT]={true};
     private:
         DamiaoMotorFeedback feedback[DamiaoMotorCFG::MOTOR_COUNT];
         void main() final;

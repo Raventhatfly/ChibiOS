@@ -40,8 +40,8 @@ public:
         MOTOR_COUNT,
     }motor_usage_t;
     static constexpr DamiaoMotorBase motorCfg[MOTOR_COUNT] = {
-            {can_channel_1,0x00,0x01,0,0,45,PI,0.0,0.0,VEL_MODE},
-            {can_channel_2,0x00,0x01,0,0,45,PI,0.0,0.0,VEL_MODE}
+            {can_channel_1,0x00,0x01,0,0,30,PI,0.0,0.0,VEL_MODE},
+            {can_channel_2,0x00,0x01,0,0,30,PI,0.0,0.0,VEL_MODE}
     };
 };
 
