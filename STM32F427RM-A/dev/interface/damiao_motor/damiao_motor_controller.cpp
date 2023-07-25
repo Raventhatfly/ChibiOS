@@ -83,7 +83,7 @@ void DamiaoMotorController::set_target_POSVEL(DamiaoMotorCFG::MotorName name, fl
     if(DamiaoMotorIF::motors_mode[name]==POS_VEL_MODE){
         chSysLock();
         DamiaoMotorIF::set_velocity(name,vel);
-        DamiaoMotorIF::set_position(name,pos);
+        DamiaoMotorIF::set_position(name,pos + DamiaoMotorCFG::motorCfg[name].initial_encoder_angle);
         chSysUnlock();
     }
 }
@@ -105,8 +105,10 @@ void DamiaoMotorController::feedbackThread::main() {
     setName("feedback");
     while(!shouldTerminate()) {
         for (int i = 0; i < DamiaoMotorCFG::MOTOR_COUNT; i++) {
-            LOG("Velocity is:%f",DamiaoMotorIF::motor_feedback[i].actual_velocity);
-
+            if(enable_feedback[i]){
+                LOG("Vel:%.2f,Pos:%.2f,Torque:%.2f",DamiaoMotorIF::motor_feedback[i].actual_velocity,DamiaoMotorIF::motor_feedback[i].actual_angle/(2*PI)*360,
+                    DamiaoMotorIF::motor_feedback[i].actual_torque);
+            }
         }
         tprio_t PRIO = this->getPriorityX();
         unsigned long sleep_time = THREAD_INTERVAL - (TIME_I2US(chVTGetSystemTimeX()) + PRIO)%THREAD_INTERVAL;

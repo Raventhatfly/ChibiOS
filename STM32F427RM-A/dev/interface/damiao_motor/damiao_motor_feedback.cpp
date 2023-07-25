@@ -1,5 +1,5 @@
 //
-// Created by Chen Qian on 10/28/21.
+// Created by Wu Feiyang on 7/25/23.
 //
 
 /**
@@ -14,7 +14,7 @@
 constexpr DamiaoMotorBase DamiaoMotorCFG::motorCfg[DamiaoMotorCFG::MOTOR_COUNT];
 void DamiaoMotorFeedback::init(DamiaoMotorCFG::MotorName motor_name, float initial_encoder_angle) {
     motor_name_ = motor_name;
-//    last_pos_raw = initial_encoder_angle;
+    initial_encoder_angle_ = initial_encoder_angle;
 }
 
 void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {

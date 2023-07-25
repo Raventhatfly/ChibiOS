@@ -113,6 +113,8 @@ private:
 
     DamiaoMotorCFG::MotorName motor_name_;
 
+    float initial_encoder_angle_;
+
     float raw2actrual(uint16_t raw,float actual_max,uint8_t bits);
 
     uint16_t actual2raw(float actual, float actual_max, uint8_t bits);

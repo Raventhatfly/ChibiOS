@@ -74,7 +74,7 @@ private:
 
     class feedbackThread : public BaseStaticThread<512> {
     public:
-        bool enable_feedback[DamiaoMotorCFG::MOTOR_COUNT]={true};
+        bool enable_feedback[DamiaoMotorCFG::MOTOR_COUNT]={false};
     private:
         DamiaoMotorFeedback feedback[DamiaoMotorCFG::MOTOR_COUNT];
         void main() final;

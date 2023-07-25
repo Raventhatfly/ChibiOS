@@ -44,7 +44,7 @@ void DamiaoMotorIF::init(CANInterface *can1_, CANInterface *can2_) {
 
 void DamiaoMotorIF::start(DamiaoMotorCFG::MotorName motorProfile) {
     DamiaoMotorIF::set_mode(motorProfile,DamiaoMotorCFG::motorCfg[motorProfile].mode);
-    chThdSleepMilliseconds(3000);
+    chThdSleepMilliseconds(500);
     for(int i=10;i > 0;i--){
         chSysLock();
         motors_can_tx_frame[motorProfile].DLC = 0x08;

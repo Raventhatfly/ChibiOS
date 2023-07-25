@@ -83,10 +83,10 @@ int main(){
 //    print_thread.start(NORMALPRIO+4);
     DamiaoMotorController::start(NORMALPRIO+1,NORMALPRIO+2,&can1,&can2);
     DamiaoMotorController::motor_enable(DamiaoMotorCFG::YAW);
-//    DamiaoMotorController::set_target_vel(DamiaoMotorCFG::YAW,5);
+//    DamiaoMotorController::set_target_vel(DamiaoMotorCFG::YAW,5);.
 //    DamiaoMotorController::set_target_angle(DamiaoMotorCFG::YAW,50);
 //    DamiaoMotorController::set_target_POSVEL(DamiaoMotorCFG::YAW,20,2);
-    DamiaoMotorController::set_target_VEL(DamiaoMotorCFG::YAW,10);
+    DamiaoMotorController::shell_display(DamiaoMotorCFG::YAW,true);
 
 
 }
