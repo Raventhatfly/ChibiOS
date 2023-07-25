@@ -65,7 +65,7 @@ public:
 
     static void motor_disable(DamiaoMotorCFG::MotorName name);
 
-    static void set_target_MIT(DamiaoMotorCFG::MotorName name);
+    static void set_target_MIT(DamiaoMotorCFG::MotorName name,float pos,float vel,float torque);
 
     static void set_target_POSVEL(DamiaoMotorCFG::MotorName name, float pos,float vel);
 

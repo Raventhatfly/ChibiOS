@@ -11,6 +11,7 @@
  */
 
 #include "damiao_motor_interface.h"
+#include "hal_spi_lld.c"
 
 CANInterface* DamiaoMotorIF::can1;
 CANInterface* DamiaoMotorIF::can2;
@@ -22,11 +23,6 @@ motor_mode_t DamiaoMotorIF::motors_mode[DamiaoMotorCFG::MOTOR_COUNT];
 void DamiaoMotorIF::init(CANInterface *can1_, CANInterface *can2_) {
     can1 = can1_;
     can2 = can2_;
-//    for(auto & i : motors_can_tx_frame){
-//        i.DLC = 0x08;
-//        i.RTR = CAN_RTR_DATA;
-//        i.IDE = CAN_IDE_STD;
-//    }
     for(int i=0; i<DamiaoMotorCFG::MOTOR_COUNT;i++){
         motors_can_tx_frame[i].RTR = CAN_RTR_DATA;
         motors_can_tx_frame[i].IDE = CAN_IDE_STD;
@@ -44,7 +40,7 @@ void DamiaoMotorIF::init(CANInterface *can1_, CANInterface *can2_) {
 
 void DamiaoMotorIF::start(DamiaoMotorCFG::MotorName motorProfile) {
     DamiaoMotorIF::set_mode(motorProfile,DamiaoMotorCFG::motorCfg[motorProfile].mode);
-    chThdSleepMilliseconds(500);
+    chThdSleepMilliseconds(1500);
     for(int i=10;i > 0;i--){
         chSysLock();
         motors_can_tx_frame[motorProfile].DLC = 0x08;
@@ -80,7 +76,10 @@ void DamiaoMotorIF::stop(DamiaoMotorCFG::MotorName motorProfile) {
 
 void DamiaoMotorIF::set_mode(DamiaoMotorCFG::MotorName motorProfile, motor_mode_t mode) {
     motors_mode[motorProfile] = mode;
-    if(motors_mode[motorProfile] != VEL_MODE){
+    if(motors_mode[motorProfile] == MIT_MODE){
+        motors_can_tx_frame[motorProfile].DLC = 0x08;
+        motors_can_tx_frame[motorProfile].SID = DamiaoMotorCFG::motorCfg[motorProfile].slaveID;
+    }else if(motors_mode[motorProfile] == POS_VEL_MODE){
         motors_can_tx_frame[motorProfile].DLC = 0x08;
         motors_can_tx_frame[motorProfile].SID = DamiaoMotorCFG::motorCfg[motorProfile].slaveID + 0x100;
     }else{
@@ -91,8 +90,11 @@ void DamiaoMotorIF::set_mode(DamiaoMotorCFG::MotorName motorProfile, motor_mode_
 
 void DamiaoMotorIF::set_velocity(DamiaoMotorCFG::MotorName motorProfile, float vel) {
     if(motors_mode[motorProfile]==MIT_MODE){
-        //TODO:MIT MODE
-
+        float v_max = DamiaoMotorCFG::motorCfg[motorProfile].V_max;
+        uint32_t uint_vel = float_to_uint(vel,-v_max,v_max,12);
+        motors_can_tx_frame[motorProfile].data8[3] &= 0x0f;
+        motors_can_tx_frame[motorProfile].data8[3] |= (uint_vel & 0x0f) << 4;
+        motors_can_tx_frame[motorProfile].data8[2] = uint_vel >> 4;
     }else if(motors_mode[motorProfile]==POS_VEL_MODE){
         float temp_vel = vel;
         uint32_t* pvel;
@@ -108,7 +110,10 @@ void DamiaoMotorIF::set_velocity(DamiaoMotorCFG::MotorName motorProfile, float v
 
 void DamiaoMotorIF::set_position(DamiaoMotorCFG::MotorName motorProfile, float pos) {
     if(motors_mode[motorProfile]==MIT_MODE){
-
+        float pos_max = DamiaoMotorCFG::motorCfg[motorProfile].P_max;
+        uint32_t  uint_pos = float_to_uint(pos,-pos_max,pos_max,16);
+        motors_can_tx_frame[motorProfile].data8[1] =uint_pos & 0x0ff;
+        motors_can_tx_frame[motorProfile].data8[0] =uint_pos >> 8;
     }else if(motors_mode[motorProfile]==POS_VEL_MODE){
         float temp_pos = pos;
         uint32_t* ppos;
@@ -119,7 +124,11 @@ void DamiaoMotorIF::set_position(DamiaoMotorCFG::MotorName motorProfile, float p
 
 void DamiaoMotorIF::set_torque(DamiaoMotorCFG::MotorName motorProfile, float torq) {
     if(motors_mode[motorProfile]==MIT_MODE){
-
+        float torque_max = DamiaoMotorCFG::motorCfg[motorProfile].T_max;
+        uint32_t uint_torq = float_to_uint(torq,-torque_max,torque_max,12);
+        motors_can_tx_frame[motorProfile].data8[7] = uint_torq & 0x0ff;
+        motors_can_tx_frame[motorProfile].data8[6] &= 0xf0;
+        motors_can_tx_frame[motorProfile].data8[6] |= uint_torq >> 8;
     }
 }
 
@@ -149,5 +158,26 @@ void DamiaoMotorIF::can2_callback_func(const CANRxFrame *rxmsg) {
         }
     }
 }
+
+void DamiaoMotorIF::set_param_MIT(DamiaoMotorCFG::MotorName motorProfile, float kp, float kd) {
+    if(DamiaoMotorCFG::motorCfg[motorProfile].mode == MIT_MODE){
+        float kp_min = DamiaoMotorCFG::motorCfg[motorProfile].kp_min;
+        float kp_max = DamiaoMotorCFG::motorCfg[motorProfile].kp_max;
+        float kd_min = DamiaoMotorCFG::motorCfg[motorProfile].kd_min;
+        float kd_max = DamiaoMotorCFG::motorCfg[motorProfile].kd_max;
+
+        uint32_t uint_kp = float_to_uint(kp,kp_min,kp_max,12);
+        uint32_t uint_kd = float_to_uint(kd,kd_min,kd_max,12);
+
+        motors_can_tx_frame[motorProfile].data8[3] &= 0xf0;
+        motors_can_tx_frame[motorProfile].data8[3] |= (uint_kp >> 8) & 0x0f;
+        motors_can_tx_frame[motorProfile].data8[4] = uint_kp & 0x0ff;
+        motors_can_tx_frame[motorProfile].data8[6] &= 0x0f;
+        motors_can_tx_frame[motorProfile].data8[6] |= (uint_kd & 0x0f) << 4;
+        motors_can_tx_frame[motorProfile].data8[5] = uint_kd >> 4;
+
+    }
+}
+
 
 

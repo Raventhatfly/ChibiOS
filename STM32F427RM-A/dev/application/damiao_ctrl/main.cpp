@@ -87,6 +87,7 @@ int main(){
 //    DamiaoMotorController::set_target_angle(DamiaoMotorCFG::YAW,50);
 //    DamiaoMotorController::set_target_POSVEL(DamiaoMotorCFG::YAW,20,2);
     DamiaoMotorController::shell_display(DamiaoMotorCFG::YAW,true);
+    DamiaoMotorController::set_target_MIT(DamiaoMotorCFG::YAW,2.5,0.9,0.9);
 
 
 }

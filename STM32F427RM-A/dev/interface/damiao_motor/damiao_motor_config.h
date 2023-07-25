@@ -23,13 +23,17 @@ public:
     CANDriver* can_driver;
     int        masterID;
     int        slaveID;
-    int        mitKp;
-    int        mitKd;
+    float      mitKp;
+    float      mitKd;
     float      V_max;   // maximum rotation speed. Unit is Rad/s.
     float      P_max;   // maximum Position. Unit is Rad.
     float      T_max;   // maximum Torque. Unit is N*m.
     float      initial_encoder_angle;
     motor_mode_t mode;
+    float      kp_min;
+    float      kp_max;
+    float      kd_min;
+    float      kd_max;
 };
 
 class DamiaoMotorCFG{
@@ -40,8 +44,10 @@ public:
         MOTOR_COUNT,
     }motor_usage_t;
     static constexpr DamiaoMotorBase motorCfg[MOTOR_COUNT] = {
-            {can_channel_1,0x00,0x01,0,0,30,PI,0.0,0.0,POS_VEL_MODE},
-            {can_channel_2,0x00,0x01,0,0,30,PI,0.0,0.0,VEL_MODE}
+            {can_channel_1,0x00,0x01,1.0,0.3,30,3.141593,10.0,
+             0.0,MIT_MODE,0.0,500.0,0.0,5.0},
+            {can_channel_2,0x00,0x01,0.0,0.0,30,3.141593,10.0,
+             0.0,VEL_MODE,0.0,500.0,0.0,5.0}
     };
 };
 

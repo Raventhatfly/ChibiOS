@@ -107,6 +107,8 @@ private:
 
     static void set_torque(DamiaoMotorCFG::MotorName motorProfile, float torq);
 
+    static void set_param_MIT(DamiaoMotorCFG::MotorName motorProfile,float kp,float kd);
+
     static bool postMsg(DamiaoMotorCFG::MotorName motorProfile);
 
     static void can1_callback_func(CANRxFrame const *rxmsg);

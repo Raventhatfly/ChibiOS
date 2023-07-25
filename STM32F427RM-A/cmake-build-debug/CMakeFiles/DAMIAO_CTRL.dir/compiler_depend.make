@@ -1275,7 +1275,8 @@ CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp
   C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/numeric \
   C:/Program\ Files\ (x86)/GNU\ Arm\ Embedded\ Toolchain/10\ 2021.10/arm-none-eabi/include/c++/10.3.1/bits/stl_numeric.h \
   D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_feedback.h \
-  D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_config.h
+  D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_config.h \
+  D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c
 
 CMakeFiles/DAMIAO_CTRL.dir/dev/interface/shell/printf.c.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c \
   D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/include/hal.h \
@@ -3001,6 +3002,8 @@ D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_cont
 D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can/can_interface.cpp:
 
 D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_controller.cpp:
+
+D:/robomaster/ChibiOS/STM32F427RM-A/os/hal/ports/STM32/LLD/SPIv1/hal_spi_lld.c:
 
 D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/shell/printf.c:
 

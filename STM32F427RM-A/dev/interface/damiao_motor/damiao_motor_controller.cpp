@@ -66,9 +66,16 @@ void DamiaoMotorController::motor_disable(DamiaoMotorCFG::MotorName name) {
     DamiaoMotorIF::stop(name);
 }
 
-void DamiaoMotorController::set_target_MIT(DamiaoMotorCFG::MotorName name) {
-    int i;
-    return;
+void DamiaoMotorController::set_target_MIT(DamiaoMotorCFG::MotorName name,float pos,float vel,float torque) {
+    if(DamiaoMotorIF::motors_mode[name]==MIT_MODE){
+        chSysLock();
+        DamiaoMotorIF::set_velocity(name,vel);
+        DamiaoMotorIF::set_position(name,pos + DamiaoMotorCFG::motorCfg[name].initial_encoder_angle);
+        DamiaoMotorIF::set_torque(name,torque);
+        DamiaoMotorIF::set_param_MIT(name,DamiaoMotorCFG::motorCfg[name].mitKp,DamiaoMotorCFG::motorCfg[name].mitKd);
+        chSysUnlock();
+    }
+
 }
 
 void DamiaoMotorController::set_target_VEL(DamiaoMotorCFG::MotorName name, float vel) {

@@ -254,4 +254,5 @@ CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\numeric \
  c:\progra~2\gnuarm~1\102021~1.10\arm-none-eabi\include\c++\10.3.1\bits\stl_numeric.h \
  D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\damiao_motor_feedback.h \
- D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\damiao_motor_config.h
+ D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\damiao_motor_config.h \
+ d:\robomaster\chibios\stm32f427rm-a\os\hal\ports\stm32\lld\spiv1\hal_spi_lld.c
