@@ -43,9 +43,14 @@ public:
         PITCH,
         MOTOR_COUNT,
     }motor_usage_t;
+    /***
+     * @brief Motor Configuration
+     * The unit of all velocity is Rad/s, unit of P_MAX must be exactly identical to the value with that of the Damiao Offical tool,
+     * whose unit is by defualt Rad. All unit of torque is N * m. The unit of @param initial_encoder_angle is degree.
+     */
     static constexpr DamiaoMotorBase motorCfg[MOTOR_COUNT] = {
-            {can_channel_1,0x00,0x01,1.0,0.3,30,3.141593,10.0,
-             0.0,MIT_MODE,0.0,500.0,0.0,5.0},
+            {can_channel_1,0x00,0x01,1.0,0.3,30,3.141953,10.0,
+             55.26,POS_VEL_MODE,0.0,500.0,0.0,5.0},
             {can_channel_2,0x00,0x01,0.0,0.0,30,3.141593,10.0,
              0.0,VEL_MODE,0.0,500.0,0.0,5.0}
     };

@@ -94,6 +94,7 @@ private:
     };
     static skdThread SKDThread;
 
+    static float degree2radius(float angle_degree);
 };
 
 

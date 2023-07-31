@@ -15,6 +15,8 @@ constexpr DamiaoMotorBase DamiaoMotorCFG::motorCfg[DamiaoMotorCFG::MOTOR_COUNT];
 void DamiaoMotorFeedback::init(DamiaoMotorCFG::MotorName motor_name, float initial_encoder_angle) {
     motor_name_ = motor_name;
     initial_encoder_angle_ = initial_encoder_angle;
+    last_update_time   = SYSTIME;
+    round_count = 0;
 }
 
 void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {
@@ -31,20 +33,22 @@ void DamiaoMotorFeedback::process_feedback(const CANRxFrame *rxmsg) {
     actual_angle = raw2actrual(pos_raw,DamiaoMotorCFG::motorCfg[motor_name_].P_max,16);
     actual_torque = raw2actrual(torque_raw,DamiaoMotorCFG::motorCfg[motor_name_].T_max,12);
 
-    if(actual_angle>=DamiaoMotorCFG::motorCfg[motor_name_].P_max){
-        actual_angle -= 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;
+    if(last_angle > 0 && actual_angle < 0 && ( DamiaoMotorCFG::motorCfg[motor_name_].P_max - last_angle) < 0.2){
+//        actual_angle -= 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;
         round_count++;
     }
-    if(actual_angle>=DamiaoMotorCFG::motorCfg[motor_name_].P_max){
-        actual_angle += 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;
+    if(last_angle < 0 && actual_angle > 0 && (last_angle - DamiaoMotorCFG::motorCfg[motor_name_].P_max < 0.2)){
+//        actual_angle += 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;
         round_count--;
     }
 
     last_update_time   = SYSTIME;  // Update Time
+    last_angle = actual_angle;
+
 }
 
 float DamiaoMotorFeedback::accumulate_angle() {
-    return actual_angle + (float)round_count * 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max;;
+    return actual_angle + (float)round_count * 2 * DamiaoMotorCFG::motorCfg[motor_name_].P_max - initial_encoder_angle_/360*(2*PI);
 }
 
 float DamiaoMotorFeedback::torque() const {

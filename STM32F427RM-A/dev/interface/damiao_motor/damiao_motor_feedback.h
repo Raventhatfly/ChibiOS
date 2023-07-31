@@ -41,6 +41,10 @@ public:
     time_msecs_t last_update_time = SYSTIME;
 
     /**
+     * @brief   [Rad]        Last angle.
+     */
+    float last_angle;
+    /**
      * @brief   [Degree/Sec]Actual output shaft velocity for motors.
      */
     float actual_velocity = 0.0f;

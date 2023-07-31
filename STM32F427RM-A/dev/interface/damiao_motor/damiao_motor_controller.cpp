@@ -27,6 +27,7 @@ void DamiaoMotorController::shell_display(DamiaoMotorCFG::MotorName name, bool e
 }
 
 void DamiaoMotorController::set_target_angle(DamiaoMotorCFG::MotorName name, float target) {
+    target = degree2radius(target);
     DamiaoMotorIF::set_position(name,target);
 }
 
@@ -70,7 +71,7 @@ void DamiaoMotorController::set_target_MIT(DamiaoMotorCFG::MotorName name,float 
     if(DamiaoMotorIF::motors_mode[name]==MIT_MODE){
         chSysLock();
         DamiaoMotorIF::set_velocity(name,vel);
-        DamiaoMotorIF::set_position(name,pos + DamiaoMotorCFG::motorCfg[name].initial_encoder_angle);
+        DamiaoMotorIF::set_position(name,degree2radius(pos + DamiaoMotorCFG::motorCfg[name].initial_encoder_angle));
         DamiaoMotorIF::set_torque(name,torque);
         DamiaoMotorIF::set_param_MIT(name,DamiaoMotorCFG::motorCfg[name].mitKp,DamiaoMotorCFG::motorCfg[name].mitKd);
         chSysUnlock();
@@ -90,9 +91,13 @@ void DamiaoMotorController::set_target_POSVEL(DamiaoMotorCFG::MotorName name, fl
     if(DamiaoMotorIF::motors_mode[name]==POS_VEL_MODE){
         chSysLock();
         DamiaoMotorIF::set_velocity(name,vel);
-        DamiaoMotorIF::set_position(name,pos + DamiaoMotorCFG::motorCfg[name].initial_encoder_angle);
+        DamiaoMotorIF::set_position(name,degree2radius(pos + DamiaoMotorCFG::motorCfg[name].initial_encoder_angle));
         chSysUnlock();
     }
+}
+
+float DamiaoMotorController::degree2radius(float angle_degree) {
+    return angle_degree /360.0f * 2 * PI;
 }
 
 void DamiaoMotorController::skdThread::main(){
@@ -113,8 +118,9 @@ void DamiaoMotorController::feedbackThread::main() {
     while(!shouldTerminate()) {
         for (int i = 0; i < DamiaoMotorCFG::MOTOR_COUNT; i++) {
             if(enable_feedback[i]){
-                LOG("Vel:%.2f,Pos:%.2f,Torque:%.2f",DamiaoMotorIF::motor_feedback[i].actual_velocity,DamiaoMotorIF::motor_feedback[i].actual_angle/(2*PI)*360,
-                    DamiaoMotorIF::motor_feedback[i].actual_torque);
+//                LOG("Vel:%.2f,Pos:%.2f,Torque:%.2f" "Accumulate Angle:%2.f",DamiaoMotorIF::motor_feedback[i].actual_velocity,DamiaoMotorIF::motor_feedback[i].actual_angle/(2*PI)*360,
+//                    DamiaoMotorIF::motor_feedback[i].actual_torque,DamiaoMotorIF::motor_feedback[i].accumulate_angle());
+                LOG("Actual:%.2f, Accumulate:%.2f",DamiaoMotorIF::motor_feedback[i].actual_angle/(2*PI)*360,DamiaoMotorIF::motor_feedback[i].accumulate_angle()/(2*PI)*360);
             }
         }
         tprio_t PRIO = this->getPriorityX();
