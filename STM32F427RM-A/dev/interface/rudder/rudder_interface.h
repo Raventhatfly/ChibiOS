@@ -12,6 +12,7 @@ class Rudder{
 public:
     typedef enum{
         MG995,
+        AFD30T60MG,
         RUDDER_TYPE_CNT
     }rudderType_t;
 
@@ -22,7 +23,7 @@ public:
     void set_rudder_angle(int angle);
 
 private:
-    PWMConfig pwm_default_config = {
+    PWMConfig mg995_pwm_default_config = {
             10000,    // frequency 10000Hz
             100,        // 10 ms, 1/10000s * 100 = 0.01s = 10ms
             nullptr,
@@ -35,6 +36,22 @@ private:
             0,
             0,
             0
+    };
+    PWMConfig afd30t60mg_default_config = {
+            1000000, // frequency 1000000Hz,1us
+            3003, // 1 / 1000000 * 3003 = 0.003003s, ->333Hz
+            nullptr,
+            {
+                    {PWM_OUTPUT_ACTIVE_HIGH, nullptr},  // it's all CH1 for current support boards
+                    {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},
+                    {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},
+                    {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr}
+            },
+            0,
+            0,
+            0
+
+
     };
     PWMDriver * driver_;
     PWMConfig * config_;

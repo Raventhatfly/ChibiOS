@@ -2610,9 +2610,6 @@
 			<Option target="DAMIAO"/>
 			<Option target="DAMIAO_CTRL"/>
 		</Unit>
-		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/main.cpp">
-			<Option target="DAMIAO"/>
-		</Unit>
 		<Unit filename="D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/led/led.cpp">
 			<Option target="LIGHT_LED"/>
 			<Option target="PLAY_SOUND"/>

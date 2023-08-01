@@ -11,7 +11,6 @@
  */
 
 #include "damiao_motor_interface.h"
-#include "hal_spi_lld.c"
 
 CANInterface* DamiaoMotorIF::can1;
 CANInterface* DamiaoMotorIF::can2;

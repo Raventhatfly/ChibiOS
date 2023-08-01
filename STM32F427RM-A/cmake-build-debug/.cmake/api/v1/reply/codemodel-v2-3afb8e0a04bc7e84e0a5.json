@@ -83,63 +83,63 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ChibiOS::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ChibiOS-Debug-2f5cdb740376bc338c3d.json",
+					"jsonFile" : "target-ChibiOS-Debug-f53e1c075ec436ac53b2.json",
 					"name" : "ChibiOS",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "DAMIAO::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DAMIAO-Debug-ebf430076e584b01041d.json",
+					"jsonFile" : "target-DAMIAO-Debug-55eb55c58360f38fce40.json",
 					"name" : "DAMIAO",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "DAMIAO_CTRL::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DAMIAO_CTRL-Debug-fa1f7c1745d530525cf4.json",
+					"jsonFile" : "target-DAMIAO_CTRL-Debug-29c4e118edee1dd0d975.json",
 					"name" : "DAMIAO_CTRL",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "DAMIAO_TEST::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-DAMIAO_TEST-Debug-6c11268d17528f9ef1c5.json",
+					"jsonFile" : "target-DAMIAO_TEST-Debug-943c6c4502c31027c481.json",
 					"name" : "DAMIAO_TEST",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "LIGHT_LED::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-LIGHT_LED-Debug-40df99e30a14f4da394e.json",
+					"jsonFile" : "target-LIGHT_LED-Debug-4ddb1ce81e26b6cc8d48.json",
 					"name" : "LIGHT_LED",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "MOTOR::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-MOTOR-Debug-44c63acef8b9aea3bb92.json",
+					"jsonFile" : "target-MOTOR-Debug-42563207251344fb6dd1.json",
 					"name" : "MOTOR",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-PLAY_SOUND-Debug-ae824f194c50b3815ada.json",
+					"jsonFile" : "target-PLAY_SOUND-Debug-4707dbb6843e65bd0abd.json",
 					"name" : "PLAY_SOUND",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "RUDDER_TEST::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-RUDDER_TEST-Debug-06b689ba94f7a87675da.json",
+					"jsonFile" : "target-RUDDER_TEST-Debug-affe1a25dafcb06dada1.json",
 					"name" : "RUDDER_TEST",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "UART::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-UART-Debug-00a57b1a8f6c23ec1813.json",
+					"jsonFile" : "target-UART-Debug-39a336d2f9ce6095943d.json",
 					"name" : "UART",
 					"projectIndex" : 0
 				}

@@ -671,30 +671,6 @@ dev/interface/damiao_motor/damiao_motor_interface.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO_CTRL.dir\build.make CMakeFiles/DAMIAO_CTRL.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.s
 .PHONY : dev/interface/damiao_motor/damiao_motor_interface.cpp.s
 
-dev/interface/damiao_motor/main.obj: dev/interface/damiao_motor/main.cpp.obj
-.PHONY : dev/interface/damiao_motor/main.obj
-
-# target to build an object file
-dev/interface/damiao_motor/main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj
-.PHONY : dev/interface/damiao_motor/main.cpp.obj
-
-dev/interface/damiao_motor/main.i: dev/interface/damiao_motor/main.cpp.i
-.PHONY : dev/interface/damiao_motor/main.i
-
-# target to preprocess a source file
-dev/interface/damiao_motor/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.i
-.PHONY : dev/interface/damiao_motor/main.cpp.i
-
-dev/interface/damiao_motor/main.s: dev/interface/damiao_motor/main.cpp.s
-.PHONY : dev/interface/damiao_motor/main.s
-
-# target to generate assembly for a file
-dev/interface/damiao_motor/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\DAMIAO.dir\build.make CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.s
-.PHONY : dev/interface/damiao_motor/main.cpp.s
-
 dev/interface/led/led.obj: dev/interface/led/led.cpp.obj
 .PHONY : dev/interface/led/led.obj
 
@@ -3107,9 +3083,6 @@ help:
 	@echo ... dev/interface/damiao_motor/damiao_motor_interface.obj
 	@echo ... dev/interface/damiao_motor/damiao_motor_interface.i
 	@echo ... dev/interface/damiao_motor/damiao_motor_interface.s
-	@echo ... dev/interface/damiao_motor/main.obj
-	@echo ... dev/interface/damiao_motor/main.i
-	@echo ... dev/interface/damiao_motor/main.s
 	@echo ... dev/interface/led/led.obj
 	@echo ... dev/interface/led/led.i
 	@echo ... dev/interface/led/led.s

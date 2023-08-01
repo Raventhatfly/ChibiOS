@@ -32,25 +32,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 118,
+				"line" : 91,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 169,
+				"line" : 168,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 160,
+				"line" : 159,
 				"parent" : 0
 			},
 			{
 				"command" : 3,
 				"file" : 0,
-				"line" : 128,
+				"line" : 94,
 				"parent" : 0
 			},
 			{
@@ -174,13 +174,13 @@
 			{
 				"command" : 6,
 				"file" : 0,
-				"line" : 124,
+				"line" : 93,
 				"parent" : 0
 			},
 			{
 				"command" : 7,
 				"file" : 0,
-				"line" : 166,
+				"line" : 165,
 				"parent" : 0
 			}
 		]
@@ -213,11 +213,11 @@
 				},
 				{
 					"backtrace" : 3,
-					"define" : "BUILD_TARGET_NAME=\"DAMIAO\""
+					"define" : "BUILD_TARGET_NAME=\"PLAY_SOUND\""
 				},
 				{
 					"backtrace" : 4,
-					"define" : "DAMIAO"
+					"define" : "PLAY_SOUND"
 				},
 				{
 					"backtrace" : 2,
@@ -400,15 +400,7 @@
 				},
 				{
 					"backtrace" : 25,
-					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor"
-				},
-				{
-					"backtrace" : 25,
-					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can"
-				},
-				{
-					"backtrace" : 25,
-					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/module"
+					"path" : "D:/robomaster/ChibiOS/STM32F427RM-A/dev/application/play_sound"
 				},
 				{
 					"backtrace" : 2,
@@ -429,8 +421,7 @@
 				0,
 				1,
 				2,
-				3,
-				4
+				3
 			]
 		}
 	],
@@ -444,7 +435,7 @@
 			"id" : "CMSIS_DSP::@09a3a5da410fd255a2ee"
 		}
 	],
-	"id" : "DAMIAO::@6890427a1f51a3e7e1df",
+	"id" : "PLAY_SOUND::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -460,7 +451,7 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "DAMIAO",
+	"name" : "PLAY_SOUND",
 	"nameOnDisk" : "meta.elf",
 	"paths" : 
 	{
@@ -476,14 +467,14 @@
 				0,
 				1,
 				2,
-				3,
-				4
+				3
 			]
 		},
 		{
 			"name" : "Object Libraries",
 			"sourceIndexes" : 
 			[
+				4,
 				5,
 				6,
 				7,
@@ -584,8 +575,7 @@
 				102,
 				103,
 				104,
-				105,
-				106
+				105
 			]
 		}
 	],
@@ -594,31 +584,25 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/damiao_motor/damiao_motor_controller.cpp",
+			"path" : "dev/application/play_sound/paly_sound.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/damiao_motor/damiao_motor_feedback.cpp",
+			"path" : "dev/interface/led/led.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/damiao_motor/damiao_motor_interface.cpp",
+			"path" : "dev/interface/buzzer/buzzer_scheduler.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "dev/interface/damiao_motor/main.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "dev/interface/can/can_interface.cpp",
+			"path" : "dev/interface/buzzer/buzzer_interface.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

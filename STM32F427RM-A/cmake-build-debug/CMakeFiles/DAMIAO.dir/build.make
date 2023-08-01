@@ -110,24 +110,10 @@ CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.s: c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.s"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\damiao_motor_interface.cpp -o CMakeFiles\DAMIAO.dir\dev\interface\damiao_motor\damiao_motor_interface.cpp.s
 
-CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj: CMakeFiles/DAMIAO.dir/flags.make
-CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/main.cpp
-CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj: CMakeFiles/DAMIAO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj -MF CMakeFiles\DAMIAO.dir\dev\interface\damiao_motor\main.cpp.obj.d -o CMakeFiles\DAMIAO.dir\dev\interface\damiao_motor\main.cpp.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\main.cpp
-
-CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.i"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\main.cpp > CMakeFiles\DAMIAO.dir\dev\interface\damiao_motor\main.cpp.i
-
-CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.s"
-	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\damiao_motor\main.cpp -o CMakeFiles\DAMIAO.dir\dev\interface\damiao_motor\main.cpp.s
-
 CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj: CMakeFiles/DAMIAO.dir/flags.make
 CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj: D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/can/can_interface.cpp
 CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj: CMakeFiles/DAMIAO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj"
 	C:\PROGRA~2\GNUARM~1\102021~1.10\bin\AR10B2~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj -MF CMakeFiles\DAMIAO.dir\dev\interface\can\can_interface.cpp.obj.d -o CMakeFiles\DAMIAO.dir\dev\interface\can\can_interface.cpp.obj -c D:\robomaster\ChibiOS\STM32F427RM-A\dev\interface\can\can_interface.cpp
 
 CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.i: cmake_force
@@ -143,7 +129,6 @@ DAMIAO_OBJECTS = \
 "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj" \
 "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj" \
 "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj" \
-"CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj" \
 "CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj"
 
 # External object files for target DAMIAO
@@ -254,7 +239,6 @@ DAMIAO_EXTERNAL_OBJECTS = \
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj
-D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/dev/interface/can/can_interface.cpp.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/crt0_v7m.S.obj
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/ChibiOS.dir/os/common/startup/ARMCMx/compilers/GCC/vectors.S.obj
@@ -361,7 +345,7 @@ D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: cmsis/CMakeFiles/CMSIS_DSP.d
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/build.make
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/objects1
 D:/robomaster/ChibiOS/STM32F427RM-A/build/meta.elf: CMakeFiles/DAMIAO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable D:\robomaster\ChibiOS\STM32F427RM-A\build\meta.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\robomaster\ChibiOS\STM32F427RM-A\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable D:\robomaster\ChibiOS\STM32F427RM-A\build\meta.elf"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Build for RM2018A"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\DAMIAO.dir\link.txt --verbose=$(VERBOSE)
 	echo

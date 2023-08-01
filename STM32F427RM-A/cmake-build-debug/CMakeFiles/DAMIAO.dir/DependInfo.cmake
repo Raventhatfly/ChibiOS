@@ -12,7 +12,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_controller.cpp" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj" "gcc" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_controller.cpp.obj.d"
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_feedback.cpp" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj" "gcc" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_feedback.cpp.obj.d"
   "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/damiao_motor_interface.cpp" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj" "gcc" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/damiao_motor_interface.cpp.obj.d"
-  "D:/robomaster/ChibiOS/STM32F427RM-A/dev/interface/damiao_motor/main.cpp" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj" "gcc" "CMakeFiles/DAMIAO.dir/dev/interface/damiao_motor/main.cpp.obj.d"
   )
 
 # Targets to which this target links.

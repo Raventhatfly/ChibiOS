@@ -119,7 +119,6 @@ add_executable(DAMIAO
         dev/interface/damiao_motor/damiao_motor_controller.cpp
         dev/interface/damiao_motor/damiao_motor_feedback.cpp
         dev/interface/damiao_motor/damiao_motor_interface.cpp
-        dev/interface/damiao_motor/main.cpp
         dev/interface/can/can_interface.cpp)
 target_include_directories(DAMIAO PRIVATE
         dev/interface/damiao_motor
