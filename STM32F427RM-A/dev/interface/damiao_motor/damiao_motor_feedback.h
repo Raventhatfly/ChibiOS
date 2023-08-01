@@ -19,7 +19,7 @@
 
 /**
  * @author  Wu Feiyang
- * @brief   Motor interface for single motor.
+ * @brief   Damiao Motor interface for single motor.
  * @usage   1. Create a instance. \n
  *          2. Call init() function. \n
  *          3. Pass CANRxFrame to the process_feedback() function.\n
@@ -68,7 +68,7 @@ public:
 
     /**
      * @brief               Get accumulate angle of the motor.
-     * @return  [Degree]    Accumulate angle of the motor.
+     * @return  [radius]    Accumulate angle of the motor in radius.
      */
     float accumulate_angle();
 

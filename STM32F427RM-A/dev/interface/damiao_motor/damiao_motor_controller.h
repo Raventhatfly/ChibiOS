@@ -22,7 +22,7 @@ class DamiaoMotorController{
 public:
 
     /**
-     * @brief           Start CAN motor scheduler thread.
+     * @brief           Start Damiao Motor scheduler thread.
      * @param SKD_PRIO  [in] Scheduler thread priority, motor controllers calculations.
      * @param FB_PRIO   [in] Feedback thread priority, log motor feedback data on shell.
      * @param can1_     [in/out] CAN interface for CAN channel 1.
@@ -30,14 +30,24 @@ public:
      */
     static void start(tprio_t SKD_PRIO, tprio_t FB_PRIO, CANInterface *can1_, CANInterface *can2_);
 
+    /**
+     * @brief          Shell display enable or disable.
+     * @param name     [in] The motor name to enable the feedback display.
+     * @param enable   [in] Enable the shell display.
+     */
     static void shell_display(DamiaoMotorCFG::MotorName name, bool enable);
 
+    /**
+     * @brief           Set the target angle of the motor.
+     * @param name     [in] The motor name.
+     * @param target   [in] target angle of the motor to be controlled
+     */
     static void set_target_angle(DamiaoMotorCFG::MotorName name, float target);
 
     /**
-     * @brief Set the target velocity in velocity PID Controller mode
-     * @param id        [in] Target motor id
-     * @param target    [in] Target velocity of motor
+     * @brief           Set the target angle of the motor.
+     * @param name     [in] The motor name.
+     * @param target   [in] target angle of the motor to be controlled
      */
     static void set_target_vel(DamiaoMotorCFG::MotorName name, float target);
 
@@ -49,26 +59,88 @@ public:
          velocity, ///< Feedback type is velocity
      };
 
+    /**
+     * @brief           Get the torque of the motor.
+     * @param name     [in] The motor name.
+     */
     static float get_torque(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief           Get the error code of the motor.
+     * @param name     [in] The motor name.
+     * @return integer error code
+     *   8--Voltage too high；
+     *   9--Voltage too low；
+     *   A--Current too high；
+     *   B--MOS over heating；
+     *   C--Motor Cable over heating；
+     *   D--Lost communication；
+     *   E--Overload；
+     */
     static int get_error(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief           Get the position of the motor.
+     * @param name     [in] The motor name.
+     * @return         [out] Angel value in radius.
+     */
     static float get_position_angel(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief           Get the MOS temprature of the motor.
+     * @param name     [in] The motor name.
+     * @return         [out] Temperature of the motor.
+     */
     static float get_mos_temprature(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief           Get the rotor temprature of the motor.
+     * @param name     [in] The motor name.
+     * @return         [out] Temperature of the rotor.
+     */
     static float get_rotor_temprature(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief          Get the ID of the motor.
+     * @param name     [in] The motor name.
+     * @return         [out] The ID of the motor.
+     */
     static int get_ID(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief          Enable the Damiao Motor.
+     * @param name     [in] The motor name.
+     */
     static void motor_enable(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief          Disable the Damiao Motor.
+     * @param name     [in] The motor name.
+     */
     static void motor_disable(DamiaoMotorCFG::MotorName name);
 
+    /**
+     * @brief          Set the motor control parameters in MIT mode.
+     * @param name     [in] The motor name.
+     * @param pos      [in] The target position.
+     * @param vel      [in] The target velocity.
+     * @param torque   [in] The target torque.
+     */
     static void set_target_MIT(DamiaoMotorCFG::MotorName name,float pos,float vel,float torque);
 
+    /**
+      * @brief          Set the motor control parameters in position-velocity mode.
+      * @param name     [in] The motor name.
+      * @param pos      [in] The target position.
+      * @param vel      [in] The target velocity.
+     */
     static void set_target_POSVEL(DamiaoMotorCFG::MotorName name, float pos,float vel);
 
+    /**
+      * @brief          Set the motor control parameters in velocity mode.
+      * @param name     [in] The motor name.
+      * @param vel      [in] The target velocity.
+      */
     static void set_target_VEL(DamiaoMotorCFG::MotorName name, float vel);
 private:
 
@@ -84,9 +156,6 @@ private:
 
     class skdThread : public BaseStaticThread<512> {
     private:
-//        float targetP[DamiaoMotorCFG::MOTOR_COUNT];
-//        float targetV[DamiaoMotorCFG::MOTOR_COUNT];
-//        DamiaoMotorCFG::MotorName name;
         void main() final;
         friend feedbackThread;
         friend DamiaoMotorController;
@@ -94,6 +163,10 @@ private:
     };
     static skdThread SKDThread;
 
+    /**
+      * @brief change from degree angle to radius angel.
+      * @param angle_degree     [in] Angle in degree.
+      */
     static float degree2radius(float angle_degree);
 };
 

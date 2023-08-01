@@ -19,51 +19,14 @@
 /**
  * @author Wu Feiyang
  * @brief  Interface for Damiao motors.
- * @usage
- * @code
- * 1.   Create and include motor CANMotorCFG class.
- * 2.   Initialized the class by calling init() method.
- * 3.a. Set current to the motor on certain CAN BUS.
- * 3.b. Also can read feedback by accessing motor_feedback.
- * 3.c. After set current, publish the data on CAN-BUS by post_target_current() method.
- * *Notice: Either set motor current or get access to motor feedback should use the
- *          logical index (YAW, PITCH).
- * @endcode
- * @details 1. CANMotorCFG class structure:
- * @code
- * class CANMotorCFG{
- *     enum             motor_id_t {...,..., MOTOR_COUNT};
- *     CANMotorBase     CANMotorProfile[MOTOR_COUNT];
- *     pid_params_t     a2vParams[MOTOR_COUNT];
- *     pid_params_t     v2iParams[MOTOR_COUNT];
- *     bool             enable_a2v[MOTOR_COUNT];
- *     bool             enable_v2i[MOTOR_COUNT];}
- * @endcode
- *
- * @details 2. Single CAN motor profile structure:
- * @code
- * CANMotorBase {[CANMotorProfile::can_channel_t] can_channel,
- *               [int] CAN_SID,
- *               [CANMotorBase::motor_type_t] motor_type,
- *               [int] initial_encoder_angle}
- * @endcode TODO: comment needs to be refactored
  */
+
 class DamiaoMotorIF{
 public:
-    /**
-     * @brief Motors that will be liked with logical motor id.
-     */
     static DamiaoMotorFeedback motor_feedback[DamiaoMotorCFG::MOTOR_COUNT];
     static motor_mode_t motors_mode[DamiaoMotorCFG::MOTOR_COUNT];
 
 private:
-
-    /**
-     * @brief Initialize the haptic arm interface.
-     * @param can1_             [in] The can1 channel to use.
-     * @param can2_             [in] The can2 channel to use.
-     */
-
 
     static CANTxFrame motors_can_tx_frame[DamiaoMotorCFG::MotorName::MOTOR_COUNT];
 
@@ -93,26 +56,78 @@ private:
         return (int) ((x-offset)*((float)((1<<bits)-1))/span);
     }
 
+    /**
+     * @brief initialize the damiao motor interface.
+     * @param can1_ Pointer of Can driver 1.
+     * @param can2_ Pointer of Can driver 2.
+     */
     static void init(CANInterface *can1_, CANInterface *can2_);
 
+    /**
+     * @brief start and enable the damiao motor by sending out the start command.
+     * @param motorProfile
+     */
     static void start(DamiaoMotorCFG::MotorName motorProfile);
 
+    /**
+     * @brief stop and disable the damiao motor by sending out the stop command.
+     * @param motorProfile
+     */
     static void stop(DamiaoMotorCFG::MotorName motorProfile);
 
+    /**
+     * @brief set the mode of the Damiao Motor. Namely, MIT_MODE, POS_VEL_MODE, VEL_MODE.
+     * @param motorProfile
+     * @param mode
+     */
     static void set_mode(DamiaoMotorCFG::MotorName motorProfile, motor_mode_t mode);
 
+    /**
+     * @brief Set the target velocity of the motor. Compatible for all modes.
+     * @param motorProfile
+     * @param vel
+     */
     static void set_velocity(DamiaoMotorCFG::MotorName motorProfile, float vel);
 
+    /**
+     * @brief Set the target position of the motor. Compatible for all modes.
+     * @param motorProfile
+     * @param pos
+     */
     static void set_position(DamiaoMotorCFG::MotorName motorProfile, float pos);
 
+    /**
+     * @brief Set the target torque of the motor. Compatible for MIT mode only.
+     * @param motorProfile
+     * @param torq
+     */
     static void set_torque(DamiaoMotorCFG::MotorName motorProfile, float torq);
 
+    /**
+     * @brief set the kp and kd parameters of MIT_MODE.
+     * @param motorProfile
+     * @param kp
+     * @param kd
+     */
     static void set_param_MIT(DamiaoMotorCFG::MotorName motorProfile,float kp,float kd);
 
+    /**
+     * @brief Post Can TX message.
+     * @param motorProfile
+     * @return true for success.
+     */
     static bool postMsg(DamiaoMotorCFG::MotorName motorProfile);
 
+    /**
+     * @brief CAN1 callback function.
+     * @param rxmsg
+     */
     static void can1_callback_func(CANRxFrame const *rxmsg);
 
+    /**
+     * @brief CAN2 callback function.
+     * @param rxmsg
+     */
     static void can2_callback_func(CANRxFrame const *rxmsg);
 
     friend class DamiaoMotorController;
