@@ -29,6 +29,7 @@ Rudder::~Rudder() {
     pwmStop(driver_);
 }
 void Rudder::start() {
+    config_->channels[channel_].mode = PWM_OUTPUT_ACTIVE_HIGH;
     pwmStart(driver_,config_);
 }
 
@@ -41,20 +42,22 @@ void Rudder::set_rudder_angle(int angle) {
          *        1.5ms - 90 degrees
          *        2.5ms - 180 degrees
          */
-         // 180 - 2000
+        // 180 - 2000
         percentage = angle * 2000 / 180 + 500;
     }else if(rudderType_ == AFD30T60MG){
         /**
         *
         */
         // 120 - 4000
-        angle = angle * 120 / 150;
-        percentage = angle * 3996 / 120 + 2997;
+        angle = angle * 120 / 150; // I don't know what is wrong, but the angle needs remapping.
+        percentage = angle * 4000 / 120 + 3000;
     }
     pwmEnableChannel(driver_,channel_,PWM_PERCENTAGE_TO_WIDTH(driver_, percentage));
 }
 void Rudder::stop() {
     pwmDisableChannel(driver_,channel_);
+    pwmStop(driver_);
+    config_->channels[channel_].mode = PWM_COMPLEMENTARY_OUTPUT_DISABLED;
 }
 
 

@@ -33,16 +33,16 @@ int main(){
     Rudder rudder1(&PWMD4,nullptr,0,Rudder::AFD30T60MG);
 
     rudder1.start();
-    rudder1.set_rudder_angle(90);
+    rudder1.set_rudder_angle(0);
     while(1){
         chThdSleepMilliseconds(2000);
+        rudder1.set_rudder_angle(60);
+        chThdSleepMilliseconds(2000);
+        rudder1.set_rudder_angle(120);
+        chThdSleepMilliseconds(2000);
+        rudder1.set_rudder_angle(60);
+        chThdSleepMilliseconds(2000);
         rudder1.set_rudder_angle(0);
-        chThdSleepMilliseconds(2000);
-        rudder1.set_rudder_angle(90);
-        chThdSleepMilliseconds(2000);
-        rudder1.set_rudder_angle(0);
-        chThdSleepMilliseconds(2000);
-        rudder1.set_rudder_angle(90);
 
     }
 }

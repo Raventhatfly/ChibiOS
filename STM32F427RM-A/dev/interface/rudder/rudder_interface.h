@@ -28,7 +28,7 @@ private:
             100,        // 10 ms, 1/10000s * 100 = 0.01s = 10ms
             nullptr,
             {
-                    {PWM_OUTPUT_ACTIVE_HIGH, nullptr},  // it's all CH1 for current support boards
+                    {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},  // it's all CH1 for current support boards
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr}
@@ -38,11 +38,11 @@ private:
             0
     };
     PWMConfig afd30t60mg_default_config = {
-            1000000, // frequency 1000000Hz,1us
-            3003, // 1 / 1000000 * 3003 = 0.003003s, ->333Hz
+            10000, // frequency 1000000Hz,1us
+            30,      // 3ms
             nullptr,
             {
-                    {PWM_OUTPUT_ACTIVE_HIGH, nullptr},  // it's all CH1 for current support boards
+                    {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},  // it's all CH1 for current support boards
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr},
                     {PWM_COMPLEMENTARY_OUTPUT_DISABLED, nullptr}
@@ -50,6 +50,7 @@ private:
             0,
             0,
             0
+
 
 
     };
