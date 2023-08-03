@@ -126,7 +126,7 @@
 #define CAN1_TX0                 10U
 #define CAN1_TX1                 11U
 #define PWM_RUDDER                  12U
-#define GPIOD_LED3                  13U
+#define PWM_RUDDER2                  13U
 #define GPIOD_LED5                  14U
 #define GPIOD_LED6                  15U
 
@@ -672,7 +672,7 @@
                                      PIN_MODE_INPUT(CAN1_TX0) |          \
                                      PIN_MODE_INPUT(CAN1_TX1) |          \
                                      PIN_MODE_ALTERNATE(PWM_RUDDER) |          \
-                                     PIN_MODE_OUTPUT(GPIOD_LED3) |          \
+                                     PIN_MODE_ALTERNATE(PWM_RUDDER2) |          \
                                      PIN_MODE_OUTPUT(GPIOD_LED5) |          \
                                      PIN_MODE_OUTPUT(GPIOD_LED6))
 #define VAL_GPIOD_OTYPER            (PIN_OTYPE_PUSHPULL(CAN1_RX) |       \
@@ -688,7 +688,7 @@
                                      PIN_OTYPE_PUSHPULL(CAN1_TX0) |      \
                                      PIN_OTYPE_PUSHPULL(CAN1_TX1) |      \
                                      PIN_OTYPE_PUSHPULL(PWM_RUDDER) |       \
-                                     PIN_OTYPE_PUSHPULL(GPIOD_LED3) |       \
+                                     PIN_OTYPE_PUSHPULL(PWM_RUDDER2) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOD_LED5) |       \
                                      PIN_OTYPE_PUSHPULL(GPIOD_LED6))
 #define VAL_GPIOD_OSPEEDR           (PIN_OSPEED_HIGH(CAN1_RX) |          \
@@ -704,7 +704,7 @@
                                      PIN_OSPEED_HIGH(CAN1_TX0) |         \
                                      PIN_OSPEED_HIGH(CAN1_TX1) |         \
                                      PIN_OSPEED_HIGH(PWM_RUDDER) |          \
-                                     PIN_OSPEED_HIGH(GPIOD_LED3) |          \
+                                     PIN_OSPEED_HIGH(PWM_RUDDER2) |          \
                                      PIN_OSPEED_HIGH(GPIOD_LED5) |          \
                                      PIN_OSPEED_HIGH(GPIOD_LED6))
 #define VAL_GPIOD_PUPDR             (PIN_PUPDR_PULLUP(CAN1_RX) |         \
@@ -720,7 +720,7 @@
                                      PIN_PUPDR_PULLUP(CAN1_TX0) |        \
                                      PIN_PUPDR_PULLUP(CAN1_TX1) |        \
                                      PIN_PUPDR_FLOATING(PWM_RUDDER) |       \
-                                     PIN_PUPDR_FLOATING(GPIOD_LED3) |       \
+                                     PIN_PUPDR_FLOATING(PWM_RUDDER2) |       \
                                      PIN_PUPDR_FLOATING(GPIOD_LED5) |       \
                                      PIN_PUPDR_FLOATING(GPIOD_LED6))
 #define VAL_GPIOD_ODR               (PIN_ODR_HIGH(CAN1_RX) |             \
@@ -736,7 +736,7 @@
                                      PIN_ODR_HIGH(CAN1_TX0) |            \
                                      PIN_ODR_HIGH(CAN1_TX1) |            \
                                      PIN_ODR_LOW(PWM_RUDDER) |              \
-                                     PIN_ODR_LOW(GPIOD_LED3) |              \
+                                     PIN_ODR_LOW(PWM_RUDDER2) |              \
                                      PIN_ODR_LOW(GPIOD_LED5) |              \
                                      PIN_ODR_LOW(GPIOD_LED6))
 #define VAL_GPIOD_AFRL              (PIN_AFIO_AF(CAN1_RX, 9U) |          \
@@ -752,7 +752,7 @@
                                      PIN_AFIO_AF(CAN1_TX0, 0U) |         \
                                      PIN_AFIO_AF(CAN1_TX1, 0U) |         \
                                      PIN_AFIO_AF(PWM_RUDDER, 2U) |          \
-                                     PIN_AFIO_AF(GPIOD_LED3, 0U) |          \
+                                     PIN_AFIO_AF(PWM_RUDDER2, 2U) |          \
                                      PIN_AFIO_AF(GPIOD_LED5, 0U) |          \
                                      PIN_AFIO_AF(GPIOD_LED6, 0U))
 
